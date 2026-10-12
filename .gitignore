@@ -12,3 +12,6 @@ venv/
 .env
 *.token
 .askpass-*
+
+# Servidor local de previsualización (utilidad local; no se publica)
+herramientas/servidor.py

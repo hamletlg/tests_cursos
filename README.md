@@ -20,7 +20,9 @@ Escribes el test en texto plano (rápido), un script lo convierte a JSON y lo pu
     python3 herramientas/convertir.py
 
     # 3. Probar en local
-    python3 -m http.server 8765      # http://localhost:8765
+    #    OJO: abrir index.html con doble clic (file://) NO funciona: el navegador
+    #    bloquea la lectura de los JSON. Hace falta servirlo por HTTP.
+    python3 herramientas/servidor.py     # abre http://127.0.0.1:8765
 
     # 4. Publicar
     python3 herramientas/publicar.py -m "Nuevo examen tema 2"

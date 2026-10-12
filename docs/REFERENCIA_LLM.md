@@ -17,6 +17,7 @@ de alumno. La corrección ocurre en el navegador del alumno y no se guarda ningu
     fuentes/*.md                   AQUÍ se escriben los exámenes (texto plano).
     herramientas/convertir.py      fuentes/*.md  ->  data/*.json  (valida el formato).
     herramientas/publicar.py       convierte + publica (git o API de GitHub).
+    herramientas/servidor.py       Servidor local de previsualización (NO se publica; ver .gitignore).
     data/index.json                Índice de exámenes (LO GENERA el script; no editar a mano).
     data/examenes/*.json           Un JSON por examen (LO GENERA el script).
     docs/REFERENCIA_LLM.md         Este documento.
@@ -90,12 +91,24 @@ huérfanos de fuentes eliminadas. `data/index.json` se regenera con la lista com
 
 ## 4. Probar en local antes de publicar
 
-    python3 -m http.server 8765
-    # abrir http://localhost:8765            (listado)
-    #      http://localhost:8765/?grupo=A    (solo exámenes del grupo A)
-    #      http://localhost:8765/?examen=<id>
+OJO: abrir `index.html` con doble clic (esquema `file://`) NO funciona. El navegador bloquea la
+lectura de `data/*.json` por CORS y la página muestra "No se pudo cargar el índice de exámenes".
+Hay que servir la carpeta por HTTP. Para eso está `herramientas/servidor.py` (solo biblioteca
+estándar; NO se publica, está en `.gitignore`):
+
+    python3 herramientas/servidor.py              # http://127.0.0.1:8765 y abre el navegador
+    python3 herramientas/servidor.py -p 9000      # otro puerto
+    python3 herramientas/servidor.py --no-abrir   # sin abrir el navegador
+    python3 herramientas/servidor.py --grupo A    # abre ya el listado del grupo A
+
+Rutas útiles:
+
+    http://127.0.0.1:8765/                 listado completo
+    http://127.0.0.1:8765/?grupo=A         solo exámenes del grupo A
+    http://127.0.0.1:8765/?examen=<id>     un examen concreto
 
 El examen se autocorrige al pulsar "Corregir"; "Reiniciar" vuelve a barajar las opciones.
+En GitHub Pages esto no aplica: allí el sitio ya se sirve por HTTP y funciona sin nada más.
 
 ---
 
