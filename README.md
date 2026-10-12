@@ -32,7 +32,12 @@ Escribes el test en texto plano (rápido), un script lo convierte a JSON y lo pu
 - **4 alternativas por pregunta**, siempre (lo valida el conversor).
 - La **posición de la respuesta correcta es aleatoria**: las 4 opciones se barajan en cada
   intento, para que el alumno no se acomode a una posición fija.
-- **Sin límite** de preguntas por examen.
+- **Sin límite** de preguntas por examen. Los tests se muestran **paginados** (10 preguntas por
+  pantalla; `#Por página: N` en el .md para cambiarlo, o el selector de la propia web).
+- Las respuestas del alumno **se conservan** al cambiar de página, al volver atrás y al recargar
+  (se guardan en el navegador del alumno; nunca se envían).
+- El alumno puede **exportar el test completo** a su dispositivo: PDF, HTML offline autocorregible
+  (funciona sin internet), JSON, CSV/Excel o texto.
 - Se admiten preguntas de **una o varias respuestas correctas**.
 - Grupos: `#Grupo: A` en el .md permite dar a cada grupo su propio listado (`...?grupo=A`).
 

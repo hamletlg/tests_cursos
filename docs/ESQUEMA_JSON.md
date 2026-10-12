@@ -26,6 +26,7 @@ Generado por `herramientas/convertir.py`. NO se edita a mano.
       "grupo": "A",
       "barajar_preguntas": false,     // si true, la web mezcla el orden de las preguntas
       "shuffle_options": true,        // la web baraja SIEMPRE las opciones (4 por pregunta)
+      "preguntas_por_pagina": 10,     // OPCIONAL: solo si el .md lleva "#Por página:"
       "questions": [
         {
           "id": 1,
@@ -41,6 +42,8 @@ Notas:
 - `correct_indices` se refiere al orden ORIGINAL de `options`. La web baraja la presentación
   y traduce las marcas del alumno a estos índices para corregir.
 - `type` se deduce del número de índices correctos.
+- `preguntas_por_pagina` es opcional: sin ella la web muestra 10 preguntas por pantalla. Se
+  omite del JSON salvo que el `.md` use `#Por página:`.
 - `id` se deriva del título (slug ASCII) salvo que se use `#Slug:` en el .md.
 - El esquema de `questions[]` es compatible con el usado en `HTML/OPOTEST` (allí con
   `title`/`description` a nivel de examen y `correct_indices` por pregunta), para reutilizar

@@ -7,6 +7,7 @@ Formato de cada fichero en `fuentes/` (texto plano, se edita rápido):
     #Descripción: texto opcional que sale en el listado
     #Grupo: A
     #Barajar preguntas: no
+    #Por página: 10
 
     ## Enunciado de la pregunta
     - opción incorrecta
@@ -22,7 +23,8 @@ Formato de cada fichero en `fuentes/` (texto plano, se edita rápido):
 
 Reglas del formato:
   * La primera línea "# " es el TÍTULO del examen (obligatorio).
-  * Directivas opcionales:  "#Descripción: ...", "#Grupo: A", "#Barajar preguntas: si|no".
+  * Directivas opcionales:  "#Descripción: ...", "#Grupo: A", "#Barajar preguntas: si|no",
+                            "#Por página: 10" (preguntas por pantalla en la web).
   * Cada "## " abre una PREGUNTA.
   * Cada línea "- " es una OPCIÓN. Marca con un " *" al final las correctas.
   * EXACTAMENTE 4 opciones por pregunta (se valida; error si no son 4).
@@ -60,6 +62,9 @@ DIRECTIVAS = {
     "grupo": "grupo",
     "barajar preguntas": "barajar_preguntas",
     "barajar_preguntas": "barajar_preguntas",
+    "por pagina": "preguntas_por_pagina",
+    "preguntas por pagina": "preguntas_por_pagina",
+    "preguntas_por_pagina": "preguntas_por_pagina",
     "slug": "slug",
     "id": "slug",
 }
@@ -99,6 +104,12 @@ def parsear(texto: str, origen: str) -> dict:
             if destino:
                 if destino == "barajar_preguntas":
                     meta[destino] = parsear_bool(valor)
+                elif destino == "preguntas_por_pagina":
+                    if re.fullmatch(r"\d+", valor) and int(valor) > 0:
+                        meta[destino] = int(valor)
+                    else:
+                        errores.append(
+                            f"{origen}:{n}: '#Por página:' necesita un entero mayor que 0, no {valor!r}")
                 else:
                     meta[destino] = valor
                 continue
@@ -154,16 +165,20 @@ def parsear(texto: str, origen: str) -> dict:
         p["type"] = "multiple" if len(p["correct_indices"]) > 1 else "single"
 
     ex_id = meta.get("slug") or slug(titulo or origen)
-    return {
+    datos = {
         "id": ex_id,
         "title": titulo or origen,
         "description": meta.get("description", ""),
         "grupo": meta.get("grupo", ""),
         "barajar_preguntas": meta.get("barajar_preguntas", False),
         "shuffle_options": True,
-        "questions": preguntas,
-        "_errores": errores,
     }
+    # solo se escribe si el .md lo pide: los exámenes sin la directiva no cambian
+    if "preguntas_por_pagina" in meta:
+        datos["preguntas_por_pagina"] = meta["preguntas_por_pagina"]
+    datos["questions"] = preguntas
+    datos["_errores"] = errores
+    return datos
 
 
 def main() -> int:

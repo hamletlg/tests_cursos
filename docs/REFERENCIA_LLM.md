@@ -35,6 +35,7 @@ siguiente conversión lo sobrescribe.
     #Descripción: texto opcional que aparece en el listado
     #Grupo: A
     #Barajar preguntas: no
+    #Por página: 10
 
     ## Enunciado de la pregunta
     - opción incorrecta
@@ -55,6 +56,8 @@ Reglas (el conversor las valida y aborta si algo no cuadra):
    - `#Descripción: ...`  -> descripción del examen.
    - `#Grupo: A`          -> etiqueta de grupo (para filtrar en la web con `?grupo=A`).
    - `#Barajar preguntas: si|no` -> si se mezcla el orden de las preguntas (por defecto no).
+   - `#Por página: 10`    -> cuántas preguntas se muestran por pantalla (por defecto 10). El
+                             alumno puede cambiarlo en la propia web (5 / 10 / 20 / 60 / Todas).
    - `#Slug: mi-id`       -> fuerza el identificador/URL del examen (por defecto se deriva del título).
 3. Cada `## ` abre una PREGUNTA.
 4. Cada línea `- ` es una OPCIÓN. Termina en ` *` (espacio + asterisco) para marcar la CORRECTA.
@@ -109,6 +112,19 @@ Rutas útiles:
 
 El examen se autocorrige al pulsar "Corregir"; "Reiniciar" vuelve a barajar las opciones.
 En GitHub Pages esto no aplica: allí el sitio ya se sirve por HTTP y funciona sin nada más.
+
+### Paginación, respuestas guardadas y exportación
+
+- El test se muestra PAGINADO (10 preguntas por pantalla por defecto; el alumno puede cambiarlo
+  a 5 / 10 / 20 / 60 / Todas). "Corregir" puntúa SIEMPRE el examen completo, no la página visible.
+- Las respuestas se conservan al pasar de página, al volver atrás y aunque el alumno recargue o
+  cierre el navegador: se guardan en su propio navegador (`localStorage`), junto con el orden
+  barajado, así que no ve su respuesta "movida". No se envía nada a ningún sitio.
+- "Reiniciar" pide confirmación si hay respuestas y borra ese progreso.
+- Abajo del todo, el alumno puede EXPORTAR EL TEST COMPLETO (todas las preguntas, no solo la
+  página visible): Imprimir/PDF (con casilla para incluir la clave), HTML offline autocorregible
+  (un único fichero que funciona sin internet ni servidor, también en el móvil), JSON, CSV/Excel
+  y copiar el texto al portapapeles.
 
 ---
 
@@ -170,7 +186,15 @@ requiere plan de pago).
 - "¿Se guardan las notas?" -> No. La corrección es local en el navegador; no se envía nada.
 - "¿Y si un alumno ve las respuestas?" -> El repo es público, así que las respuestas están en el
   JSON. Para PRACTICAR no importa; para un examen evaluable con nota, este montaje no sirve.
-- "¿Cuántas preguntas?" -> Sin límite. Solo se exige que cada pregunta tenga 4 opciones.
+- "¿Cuántas preguntas?" -> Sin límite. Solo se exige que cada pregunta tenga 4 opciones. A partir
+  de ~10 el motor las pagina solo (ver abajo).
+- "¿Puedo subir un test de 60 preguntas y que salga por páginas?" -> Sí. No hay que hacer nada
+  especial; se paginan de 10 en 10. Si quieres otro tamaño, `#Por página: 15` en el .md.
+- "Si el alumno vuelve a una página anterior, ¿se le borran las respuestas?" -> No. Se conservan
+  al ir y volver, y también si recarga o cierra el navegador.
+- "¿Puede el alumno llevarse el test entero a su móvil?" -> Sí. Con "HTML offline" se descarga un
+  fichero único con TODAS las preguntas que funciona sin internet; también puede imprimirlo a PDF,
+  descargarlo en JSON o CSV, o copiar el texto.
 - "¿La respuesta correcta sale siempre en el mismo sitio?" -> No: las opciones se barajan en cada
   intento.
 
@@ -183,4 +207,9 @@ requiere plan de pago).
 - Borrar un examen: borrar su `fuentes/<algo>.md`, reconvertir, publicar.
 - Poner imágenes dentro de una pregunta: no está soportado en el formato de texto actual; habría
   que ampliar `index.html` y el conversor (pedirlo como mejora).
+- ¿Dónde se guardan las respuestas del alumno? En su propio navegador (`localStorage`); no viajan a
+  ningún servidor. En navegación privada, con los datos del navegador borrados o en otro
+  dispositivo, no estarán.
+- ¿Hay que tocar `index.html` al añadir exámenes? No. La paginación, la persistencia y las
+  exportaciones viven ahí; añadir un examen es solo `fuentes/` + `convertir.py` + publicar.
 - Penalización por fallo: no la hay; la puntuación es `aciertos / total`. Se puede añadir.

@@ -10,7 +10,7 @@
   body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
        color:#1d2733;background:var(--fondo);line-height:1.5}
   header{background:var(--azul);color:#fff;padding:18px 22px}
-  header h1{margin:0;font-size:1.25rem;font-weight:600;letter-spacing:.2px}
+  header h1{margin:0;font-size:1.25rem;font-weight:600}
   header p{margin:4px 0 0;font-size:.85rem;opacity:.85}
   main{max-width:820px;margin:0 auto;padding:22px}
   .card{background:#fff;border:1px solid var(--borde);border-radius:6px;padding:18px 20px;margin-bottom:16px}
@@ -30,13 +30,33 @@
   .mal{border-color:var(--mal);background:#fbeceb}
   .btn{background:var(--azul);color:#fff;border:0;border-radius:5px;padding:11px 18px;font-size:.95rem;cursor:pointer}
   .btn.sec{background:#e9edf1;color:var(--azul)}
+  .btn:disabled{opacity:.45;cursor:default}
+  .barra-acciones{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
   .resultado{font-size:1.05rem;font-weight:600;margin:10px 0}
   .meta{color:var(--gris);font-size:.85rem}
   .barra{height:8px;background:#e9edf1;border-radius:4px;overflow:hidden;margin-top:8px}
   .barra > i{display:block;height:100%;background:var(--azul)}
   .chip{display:inline-block;background:#e9edf1;color:var(--azul);border-radius:10px;
         padding:1px 9px;font-size:.75rem;margin-left:6px;vertical-align:middle}
-  footer{color:var(--gris);font-size:.8rem;text-align:center;padding:18px}
+  .pager{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+         border:1px solid var(--borde);border-radius:6px;padding:10px 12px;background:#fff;margin-bottom:14px}
+  .pager .ir{list-style:none;display:flex;gap:4px;padding:0;margin:0;flex-wrap:wrap}
+  .pager .ir button{border:1px solid var(--borde);background:#fff;border-radius:4px;
+        min-width:32px;padding:5px 7px;cursor:pointer;font:inherit;font-size:.85rem}
+  .pager .ir button[aria-current="true"]{background:var(--azul);color:#fff;border-color:var(--azul)}
+  .pager .ir button.hecha::after{content:" •";color:var(--ok);font-weight:700}
+  .pager .ir button[aria-current="true"].hecha::after{color:#fff}
+  .zoom{display:inline-block;background:#eef8f2;border:1px solid var(--ok);border-radius:5px;
+        padding:2px 6px;font-size:.8rem;margin-bottom:8px;font-weight:600;color:var(--ok)}
+  /* contenedor imprimible: invisible en pantalla, completo en papel */
+  #imprimible{display:none}
+  @media print{
+    header, footer, .card, .pager, .no-print{display:none !important}
+    body{background:#fff}
+    #imprimible{display:block;padding:0 10mm}
+    #imprimible .pregunta{page-break-inside:avoid}
+    #imprimible h2{margin-top:0}
+  }
 </style>
 </head>
 <body>
@@ -45,21 +65,27 @@
   <p>Autoevaluación. La corrección es local: no se guarda ni se envía ninguna nota.</p>
 </header>
 <main id="app"></main>
-<footer>Generado desde un banco de preguntas en texto. Sin cuentas, sin datos enviados.</footer>
+<div id="imprimible"></div>
+<footer>Generado desde un banco de preguntas en texto. </footer>
 
 <script>
 "use strict";
 const app = document.getElementById('app');
+const imprimible = document.getElementById('imprimible');
 const params = new URLSearchParams(location.search);
+const OFFLINE = !!window.__EXAMEN__;          // fichero exportado: datos embebidos
+const CLAVE_LS = 'testalumnos:v1:';
 
 /* ---------- utilidades ---------- */
 function el(tag, attrs, ...hijos){
   const n = document.createElement(tag);
   if(attrs) for(const k in attrs){
-    if(k === 'class') n.className = attrs[k];
-    else if(k === 'style') n.setAttribute('style', attrs[k]);
-    else if(k.startsWith('on')) n.addEventListener(k.slice(2), attrs[k]);
-    else n.setAttribute(k, attrs[k]);
+    const v = attrs[k];
+    if(v == null || v === false){ n.removeAttribute(k); continue; }
+    if(k === 'class') n.className = v;
+    else if(k === 'style') n.setAttribute('style', v);
+    else if(k.startsWith('on')) n.addEventListener(k.slice(2), v);
+    else n.setAttribute(k, v);
   }
   const añadir = (h) => {
     if(h == null) return;
@@ -69,7 +95,6 @@ function el(tag, attrs, ...hijos){
   hijos.forEach(añadir);
   return n;
 }
-// Fisher-Yates: orden aleatorio de verdad, distinto en cada intento
 function barajar(arr){
   const a = arr.slice();
   for(let i = a.length - 1; i > 0; i--){
@@ -78,15 +103,32 @@ function barajar(arr){
   }
   return a;
 }
-function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function descargar(texto, nombre, tipo){
+  const url = URL.createObjectURL(new Blob([texto], {type: (tipo || 'text/plain') + ';charset=utf-8'}));
+  const a = el('a', {href: url, download: nombre});
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 4000);
+}
+
+/* ---------- datos ---------- */
+async function datosIndice(){
+  if(window.__INDICE__) return window.__INDICE__;
+  const r = await fetch('data/index.json', {cache:'no-store'});
+  if(!r.ok) throw new Error('HTTP ' + r.status);
+  return r.json();
+}
+async function datosExamen(meta){
+  if(OFFLINE) return window.__EXAMEN__;
+  const r = await fetch(meta.archivo, {cache:'no-store'});
+  if(!r.ok) throw new Error('HTTP ' + r.status);
+  return r.json();
+}
 
 /* ---------- navegación ---------- */
 async function cargarLista(){
   app.replaceChildren(el('div',{class:'card'}, el('p',null,'Cargando…')));
   try{
-    const r = await fetch('data/index.json', {cache:'no-store'});
-    if(!r.ok) throw new Error('HTTP ' + r.status);
-    const data = await r.json();
+    const data = await datosIndice();
     pintarLista(data.examenes || []);
   }catch(e){
     app.replaceChildren(el('div',{class:'card'},
@@ -115,14 +157,15 @@ function pintarLista(examenes){
 async function cargarExamen(id){
   app.replaceChildren(el('div',{class:'card'}, el('p',null,'Cargando examen…')));
   try{
-    const r = await fetch('data/index.json',{cache:'no-store'});
-    const data = await r.json();
-    const meta = (data.examenes || []).find(x => x.id === id);
-    if(!meta) throw new Error('Examen no encontrado: ' + id);
-    const rf = await fetch(meta.archivo, {cache:'no-store'});
-    if(!rf.ok) throw new Error('HTTP ' + rf.status);
-    const examen = await rf.json();
-    pintarExamen(meta, examen);
+    let meta;
+    if(OFFLINE){ meta = window.__EXAMEN__.meta || {id: id, title: window.__EXAMEN__.examen.title}; }
+    else {
+      const data = await datosIndice();
+      meta = (data.examenes || []).find(x => x.id === id);
+      if(!meta) throw new Error('Examen no encontrado: ' + id);
+    }
+    const examen = await datosExamen(meta);
+    pintarExamen(meta, OFFLINE ? window.__EXAMEN__.examen : examen);
   }catch(e){
     app.replaceChildren(el('div',{class:'card'},
       el('p',null,'No se pudo cargar el examen.'),
@@ -135,100 +178,269 @@ async function cargarExamen(id){
 function pintarExamen(meta, examen){
   const preguntas = examen.questions || [];
   const barajarPreguntas = examen.barajar_preguntas === true;
-  // Las opciones se barajan SIEMPRE salvo que el examen lo desactive explícitamente.
   const barajarOpciones = examen.shuffle_options !== false;
+  const CLAVE = CLAVE_LS + (meta.id || examen.id);
+  // tamaño de página por defecto: configurable en el JSON del examen
+  const POR_DEFECTO = Number(examen.preguntas_por_pagina) > 0 ? Number(examen.preguntas_por_pagina) : 10;
 
-  const cont = el('div',{class:'card'});
-  cont.append(
-    el('p',null, el('a',{href:'./'},'← Volver')),
-    el('h2',{style:'margin:.4rem 0 .2rem;font-size:1.1rem'}, meta.title || meta.titulo || meta.id),
-    el('p',{class:'meta'}, [(meta.description || meta.descripcion || ''),
-                            preguntas.length + ' preguntas'].filter(Boolean).join(' · '))
-  );
+  /* --- estado (todo serializable, se guarda en localStorage) --- */
+  let ordenPreguntas = [];   // posiciones de presentación -> índice original
+  let ordenOpciones = [];    // ordenOpciones[qi] = índices originales de opción, ya barajados
+  let seleccion = {};        // qi -> [índices originales marcados]
+  let pagina = 0, porPagina = POR_DEFECTO, corregido = false;
+  const hayMulti = preguntas.some(p => (p.correct_indices || []).length > 1);
 
-  // estado por pregunta: orden de opciones (índices originales) y selección (índices originales)
-  let ordenPreguntas = [];      // índices de pregunta en orden de presentación
-  let ordenOpciones = [];       // ordenOpciones[qi] = array de índices originales de opción
-  const seleccion = new Map();  // qi -> Set de índices originales marcados
-
-  function reiniciarEstado(){
+  function estadoNuevo(){
     ordenPreguntas = preguntas.map((_, i) => i);
     if(barajarPreguntas) ordenPreguntas = barajar(ordenPreguntas);
-    ordenOpciones = preguntas.map((p, i) => {
+    ordenOpciones = preguntas.map(p => {
       const idx = (p.options || []).map((_, k) => k);
       return barajarOpciones ? barajar(idx) : idx;
     });
-    seleccion.clear();
+    seleccion = {}; pagina = 0; corregido = false;
   }
 
+  function guardar(){
+    try{
+      localStorage.setItem(CLAVE, JSON.stringify({
+        v: 1, n: preguntas.length, ordenPreguntas, ordenOpciones, seleccion, pagina, porPagina
+      }));
+    }catch(e){ /* modo privado: se sigue funcionando, solo no persiste */ }
+  }
+  function cargar(){
+    try{
+      const crudo = localStorage.getItem(CLAVE);
+      if(!crudo) return false;
+      const d = JSON.parse(crudo);
+      if(!d || d.n !== preguntas.length || !Array.isArray(d.ordenPreguntas)) return false;
+      ordenPreguntas = d.ordenPreguntas; ordenOpciones = d.ordenOpciones;
+      seleccion = d.seleccion || {}; pagina = d.pagina || 0;
+      porPagina = Number(d.porPagina) > 0 ? Number(d.porPagina) : POR_DEFECTO;
+      return true;
+    }catch(e){ return false; }
+  }
+  function limpiar(){ try{ localStorage.removeItem(CLAVE); }catch(e){} }
+
+  const totalPaginas = () => Math.max(1, Math.ceil(ordenPreguntas.length / porPagina));
+  const respondidas = () => Object.keys(seleccion).filter(k => (seleccion[k] || []).length).length;
+  const esMulti = (p) => (p.correct_indices || []).length > 1;
+  const marcado = (qi, oi) => (seleccion[qi] || []).includes(oi);
+  function acerto(qi){
+    const corr = new Set(preguntas[qi].correct_indices || []);
+    const dada = new Set(seleccion[qi] || []);
+    return corr.size === dada.size && [...corr].every(x => dada.has(x));
+  }
+
+  /* --- vistas --- */
   const contenedorPreguntas = el('div');
   const res = el('div');
+  const pager = el('div', {class:'pager'});
+
+  function bloquePregunta(pos, qi, conMarca){
+    const p = preguntas[qi];
+    const wrap = el('div', {class:'pregunta'});
+    if(conMarca){
+      wrap.append(el('span', {class: acerto(qi) ? 'zoom' : 'zoom'},
+        acerto(qi) ? '✓ correcta' : '✗ fallada'));
+    }
+    wrap.append(el('h3', null, (pos + 1) + '. ' + (p.text || p.enunciado || '')),
+      esMulti(p) ? el('p',{class:'meta'},'Respuesta múltiple: marca todas las correctas.') : null);
+    const multi = esMulti(p);
+    for(const oi of ordenOpciones[qi]){
+      const inp = el('input', {type: multi ? 'checkbox' : 'radio', name: 'q' + qi, value: String(oi)});
+      inp.checked = marcado(qi, oi);
+      inp.addEventListener('change', () => {
+        const set = new Set(seleccion[qi] || []);
+        if(multi){ inp.checked ? set.add(oi) : set.delete(oi); }
+        else { set.clear(); set.add(oi); }
+        seleccion[qi] = [...set];
+        guardar();
+        pintarPager();
+      });
+      const lab = el('label', {class:'opcion'}, inp, el('span', null, (p.options || [])[oi]));
+      if(conMarca){
+        const corr = new Set(p.correct_indices || []);
+        if(corr.has(oi)) lab.classList.add('ok');
+        else if(marcado(qi, oi)) lab.classList.add('mal');
+      }
+      wrap.append(lab);
+    }
+    return wrap;
+  }
+
+  function pintarPager(){
+    if(corregido || porPagina >= ordenPreguntas.length){ pager.replaceChildren(); pager.style.display='none'; return; }
+    pager.style.display = 'flex';
+    const ul = el('ul', {class:'ir'});
+    for(let k = 0; k < totalPaginas(); k++){
+      const hecha = ordenPreguntas.slice(k * porPagina, (k + 1) * porPagina)
+        .every(qi => (seleccion[qi] || []).length > 0);
+      const b = el('button', {type:'button', class: hecha ? 'hecha' : null,
+                              'aria-current': k === pagina ? 'true' : 'false',
+                              onclick: () => irA(k)}, String(k + 1));
+      ul.append(el('li', null, b));
+    }
+    const sel = el('select', {onchange: (e) => {
+      porPagina = Number(e.target.value); pagina = 0; guardar(); render();
+    }});
+    for(const n of [5, 10, 20, 60, 1000]) sel.append(el('option', {value: String(n)}, n >= 1000 ? 'Todas' : n + ' por página'));
+    sel.value = String(porPagina);
+    pager.replaceChildren(
+      el('button', {type:'button', class:'btn sec', disabled: pagina === 0 ? '' : null,
+                    onclick: () => irA(pagina - 1)}, '← Anterior'),
+      ul,
+      el('button', {type:'button', class:'btn sec', disabled: (pagina >= totalPaginas() - 1) ? '' : null,
+                    onclick: () => irA(pagina + 1)}, 'Siguiente →'),
+      el('span', {class:'meta'}, 'Página ' + (pagina + 1) + ' de ' + totalPaginas() +
+        ' · respondidas ' + respondidas() + '/' + ordenPreguntas.length),
+      el('label', {class:'meta'}, 'Ver ', sel)
+    );
+  }
+
+  function irA(k){
+    const antes = respondidas();
+    pagina = Math.min(Math.max(0, k), totalPaginas() - 1);
+    guardar();
+    render();
+    window.scrollTo(0, 0);
+  }
 
   function render(){
     contenedorPreguntas.replaceChildren();
-    ordenPreguntas.forEach((qi, pos) => {
-      const p = preguntas[qi];
-      const wrap = el('div',{class:'pregunta'});
-      const multi = (p.correct_indices || []).length > 1;
-      wrap.append(el('h3',null, (pos + 1) + '. ' + (p.text || p.enunciado || '')),
-                  multi ? el('p',{class:'meta'},'Respuesta múltiple: marca todas las correctas.') : null);
-      ordenOpciones[qi].forEach((oi) => {
-        const inp = el('input',{type: multi ? 'checkbox' : 'radio', name: 'q' + qi, value: String(oi)});
-        const sel = seleccion.get(qi);
-        if(sel && sel.has(oi)) inp.checked = true;
-        inp.addEventListener('change', () => {
-          const set = seleccion.get(qi) || new Set();
-          if(multi){ inp.checked ? set.add(oi) : set.delete(oi); }
-          else { set.clear(); set.add(oi); }
-          seleccion.set(qi, set);
-        });
-        wrap.append(el('label',{class:'opcion'}, inp, el('span',null, (p.options || [])[oi])));
-      });
-      contenedorPreguntas.append(wrap);
-    });
     res.replaceChildren();
+    if(corregido){
+      const aciertos = ordenPreguntas.filter(qi => acerto(qi)).length;
+      const pct = Math.round(1000 * aciertos / (ordenPreguntas.length || 1)) / 10;
+      res.append(
+        el('p',{class:'resultado'}, 'Resultado: ' + aciertos + ' / ' + ordenPreguntas.length + '  (' + pct + ' %)'),
+        el('div',{class:'barra'}, el('i',{style:'width:' + pct + '%'})),
+        el('p',{class:'meta'}, 'Verde = correcta · Rojo = tu elección errónea. Reinicia para otro intento con el orden cambiado.'));
+      // en modo corregido se muestran TODAS, con marcas
+      ordenPreguntas.forEach((qi, pos) => contenedorPreguntas.append(bloquePregunta(pos, qi, true)));
+    } else {
+      const ini = pagina * porPagina;
+      ordenPreguntas.slice(ini, ini + porPagina).forEach((qi, k) => contenedorPreguntas.append(bloquePregunta(ini + k, qi, false)));
+    }
+    pintarPager();
   }
 
-  const btnCorr = el('button',{class:'btn'},'Corregir');
-  const btnRein = el('button',{class:'btn sec', style:'margin-left:8px'},'Reiniciar');
-
-  btnCorr.addEventListener('click', () => {
-    let aciertos = 0;
-    contenedorPreguntas.querySelectorAll('.pregunta').forEach((nodo, pos) => {
-      const qi = ordenPreguntas[pos];
+  /* --- impresión: se construye el documento completo con las respuestas del alumno --- */
+  function construirImprimible(conClave){
+    imprimible.replaceChildren();
+    imprimible.append(
+      el('h2', null, (meta.title || examen.title || meta.id)),
+      el('p', {class:'meta'}, preguntas.length + ' preguntas'
+        + (conClave ? ' · incluye la clave de respuestas' : '') + ' · ' + new Date().toLocaleString('es-ES')));
+    ordenPreguntas.forEach((qi, pos) => {
       const p = preguntas[qi];
+      const wrap = el('div', {class:'pregunta'});
+      wrap.append(el('h3', null, (pos + 1) + '. ' + (p.text || p.enunciado || '')));
       const corr = new Set(p.correct_indices || []);
-      const dada = seleccion.get(qi) || new Set();
-      const igual = corr.size === dada.size && [...corr].every(x => dada.has(x));
-      if(igual) aciertos++;
-      nodo.querySelectorAll('.opcion').forEach((lab, k) => {
-        const oi = ordenOpciones[qi][k];
-        lab.classList.remove('ok','mal');
-        if(corr.has(oi)) lab.classList.add('ok');
-        else if(dada.has(oi)) lab.classList.add('mal');
-      });
+      for(const oi of (p.options || []).map((_, k) => k)){
+        let marca = '';
+        if(conClave && corr.has(oi)) marca = '  [correcta]';
+        if(marcado(qi, oi)) marca = marca ? marca + '  ← tu respuesta' : '  ← tu respuesta';
+        wrap.append(el('p', {style:'margin:2px 0 2px 14px'}, (p.options || [])[oi] + marca));
+      }
+      imprimible.append(wrap);
     });
-    const total = preguntas.length || 1;
-    const pct = Math.round(1000 * aciertos / total) / 10;
-    res.replaceChildren(
-      el('p',{class:'resultado'}, 'Resultado: ' + aciertos + ' / ' + preguntas.length + '  (' + pct + ' %)'),
-      el('div',{class:'barra'}, el('i',{style:'width:' + pct + '%'})),
-      el('p',{class:'meta'}, 'Verde = correcta · Rojo = tu elección errónea. Pulsa Reiniciar para otro intento con el orden cambiado.')
-    );
-  });
+  }
 
-  // Reiniciar = barajar de nuevo (opciones siempre; preguntas si procede) y limpiar marcas
-  btnRein.addEventListener('click', () => { reiniciarEstado(); render(); window.scrollTo(0,0); });
+  /* --- exportaciones --- */
+  async function exportarHtmlOffline(){
+    // copia autónoma: el JSON va embebido, así funciona desde file:// sin servidor
+    let src = null;
+    try{ src = await fetch(location.pathname, {cache:'no-store'}).then(r => r.text()); }catch(e){}
+    if(!src || !src.includes('<script>')){
+      alert('No se pudo leer el motor de la página (abre el test por HTTP para exportarlo).');
+      return;
+    }
+    const datos = {'meta': meta, 'examen': examen};
+    const salida = src.replace('<script>',
+      '<script>window.__EXAMEN__=' + JSON.stringify(datos) + ';<\/script>\n<script>');
+    descargar(salida, (meta.id || examen.id) + '-test-offline.html', 'text/html');
+  }
 
-  cont.append(contenedorPreguntas, res, el('div',{style:'margin-top:12px'}, btnCorr, btnRein));
+  function exportarJson(){
+    descargar(JSON.stringify(examen, null, 2), (meta.id || examen.id) + '.json', 'application/json');
+  }
+
+  function exportarCsv(){
+    const filas = [['nº', 'pregunta', 'A', 'B', 'C', 'D', 'correctas', 'tu_respuesta'].map(c => '"' + c + '"').join(';')];
+    ordenPreguntas.forEach((qi, pos) => {
+      const p = preguntas[qi];
+      const ops = (p.options || []).map((_, k) => k).map(k => (p.options || [])[k]);
+      const corr = (p.correct_indices || []).map(k => (p.options || [])[k]).join(' | ');
+      const mia = (seleccion[qi] || []).map(k => (p.options || [])[k]).join(' | ');
+      filas.push([pos + 1, p.text || p.enunciado || '', ...ops, corr, mia]
+        .map(v => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"').join(';'));
+    });
+    descargar('\uFEFF' + filas.join('\r\n'), (meta.id || examen.id) + '.csv', 'text/csv');
+  }
+
+  /* --- montaje --- */
+  const cont = el('div', {class:'card'});
+  const accionesFinal = el('div', {class:'barra-acciones'});
+  const accionesExport = el('div', {class:'barra-acciones no-print'});
+
+  const btnCorr = el('button', {class:'btn', onclick: () => {
+    corregido = true; guardar(); render(); window.scrollTo(0, 0);
+  }}, 'Corregir');
+  const btnRein = el('button', {class:'btn sec', onclick: () => {
+    const seguir = !respondidas() || confirm('¿Borrar tus respuestas y empezar un intento nuevo?');
+    if(!seguir) return;
+    estadoNuevo(); limpiar(); render(); window.scrollTo(0, 0);
+  }}, 'Reiniciar');
+
+  const chkClave = el('input', {type:'checkbox'});
+  const btnImprimir = el('button', {class:'btn sec', onclick: () => {
+    construirImprimible(chkClave.checked);
+    window.print();
+  }}, 'Imprimir / PDF');
+
+  accionesFinal.append(btnCorr, btnRein);
+  accionesExport.append(
+    el('span', {class:'meta', style:'width:100%'}, 'Exportar el test completo (todas las preguntas, no solo esta página):'),
+    btnImprimir, el('label', {class:'meta'}, chkClave, ' incluir respuestas correctas'),
+    el('button', {class:'btn sec', onclick: exportarHtmlOffline}, 'HTML offline (autocorregible)'),
+    el('button', {class:'btn sec', onclick: exportarJson}, 'JSON'),
+    el('button', {class:'btn sec', onclick: exportarCsv}, 'CSV / Excel'),
+    el('button', {class:'btn sec', onclick: async () => {
+      try{
+        await navigator.clipboard.writeText(ordenPreguntas.map((qi, pos) => {
+          const p = preguntas[qi];
+          return (pos + 1) + '. ' + (p.text || '') + '\n' + p.options.map((o, k) => '   ' + String.fromCharCode(65 + k) + ') ' + o).join('\n');
+        }).join('\n\n'));
+        alert('Test copiado al portapapeles.');
+      }catch(e){ alert('El navegador no ha permitido copiar: ' + e); }
+    }}, 'Copiar texto')
+  );
+
+  cont.append(
+    OFFLINE ? null : el('p', {class:'no-print'}, el('a', {href:'./'}, '← Volver')),
+    el('h2', {style:'margin:.4rem 0 .2rem;font-size:1.1rem'}, meta.title || examen.title || meta.id),
+    el('p', {class:'meta'}, [(meta.description || examen.description || ''),
+                             preguntas.length + ' preguntas',
+                             hayMulti ? 'incluye respuesta múltiple' : ''].filter(Boolean).join(' · ')),
+    pager,
+    contenedorPreguntas,
+    res,
+    accionesFinal,
+    accionesExport
+  );
   app.replaceChildren(cont);
-  reiniciarEstado();
+
+  if(!cargar()) estadoNuevo();
   render();
-  window.scrollTo(0,0);
+  window.addEventListener('beforeunload', guardar);
+  window.scrollTo(0, 0);
 }
 
-const ex = params.get('examen');
-ex ? cargarExamen(ex) : cargarLista();
+/* ---------- arranque ---------- */
+const ex = params.get('examen') || (OFFLINE ? (window.__EXAMEN__.meta || {}).id : null);
+if(OFFLINE && !ex){ cargarExamen((window.__EXAMEN__.meta || {}).id); }
+else if(ex){ cargarExamen(ex); }
+else { cargarLista(); }
 </script>
 </body>
 </html>

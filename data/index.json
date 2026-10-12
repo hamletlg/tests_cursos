@@ -1,20 +1,3 @@
 {
-  "examenes": [
-    {
-      "id": "tema-1-fundamentos-grupo-a",
-      "title": "Tema 1 — Fundamentos (grupo A)",
-      "description": "Repaso autoevaluable del tema 1",
-      "grupo": "A",
-      "num_preguntas": 3,
-      "archivo": "data/examenes/tema-1-fundamentos-grupo-a.json"
-    },
-    {
-      "id": "tema-1-fundamentos-grupo-b",
-      "title": "Tema 1 — Fundamentos (grupo B)",
-      "description": "Repaso autoevaluable del tema 1 (versión B)",
-      "grupo": "B",
-      "num_preguntas": 3,
-      "archivo": "data/examenes/tema-1-fundamentos-grupo-b.json"
-    }
-  ]
+  "examenes": []
 }
