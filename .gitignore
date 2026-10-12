@@ -1,0 +1,14 @@
+# Entorno de Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Basura del sistema
+.DS_Store
+*.swp
+
+# Tokens / secretos (nunca subir)
+.env
+*.token
+.askpass-*

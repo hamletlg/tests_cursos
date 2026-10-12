@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test de práctica</title>
+<style>
+  :root{--azul:#12355b;--gris:#5b6670;--borde:#d7dde3;--fondo:#f5f7f9;--ok:#1e7d4f;--mal:#b23b3b;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+       color:#1d2733;background:var(--fondo);line-height:1.5}
+  header{background:var(--azul);color:#fff;padding:18px 22px}
+  header h1{margin:0;font-size:1.25rem;font-weight:600;letter-spacing:.2px}
+  header p{margin:4px 0 0;font-size:.85rem;opacity:.85}
+  main{max-width:820px;margin:0 auto;padding:22px}
+  .card{background:#fff;border:1px solid var(--borde);border-radius:6px;padding:18px 20px;margin-bottom:16px}
+  a{color:var(--azul)}
+  .exam-list{list-style:none;padding:0;margin:0}
+  .exam-list li{border-bottom:1px solid var(--borde)}
+  .exam-list li:last-child{border-bottom:0}
+  .exam-list a{display:block;padding:14px 4px;text-decoration:none;font-weight:600}
+  .exam-list a span{display:block;font-weight:400;color:var(--gris);font-size:.85rem;margin-top:2px}
+  .pregunta{margin-bottom:22px}
+  .pregunta h3{margin:0 0 10px;font-size:1rem}
+  .opcion{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border:1px solid var(--borde);
+          border-radius:5px;margin-bottom:6px;cursor:pointer}
+  .opcion:hover{background:#f0f3f6}
+  .opcion input{margin-top:3px}
+  .ok{border-color:var(--ok);background:#eef8f2}
+  .mal{border-color:var(--mal);background:#fbeceb}
+  .btn{background:var(--azul);color:#fff;border:0;border-radius:5px;padding:11px 18px;font-size:.95rem;cursor:pointer}
+  .btn.sec{background:#e9edf1;color:var(--azul)}
+  .resultado{font-size:1.05rem;font-weight:600;margin:10px 0}
+  .meta{color:var(--gris);font-size:.85rem}
+  .barra{height:8px;background:#e9edf1;border-radius:4px;overflow:hidden;margin-top:8px}
+  .barra > i{display:block;height:100%;background:var(--azul)}
+  .chip{display:inline-block;background:#e9edf1;color:var(--azul);border-radius:10px;
+        padding:1px 9px;font-size:.75rem;margin-left:6px;vertical-align:middle}
+  footer{color:var(--gris);font-size:.8rem;text-align:center;padding:18px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Test de práctica</h1>
+  <p>Autoevaluación. La corrección es local: no se guarda ni se envía ninguna nota.</p>
+</header>
+<main id="app"></main>
+<footer>Generado desde un banco de preguntas en texto. Sin cuentas, sin datos enviados.</footer>
+
+<script>
+"use strict";
+const app = document.getElementById('app');
+const params = new URLSearchParams(location.search);
+
+/* ---------- utilidades ---------- */
+function el(tag, attrs, ...hijos){
+  const n = document.createElement(tag);
+  if(attrs) for(const k in attrs){
+    if(k === 'class') n.className = attrs[k];
+    else if(k === 'style') n.setAttribute('style', attrs[k]);
+    else if(k.startsWith('on')) n.addEventListener(k.slice(2), attrs[k]);
+    else n.setAttribute(k, attrs[k]);
+  }
+  const añadir = (h) => {
+    if(h == null) return;
+    if(Array.isArray(h)) { h.forEach(añadir); return; }
+    n.append(h.nodeType ? h : document.createTextNode(h));
+  };
+  hijos.forEach(añadir);
+  return n;
+}
+// Fisher-Yates: orden aleatorio de verdad, distinto en cada intento
+function barajar(arr){
+  const a = arr.slice();
+  for(let i = a.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+/* ---------- navegación ---------- */
+async function cargarLista(){
+  app.replaceChildren(el('div',{class:'card'}, el('p',null,'Cargando…')));
+  try{
+    const r = await fetch('data/index.json', {cache:'no-store'});
+    if(!r.ok) throw new Error('HTTP ' + r.status);
+    const data = await r.json();
+    pintarLista(data.examenes || []);
+  }catch(e){
+    app.replaceChildren(el('div',{class:'card'},
+      el('p',null,'No se pudo cargar el índice de exámenes.'),
+      el('p',{class:'meta'}, String(e))));
+  }
+}
+
+function pintarLista(examenes){
+  const grupo = params.get('grupo');
+  const filtrados = grupo ? examenes.filter(e => (e.grupo || '') === grupo) : examenes;
+  const ul = el('ul',{class:'exam-list'});
+  for(const ex of filtrados){
+    const titulo = [ex.title || ex.titulo || ex.id];
+    if(ex.grupo) titulo.push(el('span',{class:'chip'},'Grupo ' + ex.grupo));
+    const n = ex.num_preguntas != null ? (ex.num_preguntas + ' preguntas') : '';
+    ul.append(el('li',null, el('a',{href:'?examen=' + encodeURIComponent(ex.id)},
+      titulo, el('span',null, [ex.description || ex.descripcion || '', n].filter(Boolean).join(' · ')))));
+  }
+  const cabecera = grupo ? ('Exámenes disponibles (grupo ' + grupo + ')') : 'Exámenes disponibles';
+  app.replaceChildren(el('div',{class:'card'},
+    el('h2',{style:'margin-top:0;font-size:1.05rem'}, cabecera),
+    filtrados.length ? ul : el('p',{class:'meta'}, grupo ? 'No hay exámenes para ese grupo.' : 'Todavía no hay exámenes publicados.')));
+}
+
+async function cargarExamen(id){
+  app.replaceChildren(el('div',{class:'card'}, el('p',null,'Cargando examen…')));
+  try{
+    const r = await fetch('data/index.json',{cache:'no-store'});
+    const data = await r.json();
+    const meta = (data.examenes || []).find(x => x.id === id);
+    if(!meta) throw new Error('Examen no encontrado: ' + id);
+    const rf = await fetch(meta.archivo, {cache:'no-store'});
+    if(!rf.ok) throw new Error('HTTP ' + rf.status);
+    const examen = await rf.json();
+    pintarExamen(meta, examen);
+  }catch(e){
+    app.replaceChildren(el('div',{class:'card'},
+      el('p',null,'No se pudo cargar el examen.'),
+      el('p',{class:'meta'}, String(e)),
+      el('p',null, el('a',{href:'./'},'← Volver'))));
+  }
+}
+
+/* ---------- examen ---------- */
+function pintarExamen(meta, examen){
+  const preguntas = examen.questions || [];
+  const barajarPreguntas = examen.barajar_preguntas === true;
+  // Las opciones se barajan SIEMPRE salvo que el examen lo desactive explícitamente.
+  const barajarOpciones = examen.shuffle_options !== false;
+
+  const cont = el('div',{class:'card'});
+  cont.append(
+    el('p',null, el('a',{href:'./'},'← Volver')),
+    el('h2',{style:'margin:.4rem 0 .2rem;font-size:1.1rem'}, meta.title || meta.titulo || meta.id),
+    el('p',{class:'meta'}, [(meta.description || meta.descripcion || ''),
+                            preguntas.length + ' preguntas'].filter(Boolean).join(' · '))
+  );
+
+  // estado por pregunta: orden de opciones (índices originales) y selección (índices originales)
+  let ordenPreguntas = [];      // índices de pregunta en orden de presentación
+  let ordenOpciones = [];       // ordenOpciones[qi] = array de índices originales de opción
+  const seleccion = new Map();  // qi -> Set de índices originales marcados
+
+  function reiniciarEstado(){
+    ordenPreguntas = preguntas.map((_, i) => i);
+    if(barajarPreguntas) ordenPreguntas = barajar(ordenPreguntas);
+    ordenOpciones = preguntas.map((p, i) => {
+      const idx = (p.options || []).map((_, k) => k);
+      return barajarOpciones ? barajar(idx) : idx;
+    });
+    seleccion.clear();
+  }
+
+  const contenedorPreguntas = el('div');
+  const res = el('div');
+
+  function render(){
+    contenedorPreguntas.replaceChildren();
+    ordenPreguntas.forEach((qi, pos) => {
+      const p = preguntas[qi];
+      const wrap = el('div',{class:'pregunta'});
+      const multi = (p.correct_indices || []).length > 1;
+      wrap.append(el('h3',null, (pos + 1) + '. ' + (p.text || p.enunciado || '')),
+                  multi ? el('p',{class:'meta'},'Respuesta múltiple: marca todas las correctas.') : null);
+      ordenOpciones[qi].forEach((oi) => {
+        const inp = el('input',{type: multi ? 'checkbox' : 'radio', name: 'q' + qi, value: String(oi)});
+        const sel = seleccion.get(qi);
+        if(sel && sel.has(oi)) inp.checked = true;
+        inp.addEventListener('change', () => {
+          const set = seleccion.get(qi) || new Set();
+          if(multi){ inp.checked ? set.add(oi) : set.delete(oi); }
+          else { set.clear(); set.add(oi); }
+          seleccion.set(qi, set);
+        });
+        wrap.append(el('label',{class:'opcion'}, inp, el('span',null, (p.options || [])[oi])));
+      });
+      contenedorPreguntas.append(wrap);
+    });
+    res.replaceChildren();
+  }
+
+  const btnCorr = el('button',{class:'btn'},'Corregir');
+  const btnRein = el('button',{class:'btn sec', style:'margin-left:8px'},'Reiniciar');
+
+  btnCorr.addEventListener('click', () => {
+    let aciertos = 0;
+    contenedorPreguntas.querySelectorAll('.pregunta').forEach((nodo, pos) => {
+      const qi = ordenPreguntas[pos];
+      const p = preguntas[qi];
+      const corr = new Set(p.correct_indices || []);
+      const dada = seleccion.get(qi) || new Set();
+      const igual = corr.size === dada.size && [...corr].every(x => dada.has(x));
+      if(igual) aciertos++;
+      nodo.querySelectorAll('.opcion').forEach((lab, k) => {
+        const oi = ordenOpciones[qi][k];
+        lab.classList.remove('ok','mal');
+        if(corr.has(oi)) lab.classList.add('ok');
+        else if(dada.has(oi)) lab.classList.add('mal');
+      });
+    });
+    const total = preguntas.length || 1;
+    const pct = Math.round(1000 * aciertos / total) / 10;
+    res.replaceChildren(
+      el('p',{class:'resultado'}, 'Resultado: ' + aciertos + ' / ' + preguntas.length + '  (' + pct + ' %)'),
+      el('div',{class:'barra'}, el('i',{style:'width:' + pct + '%'})),
+      el('p',{class:'meta'}, 'Verde = correcta · Rojo = tu elección errónea. Pulsa Reiniciar para otro intento con el orden cambiado.')
+    );
+  });
+
+  // Reiniciar = barajar de nuevo (opciones siempre; preguntas si procede) y limpiar marcas
+  btnRein.addEventListener('click', () => { reiniciarEstado(); render(); window.scrollTo(0,0); });
+
+  cont.append(contenedorPreguntas, res, el('div',{style:'margin-top:12px'}, btnCorr, btnRein));
+  app.replaceChildren(cont);
+  reiniciarEstado();
+  render();
+  window.scrollTo(0,0);
+}
+
+const ex = params.get('examen');
+ex ? cargarExamen(ex) : cargarLista();
+</script>
+</body>
+</html>
