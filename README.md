@@ -1,7 +1,7 @@
 # TEST_ALUMNOS — tests de práctica autocorregibles, sin cuentas
 
 Web estática para que los alumnos practiquen con tests tipo test hechos por el profesor.
-Cada alumno abre un enlace, hace el test y ve su nota **en su propio navegador**.
+Cada alumno abre un enlace, hace el test y ve su nota en su propio navegador.
 No hay cuentas, no hay servidor, no se guarda ninguna puntuación.
 
 ## Idea
@@ -20,8 +20,6 @@ Escribes el test en texto plano (rápido), un script lo convierte a JSON y lo pu
     python3 herramientas/convertir.py
 
     # 3. Probar en local
-    #    OJO: abrir index.html con doble clic (file://) NO funciona: el navegador
-    #    bloquea la lectura de los JSON. Hace falta servirlo por HTTP.
     python3 herramientas/servidor.py     # abre http://127.0.0.1:8765
 
     # 4. Publicar
@@ -41,12 +39,6 @@ Escribes el test en texto plano (rápido), un script lo convierte a JSON y lo pu
 - Se admiten preguntas de **una o varias respuestas correctas**.
 - Grupos: `#Grupo: A` en el .md permite dar a cada grupo su propio listado (`...?grupo=A`).
 
-## Dos grupos, dos tests el mismo día
-
-Dos ficheros `.md` distintos => dos JSON => dos enlaces. Un solo repositorio y un solo
-despliegue de Pages bastan. (Un segundo repositorio solo si quieres catálogos totalmente
-separados; no es necesario para esto.) Detalle en `docs/REFERENCIA_LLM.md`, sección 6.
-
 ## Documentación
 
 - `docs/REFERENCIA_LLM.md` — formato de los tests, pasos de conversión y publicación, guion de
@@ -55,7 +47,6 @@ separados; no es necesario para esto.) Detalle en `docs/REFERENCIA_LLM.md`, secc
 
 ## Publicación (resumen)
 
-- Repositorio **público** (Pages privado requiere plan de pago).
 - Settings > Pages > Deploy from a branch > `main` / `/ (root)`.
 - URL: `https://<usuario>.github.io/<repo>/`.
 - Alternativa sin clonar: `publicar.py --api --repo usuario/repo` (API Contents de GitHub).
