@@ -1,0 +1,710 @@
+{
+  "id": "diseno-de-la-intervencion-educativa",
+  "title": "Diseño de la Intervención Educativa",
+  "description": "Test sobre marco curricular, niveles de concreción, fuentes del currículo, PEC, Propuesta Pedagógica y planificación",
+  "grupo": "",
+  "barajar_preguntas": false,
+  "shuffle_options": true,
+  "questions": [
+    {
+      "text": "Según el artículo 6 de la LOMLOE, el currículo se define como el conjunto de:",
+      "options": [
+        "Objetivos, contenidos y metodología.",
+        "Objetivos, competencias, contenidos, métodos pedagógicos y criterios de evaluación.",
+        "Programaciones y unidades didácticas.",
+        "Normativa estatal y autonómica."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 1,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de las siguientes es una fuente clásica del currículo?",
+      "options": [
+        "Fuente legislativa.",
+        "Fuente psicológica.",
+        "Fuente administrativa.",
+        "Fuente económica."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 2,
+      "type": "single"
+    },
+    {
+      "text": "El Proyecto Educativo de Centro (PEC) se sitúa en:",
+      "options": [
+        "El primer nivel de concreción curricular.",
+        "El segundo nivel de concreción curricular.",
+        "El tercer nivel de concreción curricular.",
+        "No es un nivel de concreción."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 3,
+      "type": "single"
+    },
+    {
+      "text": "En educación no formal, el nivel más operativo de planificación es:",
+      "options": [
+        "El plan.",
+        "El programa.",
+        "El proyecto.",
+        "La actividad."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 4,
+      "type": "single"
+    },
+    {
+      "text": "El Real Decreto 95/2022 establece el currículo de Educación Infantil organizado en:",
+      "options": [
+        "Cinco áreas.",
+        "Cuatro áreas.",
+        "Tres áreas.",
+        "Dos áreas."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 5,
+      "type": "single"
+    },
+    {
+      "text": "La Propuesta Pedagógica de Educación Infantil forma parte de:",
+      "options": [
+        "El Proyecto Curricular.",
+        "El Proyecto Educativo de Centro.",
+        "La programación de aula.",
+        "El currículo oficial."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 6,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué elemento NO es propio del Proyecto Curricular?",
+      "options": [
+        "Adecuación de objetivos al contexto.",
+        "Criterios metodológicos generales.",
+        "Presupuesto anual del centro.",
+        "Decisiones sobre evaluación."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 7,
+      "type": "single"
+    },
+    {
+      "text": "La fuente sociológica del currículo aporta:",
+      "options": [
+        "Teorías del aprendizaje.",
+        "Demandas sociales y culturales.",
+        "Estructura de las disciplinas.",
+        "Métodos didácticos."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 8,
+      "type": "single"
+    },
+    {
+      "text": "El currículo oculto se refiere a:",
+      "options": [
+        "Contenidos no evaluados.",
+        "Aprendizajes no intencionales transmitidos implícitamente.",
+        "Contenidos optativos.",
+        "Normativa no publicada."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 9,
+      "type": "single"
+    },
+    {
+      "text": "El primer nivel de concreción curricular corresponde a:",
+      "options": [
+        "El centro educativo.",
+        "El aula.",
+        "El Gobierno y las administraciones educativas.",
+        "El equipo docente."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 10,
+      "type": "single"
+    },
+    {
+      "text": "El currículo como proceso incluye:",
+      "options": [
+        "Solo el documento oficial.",
+        "Lo prescrito, lo planificado y lo vivido en el aula.",
+        "Únicamente la programación de aula.",
+        "Exclusivamente las leyes educativas."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 11,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué tipo de currículo se refiere a los aprendizajes no intencionales?",
+      "options": [
+        "Currículo prescrito.",
+        "Currículo planificado.",
+        "Currículo realizado.",
+        "Currículo oculto."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 12,
+      "type": "single"
+    },
+    {
+      "text": "La fuente psicológica del currículo se fundamenta principalmente en:",
+      "options": [
+        "Las demandas sociales.",
+        "Las teorías del desarrollo y del aprendizaje.",
+        "La estructura de las disciplinas.",
+        "La tradición educativa."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 13,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es la finalidad principal del Proyecto Educativo de Centro (PEC)?",
+      "options": [
+        "Concretar el currículo de etapa.",
+        "Guiar la acción educativa del centro.",
+        "Elaborar las programaciones de aula.",
+        "Evaluar al alumnado."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 14,
+      "type": "single"
+    },
+    {
+      "text": "El Decreto 36/2022 es la norma que establece el currículo de Educación Infantil en:",
+      "options": [
+        "Andalucía.",
+        "La Comunidad de Madrid.",
+        "Cataluña.",
+        "Galicia."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 15,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué área de Educación Infantil se centra en el desarrollo personal, afectivo y motor?",
+      "options": [
+        "Descubrimiento y Exploración del Entorno.",
+        "Comunicación y Representación de la Realidad.",
+        "Crecimiento en Armonía.",
+        "Lenguajes Artísticos."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 16,
+      "type": "single"
+    },
+    {
+      "text": "La fuente pedagógica del currículo aporta:",
+      "options": [
+        "La estructura de las disciplinas.",
+        "Las teorías y modelos didácticos.",
+        "Las demandas sociales.",
+        "Las teorías del aprendizaje."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 17,
+      "type": "single"
+    },
+    {
+      "text": "El segundo nivel de concreción curricular corresponde a:",
+      "options": [
+        "El currículo oficial.",
+        "El Proyecto Educativo de Centro.",
+        "La programación de aula.",
+        "Las adaptaciones curriculares individuales."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 18,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de los siguientes documentos forma parte del Proyecto Educativo de Centro (PEC)?",
+      "options": [
+        "La programación de aula.",
+        "La Propuesta Pedagógica de Educación Infantil.",
+        "Las unidades didácticas.",
+        "Las adaptaciones curriculares individuales."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 19,
+      "type": "single"
+    },
+    {
+      "text": "En la planificación no formal, el nivel que establece directrices políticas fundamentales y prioridades es:",
+      "options": [
+        "El plan.",
+        "El programa.",
+        "El proyecto.",
+        "La actividad."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 20,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué caracteriza al currículo explícito?",
+      "options": [
+        "Ser aprendizajes no intencionales.",
+        "Estar documentado y planificado.",
+        "Ser invisible en la programación.",
+        "Transmitir valores implícitos."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 21,
+      "type": "single"
+    },
+    {
+      "text": "La fuente epistemológica del currículo aporta:",
+      "options": [
+        "Las teorías del aprendizaje.",
+        "La estructura de las disciplinas y áreas de conocimiento.",
+        "Las demandas sociales.",
+        "Los métodos didácticos."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 22,
+      "type": "single"
+    },
+    {
+      "text": "El Decreto 100/2023 es la norma que establece el currículo de Educación Infantil en:",
+      "options": [
+        "La Comunidad de Madrid.",
+        "Andalucía.",
+        "La Comunidad Valenciana.",
+        "El País Vasco."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 23,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué documento concreta el currículo para la etapa o ciclo y es elaborado por el equipo educativo?",
+      "options": [
+        "El Proyecto Educativo de Centro.",
+        "La Propuesta Pedagógica.",
+        "El Proyecto Curricular.",
+        "La programación de aula."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 24,
+      "type": "single"
+    },
+    {
+      "text": "El tercer nivel de concreción curricular se concreta en:",
+      "options": [
+        "El currículo oficial.",
+        "El Proyecto Educativo de Centro.",
+        "La programación de aula.",
+        "El Proyecto Curricular."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 25,
+      "type": "single"
+    },
+    {
+      "text": "La fuente sociológica del currículo responde a la pregunta clave:",
+      "options": [
+        "¿Cómo aprende el niño?",
+        "¿Qué necesita la sociedad?",
+        "¿Cómo enseñar?",
+        "¿Qué saber es válido?"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 26,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de las siguientes es una competencia clave de la LOMLOE?",
+      "options": [
+        "Competencia en comunicación lingüística.",
+        "Competencia en investigación científica.",
+        "Competencia en liderazgo.",
+        "Competencia en gestión emocional."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 27,
+      "type": "single"
+    },
+    {
+      "text": "Según el Real Decreto 95/2022, las competencias específicas de cada área:",
+      "options": [
+        "Describen lo que el alumnado debe saber hacer.",
+        "Son los contenidos mínimos.",
+        "Se concretan en saberes básicos.",
+        "Son los criterios de evaluación."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 28,
+      "type": "single"
+    },
+    {
+      "text": "En el ámbito no formal, ¿qué nivel de planificación se concreta en proyectos coordinados entre sí?",
+      "options": [
+        "El plan.",
+        "El programa.",
+        "El proyecto.",
+        "La actividad."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 29,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué elemento incluye el Proyecto Curricular?",
+      "options": [
+        "La organización del tiempo y los criterios de agrupamiento.",
+        "El presupuesto económico del centro.",
+        "La identidad del centro.",
+        "El plan de convivencia."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 30,
+      "type": "single"
+    },
+    {
+      "text": "La fuente pedagógica del currículo responde a la pregunta clave:",
+      "options": [
+        "¿Qué necesita la sociedad?",
+        "¿Cómo aprende el niño?",
+        "¿Cómo enseñar?",
+        "¿Qué saber es válido?"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 31,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué documento define la identidad del centro y recoge valores, objetivos y prioridades?",
+      "options": [
+        "El Proyecto Curricular.",
+        "La Propuesta Pedagógica.",
+        "El Proyecto Educativo de Centro.",
+        "La programación de aula."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 32,
+      "type": "single"
+    },
+    {
+      "text": "La evaluación en el Proyecto Curricular se refiere a:",
+      "options": [
+        "Criterios de evaluación de etapa.",
+        "El plan de evaluación del centro.",
+        "Indicadores propios del proyecto.",
+        "La evaluación del alumnado."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 33,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es la finalidad de la Propuesta Pedagógica de Educación Infantil?",
+      "options": [
+        "Concretar los objetivos de la etapa y las decisiones metodológicas.",
+        "Establecer el presupuesto del centro.",
+        "Definir la estructura organizativa del centro.",
+        "Elaborar el plan de convivencia."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 34,
+      "type": "single"
+    },
+    {
+      "text": "El currículo planificado se refiere a:",
+      "options": [
+        "La normativa oficial.",
+        "Lo que ocurre en el aula.",
+        "El proyecto educativo y las programaciones.",
+        "Los aprendizajes no intencionales."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 35,
+      "type": "single"
+    },
+    {
+      "text": "La fuente psicológica del currículo se apoya en autores como:",
+      "options": [
+        "Piaget, Vygotski, Bruner y Ausubel.",
+        "Platón, Aristóteles y Sócrates.",
+        "Kant, Hegel y Marx.",
+        "Descartes, Hume y Locke."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 36,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué área de Educación Infantil se centra en el conocimiento del medio físico, natural y social?",
+      "options": [
+        "Crecimiento en Armonía.",
+        "Descubrimiento y Exploración del Entorno.",
+        "Comunicación y Representación de la Realidad.",
+        "Lenguaje Matemático."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 37,
+      "type": "single"
+    },
+    {
+      "text": "El cuarto nivel de concreción curricular corresponde a:",
+      "options": [
+        "El currículo oficial.",
+        "El Proyecto Educativo de Centro.",
+        "La programación de aula.",
+        "Las adaptaciones curriculares individuales (ACI)."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 38,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué caracteriza al currículo oculto?",
+      "options": [
+        "Estar documentado y planificado.",
+        "Ser visible en la programación.",
+        "Transmitir valores, normas y actitudes implícitamente.",
+        "Ser contenidos optativos."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 39,
+      "type": "single"
+    },
+    {
+      "text": "La planificación en educación no formal requiere:",
+      "options": [
+        "Intencionalidad y sistematización.",
+        "Rigidez normativa.",
+        "Titulación oficial.",
+        "Evaluación por criterios oficiales."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 40,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué documento incluye la concreción de los objetivos de la etapa y las decisiones metodológicas?",
+      "options": [
+        "El Proyecto Educativo de Centro.",
+        "La Propuesta Pedagógica de Educación Infantil.",
+        "El Proyecto Curricular.",
+        "La programación de aula."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 41,
+      "type": "single"
+    },
+    {
+      "text": "El Real Decreto 95/2022 incluye por primera vez:",
+      "options": [
+        "El currículo básico del primer ciclo (0-3 años).",
+        "El currículo básico del segundo ciclo (3-6 años).",
+        "Las competencias clave.",
+        "Los criterios de evaluación."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 42,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de las siguientes es una fuente del currículo?",
+      "options": [
+        "Fuente económica.",
+        "Fuente administrativa.",
+        "Fuente epistemológica.",
+        "Fuente legislativa."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 43,
+      "type": "single"
+    },
+    {
+      "text": "El Proyecto Curricular es elaborado por:",
+      "options": [
+        "El equipo directivo.",
+        "El equipo educativo.",
+        "El educador/a.",
+        "La administración educativa."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 44,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué área de Educación Infantil se centra en el desarrollo de la comunicación y la representación?",
+      "options": [
+        "Crecimiento en Armonía.",
+        "Descubrimiento y Exploración del Entorno.",
+        "Comunicación y Representación de la Realidad.",
+        "Lenguaje Corporal."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 45,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué nivel de concreción curricular garantiza la coherencia vertical?",
+      "options": [
+        "El primer nivel.",
+        "El segundo nivel.",
+        "El tercer nivel.",
+        "Todos los niveles."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 46,
+      "type": "single"
+    },
+    {
+      "text": "La fuente epistemológica del currículo responde a la pregunta clave:",
+      "options": [
+        "¿Qué necesita la sociedad?",
+        "¿Cómo aprende el niño?",
+        "¿Cómo enseñar?",
+        "¿Qué saber es válido?"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 47,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué documento recoge la atención a la diversidad en el PEC?",
+      "options": [
+        "El Proyecto Curricular.",
+        "La Propuesta Pedagógica.",
+        "El Plan de convivencia.",
+        "La programación de aula."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 48,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué caracteriza a la educación no formal?",
+      "options": [
+        "Estar regulada por normativa oficial.",
+        "Conducir a titulaciones oficiales.",
+        "Tener mayor flexibilidad organizativa.",
+        "Tener una estructura rígida."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 49,
+      "type": "single"
+    },
+    {
+      "text": "La planificación educativa proporciona:",
+      "options": [
+        "Improvisación y estrés docente.",
+        "Seguridad al educador/a y coherencia en la actuación.",
+        "Pérdida de objetivos educativos.",
+        "Dificultad para evaluar."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 50,
+      "type": "single"
+    }
+  ]
+}

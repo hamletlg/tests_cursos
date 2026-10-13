@@ -7,6 +7,14 @@
       "grupo": "",
       "num_preguntas": 50,
       "archivo": "data/examenes/contexto-de-la-actividad-educativa.json"
+    },
+    {
+      "id": "diseno-de-la-intervencion-educativa",
+      "title": "Diseño de la Intervención Educativa",
+      "description": "Test sobre marco curricular, niveles de concreción, fuentes del currículo, PEC, Propuesta Pedagógica y planificación",
+      "grupo": "",
+      "num_preguntas": 50,
+      "archivo": "data/examenes/diseno-de-la-intervencion-educativa.json"
     }
   ]
 }
