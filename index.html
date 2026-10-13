@@ -243,8 +243,10 @@ function pintarExamen(meta, examen){
       wrap.append(el('span', {class: acerto(qi) ? 'zoom' : 'zoom'},
         acerto(qi) ? '✓ correcta' : '✗ fallada'));
     }
-    wrap.append(el('h3', null, (pos + 1) + '. ' + (p.text || p.enunciado || '')),
-      esMulti(p) ? el('p',{class:'meta'},'Respuesta múltiple: marca todas las correctas.') : null);
+    // OJO: aquí NO se puede usar el append nativo con un posible null (Node.append(null)
+    // escribe el texto "null" en el DOM). Se filtra la condición antes de añadir.
+    wrap.append(el('h3', null, (pos + 1) + '. ' + (p.text || p.enunciado || '')));
+    if(esMulti(p)) wrap.append(el('p',{class:'meta'},'Respuesta múltiple: marca todas las correctas.'));
     const multi = esMulti(p);
     for(const oi of ordenOpciones[qi]){
       const inp = el('input', {type: multi ? 'checkbox' : 'radio', name: 'q' + qi, value: String(oi)});
@@ -417,7 +419,8 @@ function pintarExamen(meta, examen){
   );
 
   cont.append(
-    OFFLINE ? null : el('p', {class:'no-print'}, el('a', {href:'./'}, '← Volver')),
+    // igual que arriba: nada de pasar null al append nativo (imprimiría "null" en modo offline)
+    ...(OFFLINE ? [] : [el('p', {class:'no-print'}, el('a', {href:'./'}, '← Volver'))]),
     el('h2', {style:'margin:.4rem 0 .2rem;font-size:1.1rem'}, meta.title || examen.title || meta.id),
     el('p', {class:'meta'}, [(meta.description || examen.description || ''),
                              preguntas.length + ' preguntas',
