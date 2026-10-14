@@ -23,6 +23,7 @@ de alumno. La corrección ocurre en el navegador del alumno y no se guarda ningu
     docs/REFERENCIA_LLM.md         Este documento.
     docs/ESQUEMA_JSON.md           Esquema exacto del JSON y del índice.
     .nojekyll                      Evita que GitHub Pages procese el sitio con Jekyll.
+    .github/workflows/convertir.yml  Reconvierte fuentes/ -> data/ y lo publica solo (ver sección 5).
 
 Fuente de verdad = `fuentes/*.md`. Lo de `data/` es derivado: si se edita a mano, la
 siguiente conversión lo sobrescribe.
@@ -135,6 +136,19 @@ En GitHub Pages esto no aplica: allí el sitio ya se sirve por HTTP y funciona s
 
 ## 5. Publicar (elegir un modo)
 
+### Modo 0 — automático (ya está activo en el repo)
+
+`.github/workflows/convertir.yml` ejecuta `convertir.py` en cada push a `main` que toque `fuentes/**`
+(y también cuando se edita `herramientas/convertir.py`) y commitea `data/` por ti. Esto incluye
+editar un `.md` desde la web de GitHub y pulsar "Commit changes": el cambio llega a la web publicada
+en ~1 minuto sin abrir una terminal.
+
+- Cubre tanto este caso como los Modos A y B, que siguen siendo válidos: si `data/` ya está al día,
+  el workflow lo detecta y no commitea nada de más.
+- Si un `.md` tiene el formato mal, el workflow falla en ROJO y **no commitea**: el sitio se queda
+  como estaba y GitHub avisa por correo. El log del paso "Validar y convertir" dice fichero y línea.
+- Dónde verlo: pestaña **Actions** del repositorio.
+
 ### Modo A — git (lo normal)
 
     # una sola vez:
@@ -205,7 +219,7 @@ requiere plan de pago).
 - "¿Puedo tener un test preparado pero sin que lo vean los alumnos?" -> Sí: `#Visible: no` en su
   `.md`, reconvertir y publicar. Cuando toque, se cambia a `#Visible: si` (o se borra la línea) y
   se vuelve a publicar. Con `no`, el examen no sale en el listado y el enlace directo tampoco lo
-  abre.
+  abre. El cambio se puede hacer desde la propia web de GitHub (basta editar el `.md` y confirmar).
 
 ---
 
@@ -221,4 +235,10 @@ requiere plan de pago).
   dispositivo, no estarán.
 - ¿Hay que tocar `index.html` al añadir exámenes? No. La paginación, la persistencia y las
   exportaciones viven ahí; añadir un examen es solo `fuentes/` + `convertir.py` + publicar.
+- ¿Puedo cambiar la visibilidad editando el `.md` desde la web de GitHub? Sí: cambia
+  `#Visible: si|no`, pulsa "Commit changes" y el workflow del repo reconvierte y publica solo (Modo 0).
+  Antes del workflow esto NO bastaba: editar `fuentes/` por la web no regeneraba `data/`, así que la
+  web seguía sirviendo el valor viejo y parecía que el despliegue lo había ignorado.
+- ¿Y si prefiero no depender del workflow? El flujo local de siempre (`convertir.py` + `publicar.py`)
+  funciona igual; el workflow verá `data/` ya al día y no hará nada.
 - Penalización por fallo: no la hay; la puntuación es `aciertos / total`. Se puede añadir.

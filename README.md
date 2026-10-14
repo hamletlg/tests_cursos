@@ -51,6 +51,8 @@ Escribes el test en texto plano (rápido), un script lo convierte a JSON y lo pu
 
 - Settings > Pages > Deploy from a branch > `main` / `/ (root)`.
 - URL: `https://<usuario>.github.io/<repo>/`.
+- Ya configurado: el workflow `.github/workflows/convertir.yml` reconvierte `fuentes/` -> `data/` y
+  publica solo en cada push a `main`. También si editas un `.md` desde la web de GitHub y confirmas.
 - Alternativa sin clonar: `publicar.py --api --repo usuario/repo` (API Contents de GitHub).
 
 ## Aviso de uso
