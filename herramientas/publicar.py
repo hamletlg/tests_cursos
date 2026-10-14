@@ -46,12 +46,19 @@ def convertir() -> int:
 def modo_git(mensaje: str, token: str | None) -> int:
     if ejecutar(["git", "add", "-A"]).returncode != 0:
         return 1
-    r = ejecutar(["git", "diff", "--cached", "--quiet"])
-    if r.returncode == 0:
-        print("No hay cambios que publicar.")
-        return 0
-    if ejecutar(["git", "commit", "-m", mensaje]).returncode != 0:
-        return 1
+    if ejecutar(["git", "diff", "--cached", "--quiet"]).returncode != 0:
+        if ejecutar(["git", "commit", "-m", mensaje]).returncode != 0:
+            return 1
+    else:
+        # Sin cambios nuevos que commitear. Antes se salía aquí sin subir nada, así que un commit
+        # local pendiente (por ejemplo, si el push anterior falló) se quedaba sin publicar.
+        r = ejecutar(["git", "rev-list", "--count", "HEAD", "--not", "--remotes"],
+                     stdout=subprocess.PIPE)
+        pendientes = (r.stdout or "").strip()
+        if r.returncode != 0 or pendientes == "0":
+            print("No hay cambios que publicar.")
+            return 0
+        print(f"Sin cambios nuevos, pero hay {pendientes} commit(s) local(es) sin subir: se hace push.")
 
     env = os.environ.copy()
     env["GIT_TERMINAL_PROMPT"] = "0"
