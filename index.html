@@ -196,7 +196,7 @@ function pintarExamen(meta, examen){
   let ordenPreguntas = [];   // posiciones de presentación -> índice original
   let ordenOpciones = [];    // ordenOpciones[qi] = índices originales de opción, ya barajados
   let seleccion = {};        // qi -> [índices originales marcados]
-  let pagina = 0, porPagina = POR_DEFECTO, corregido = false;
+  let pagina = 0, porPagina = POR_DEFECTO, corregido = false, llegoAlFinal = false;
   const hayMulti = preguntas.some(p => (p.correct_indices || []).length > 1);
 
   function estadoNuevo(){
@@ -206,13 +206,14 @@ function pintarExamen(meta, examen){
       const idx = (p.options || []).map((_, k) => k);
       return barajarOpciones ? barajar(idx) : idx;
     });
-    seleccion = {}; pagina = 0; corregido = false;
+    seleccion = {}; pagina = 0; corregido = false; llegoAlFinal = false;
   }
 
   function guardar(){
     try{
       localStorage.setItem(CLAVE, JSON.stringify({
-        v: 1, n: preguntas.length, ordenPreguntas, ordenOpciones, seleccion, pagina, porPagina
+        v: 1, n: preguntas.length, ordenPreguntas, ordenOpciones, seleccion, pagina, porPagina,
+        llegoAlFinal
       }));
     }catch(e){ /* modo privado: se sigue funcionando, solo no persiste */ }
   }
@@ -225,12 +226,16 @@ function pintarExamen(meta, examen){
       ordenPreguntas = d.ordenPreguntas; ordenOpciones = d.ordenOpciones;
       seleccion = d.seleccion || {}; pagina = d.pagina || 0;
       porPagina = Number(d.porPagina) > 0 ? Number(d.porPagina) : POR_DEFECTO;
+      llegoAlFinal = d.llegoAlFinal === true;
       return true;
     }catch(e){ return false; }
   }
   function limpiar(){ try{ localStorage.removeItem(CLAVE); }catch(e){} }
 
   const totalPaginas = () => Math.max(1, Math.ceil(ordenPreguntas.length / porPagina));
+  // "el final del test" = estar en la última página (o haber llegado a ella en este intento)
+  const enElFinal = () => pagina >= totalPaginas() - 1;
+  const puedeCorregir = () => corregido || llegoAlFinal || enElFinal();
   const respondidas = () => Object.keys(seleccion).filter(k => (seleccion[k] || []).length).length;
   const esMulti = (p) => (p.correct_indices || []).length > 1;
   const marcado = (qi, oi) => (seleccion[qi] || []).includes(oi);
@@ -243,7 +248,8 @@ function pintarExamen(meta, examen){
   /* --- vistas --- */
   const contenedorPreguntas = el('div');
   const res = el('div');
-  const pager = el('div', {class:'pager'});
+  // el paginador se pinta dos veces: uno arriba (cabecera) y otro abajo (pie), siempre sincronizados
+  const pagers = [el('div', {class:'pager'}), el('div', {class:'pager'})];
 
   function bloquePregunta(pos, qi, conMarca){
     const p = preguntas[qi];
@@ -280,32 +286,36 @@ function pintarExamen(meta, examen){
   }
 
   function pintarPager(){
-    if(corregido || porPagina >= ordenPreguntas.length){ pager.replaceChildren(); pager.style.display='none'; return; }
-    pager.style.display = 'flex';
-    const ul = el('ul', {class:'ir'});
-    for(let k = 0; k < totalPaginas(); k++){
-      const hecha = ordenPreguntas.slice(k * porPagina, (k + 1) * porPagina)
-        .every(qi => (seleccion[qi] || []).length > 0);
-      const b = el('button', {type:'button', class: hecha ? 'hecha' : null,
-                              'aria-current': k === pagina ? 'true' : 'false',
-                              onclick: () => irA(k)}, String(k + 1));
-      ul.append(el('li', null, b));
+    const ocultar = corregido || porPagina >= ordenPreguntas.length;
+    for(const pager of pagers){
+      if(ocultar){ pager.replaceChildren(); pager.style.display = 'none'; continue; }
+      pager.style.display = 'flex';
+      const ul = el('ul', {class:'ir'});
+      for(let k = 0; k < totalPaginas(); k++){
+        const hecha = ordenPreguntas.slice(k * porPagina, (k + 1) * porPagina)
+          .every(qi => (seleccion[qi] || []).length > 0);
+        const b = el('button', {type:'button', class: hecha ? 'hecha' : null,
+                                'aria-current': k === pagina ? 'true' : 'false',
+                                onclick: () => irA(k)}, String(k + 1));
+        ul.append(el('li', null, b));
+      }
+      const sel = el('select', {onchange: (e) => {
+        porPagina = Number(e.target.value); pagina = 0; guardar(); render();
+      }});
+      for(const n of [5, 10, 20, 60, 1000]) sel.append(el('option', {value: String(n)}, n >= 1000 ? 'Todas' : n + ' por página'));
+      sel.value = String(porPagina);
+      pager.replaceChildren(
+        el('button', {type:'button', class:'btn sec', disabled: pagina === 0 ? '' : null,
+                      onclick: () => irA(pagina - 1)}, '← Anterior'),
+        ul,
+        el('button', {type:'button', class:'btn sec', disabled: (pagina >= totalPaginas() - 1) ? '' : null,
+                      onclick: () => irA(pagina + 1)}, 'Siguiente →'),
+        el('span', {class:'meta'}, 'Página ' + (pagina + 1) + ' de ' + totalPaginas() +
+          ' · respondidas ' + respondidas() + '/' + ordenPreguntas.length),
+        el('label', {class:'meta'}, 'Ver ', sel)
+      );
     }
-    const sel = el('select', {onchange: (e) => {
-      porPagina = Number(e.target.value); pagina = 0; guardar(); render();
-    }});
-    for(const n of [5, 10, 20, 60, 1000]) sel.append(el('option', {value: String(n)}, n >= 1000 ? 'Todas' : n + ' por página'));
-    sel.value = String(porPagina);
-    pager.replaceChildren(
-      el('button', {type:'button', class:'btn sec', disabled: pagina === 0 ? '' : null,
-                    onclick: () => irA(pagina - 1)}, '← Anterior'),
-      ul,
-      el('button', {type:'button', class:'btn sec', disabled: (pagina >= totalPaginas() - 1) ? '' : null,
-                    onclick: () => irA(pagina + 1)}, 'Siguiente →'),
-      el('span', {class:'meta'}, 'Página ' + (pagina + 1) + ' de ' + totalPaginas() +
-        ' · respondidas ' + respondidas() + '/' + ordenPreguntas.length),
-      el('label', {class:'meta'}, 'Ver ', sel)
-    );
+    actualizarBtnCorregir();
   }
 
   function irA(k){
@@ -319,6 +329,7 @@ function pintarExamen(meta, examen){
   function render(){
     contenedorPreguntas.replaceChildren();
     res.replaceChildren();
+    if(enElFinal()) llegoAlFinal = true;   // ya ha visto el final: se desbloquea «Corregir»
     if(corregido){
       const aciertos = ordenPreguntas.filter(qi => acerto(qi)).length;
       const pct = Math.round(1000 * aciertos / (ordenPreguntas.length || 1)) / 10;
@@ -409,7 +420,19 @@ function pintarExamen(meta, examen){
     window.print();
   }}, 'Imprimir / PDF');
 
-  accionesFinal.append(btnCorr, btnRein);
+  // aviso que solo se ve mientras «Corregir» está bloqueado
+  const avisoFinal = el('span', {class:'meta no-print', style:'display:none'},
+    'Para corregir, llega hasta la última página del test.');
+
+  // «Corregir» solo se activa al llegar al final (o si el test cabe entero en una pantalla)
+  function actualizarBtnCorregir(){
+    const puede = puedeCorregir();
+    btnCorr.disabled = !puede;
+    btnCorr.title = puede ? '' : 'Llega hasta la última página del test para poder corregir.';
+    avisoFinal.style.display = (!puede && !corregido) ? '' : 'none';
+  }
+
+  accionesFinal.append(btnCorr, btnRein, avisoFinal);
   accionesExport.append(
     el('span', {class:'meta', style:'width:100%'}, 'Exportar el test completo (todas las preguntas, no solo esta página):'),
     btnImprimir, el('label', {class:'meta'}, chkClave, ' incluir respuestas correctas'),
@@ -434,8 +457,9 @@ function pintarExamen(meta, examen){
     el('p', {class:'meta'}, [(meta.description || examen.description || ''),
                              preguntas.length + ' preguntas',
                              hayMulti ? 'incluye respuesta múltiple' : ''].filter(Boolean).join(' · ')),
-    pager,
+    pagers[0],
     contenedorPreguntas,
+    pagers[1],
     res,
     accionesFinal,
     accionesExport
