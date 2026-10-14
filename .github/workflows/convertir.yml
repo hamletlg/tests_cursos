@@ -1,0 +1,62 @@
+name: Convertir fuentes a data
+
+# Reconvierte fuentes/*.md -> data/*.json y sube el resultado.
+#
+# Sirve para poder cambiar un test editando SOLO el .md desde la web de GitHub
+# (pulsando "Commit changes" en el navegador): ese commit no ejecuta nada en
+# local, asi que sin este workflow la web publicada seguiria sirviendo el JSON
+# viejo. Aqui se regenera data/ y se commitea automaticamente.
+#
+# data/ es DERIVADO: el unico sitio donde se editan los tests es fuentes/*.md.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'fuentes/**'
+      - 'herramientas/convertir.py'
+      - '.github/workflows/convertir.yml'
+  workflow_dispatch:      # permite lanzarlo a mano desde la pestana Actions
+
+permissions:
+  contents: write
+
+# Si llegan dos ediciones seguidas, se hacen una despues de otra (no en paralelo).
+concurrency:
+  group: convertir-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  convertir:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Python 3.12 (la misma version que en local)
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Si algun .md tiene mal el formato, este paso falla y NO se commitea nada:
+      # la web se queda como estaba y GitHub avisa por correo al autor del push.
+      - name: Validar y convertir
+        run: python3 herramientas/convertir.py
+
+      - name: Commitear data/ si cambio algo
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ -z "$(git status --porcelain -- data)" ]; then
+            echo "data/ ya estaba al dia: no hay nada que commitear."
+            exit 0
+          fi
+
+          git add -- data
+          git diff --cached --stat
+          # Sin [skip ci] a proposito: el commit debe disparar el despliegue de Pages.
+          # No se re-dispara este workflow porque toca data/** y no fuentes/**.
+          git commit -m "Reconvertir data/ desde fuentes/ (automatico)"
+          git push origin HEAD:main
