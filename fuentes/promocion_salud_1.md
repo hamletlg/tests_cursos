@@ -147,7 +147,6 @@
 - Ser de corta duración.
 
 ## El nivel operativo de planificación se concreta en:
-#Por página: 15
 - Planes y programas.
 - Programas y proyectos.
 - Proyectos y programación. *
