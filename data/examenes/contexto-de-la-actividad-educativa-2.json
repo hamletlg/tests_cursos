@@ -1,0 +1,361 @@
+{
+  "id": "contexto-de-la-actividad-educativa-2",
+  "title": "Contexto de la actividad educativa 2",
+  "description": "Test sobre marco normativo, currículo y atención a la infancia en Educación Infantil (LOMLOE, Decretos CM, RD)",
+  "grupo": "",
+  "visible": false,
+  "barajar_preguntas": false,
+  "shuffle_options": true,
+  "questions": [
+    {
+      "text": "Los CEIP (Colegios de Educación Infantil y Primaria) en la Comunidad de Madrid imparten:",
+      "options": [
+        "El primer ciclo (0-3 años) de forma generalizada",
+        "El segundo ciclo (3-6 años) con carácter gratuito y universal",
+        "Ambos ciclos de forma obligatoria",
+        "Solo el tramo de 0 a 2 años"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 1,
+      "type": "single"
+    },
+    {
+      "text": "Según el Decreto 18/2008, la superficie mínima general por aula en el primer ciclo de Educación Infantil es:",
+      "options": [
+        "20 m²",
+        "25 m²",
+        "30 m²",
+        "40 m²"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 2,
+      "type": "single"
+    },
+    {
+      "text": "El Decreto 18/2008 establece que, en unidades mixtas, el límite máximo de niños por unidad escolar es:",
+      "options": [
+        "10 niños",
+        "12 niños",
+        "15 niños",
+        "20 niños"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 3,
+      "type": "single"
+    },
+    {
+      "text": "Según el artículo 8.2 del Decreto 18/2008, la aprobación del número exacto de alumnos por grupo corresponde a:",
+      "options": [
+        "El director del centro",
+        "El Consejo Escolar",
+        "La Dirección de Área Territorial a propuesta del centro y con el visto bueno del Servicio de Inspección Educativa",
+        "La Consejería de Educación"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 4,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de las siguientes es una función de las instituciones formales de atención a la infancia?",
+      "options": [
+        "Función exclusivamente asistencial",
+        "Función educativa y pedagógica, socializadora, compensatoria e inclusiva, y de conciliación",
+        "Función únicamente lúdica",
+        "Función de custodia sin intención educativa"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 5,
+      "type": "single"
+    },
+    {
+      "text": "Según el Decreto 36/2022, ¿qué principio constituye la base del desarrollo y del aprendizaje en la etapa de Educación Infantil?",
+      "options": [
+        "La disciplina",
+        "El apego seguro y bienestar emocional",
+        "La competitividad",
+        "La autonomía precoz"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 6,
+      "type": "single"
+    },
+    {
+      "text": "El principio de individualización de la enseñanza en Educación Infantil implica:",
+      "options": [
+        "Aplicar el mismo método a todos los niños",
+        "Adaptación a los ritmos y estilos de cada niño y niña, respetando la diversidad del aula",
+        "Agrupar a los niños por niveles de capacidad",
+        "Evaluar con pruebas estandarizadas"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 7,
+      "type": "single"
+    },
+    {
+      "text": "La coeducación en Educación Infantil se refiere a:",
+      "options": [
+        "Separar a niños y niñas en actividades distintas",
+        "Educación para la igualdad real entre niños y niñas, libre de estereotipos de género",
+        "Enseñar en dos idiomas",
+        "Educar solo en valores religiosos"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 8,
+      "type": "single"
+    },
+    {
+      "text": "Según el Decreto 36/2022, el Área I del currículo se denomina:",
+      "options": [
+        "Descubrimiento y exploración del entorno",
+        "Comunicación y representación de la realidad",
+        "Crecimiento en armonía",
+        "Conocimiento del medio natural y social"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 9,
+      "type": "single"
+    },
+    {
+      "text": "El Área II del currículo de Educación Infantil en la Comunidad de Madrid se denomina:",
+      "options": [
+        "Crecimiento en armonía",
+        "Descubrimiento y exploración del entorno",
+        "Comunicación y representación de la realidad",
+        "Lenguajes y expresión artística"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 10,
+      "type": "single"
+    },
+    {
+      "text": "El Área III del currículo de Educación Infantil en la Comunidad de Madrid se denomina:",
+      "options": [
+        "Crecimiento en armonía",
+        "Descubrimiento y exploración del entorno",
+        "Comunicación y representación de la realidad",
+        "Conocimiento de sí mismo y autonomía personal"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 11,
+      "type": "single"
+    },
+    {
+      "text": "Ante indicios de desprotección o maltrato de un menor (LOPIVI), el educador debe:",
+      "options": [
+        "Esperar a que la familia lo comunique formalmente",
+        "Resolverlo de forma privada con los progenitores, sin dejar registro",
+        "Comunicarlo de inmediato a la dirección del centro para activar los protocolos de protección",
+        "Denunciarlo en redes sociales o foros de internet"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 12,
+      "type": "single"
+    },
+    {
+      "text": "En protección de datos (RGPD y LOPDGDD), ¿cuál es el procedimiento correcto para el uso de fotografías del alumnado?",
+      "options": [
+        "Publicarlas en redes personales si el fin es pedagógico",
+        "Consentimiento previo, expreso y por escrito de los representantes legales, con difusión solo por canales institucionales",
+        "Basta con el consentimiento verbal del menor al tomar la fotografía",
+        "No se requiere autorización si la imagen es en plano general"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 13,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es la técnica indispensable para evaluar el proceso de aprendizaje en Educación Infantil de manera rigurosa?",
+      "options": [
+        "Las pruebas objetivas estandarizadas",
+        "La intuición subjetiva del educador",
+        "La observación directa y sistemática registrada con escalas o anecdotarios",
+        "La comparación mediante calificaciones numéricas"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 14,
+      "type": "single"
+    },
+    {
+      "text": "Según el marco deontológico, ¿cuál es el deber del educador ante cualquier indicio de riesgo o desamparo de un menor?",
+      "options": [
+        "Guardar silencio para proteger la intimidad familiar",
+        "Ponerlo en conocimiento de la dirección o las autoridades competentes",
+        "Intentar resolverlo por sí mismo sin informar a nadie",
+        "Esperar a tener pruebas concluyentes"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 15,
+      "type": "single"
+    },
+    {
+      "text": "La imagen del menor es considerada un dato de protección especial, lo que exige:",
+      "options": [
+        "Consentimiento verbal del menor",
+        "Consentimiento previo, expreso y por escrito de los representantes legales y difusión solo por canales institucionales",
+        "Autorización del centro educativo sin necesidad de consentimiento familiar",
+        "Publicación libre si la foto se toma en un acto escolar"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 16,
+      "type": "single"
+    },
+    {
+      "text": "Según el Real Decreto 1394/2007, ¿cuál es la competencia general del título de TSEI?",
+      "options": [
+        "Impartir docencia en el segundo ciclo de Educación Infantil",
+        "Diseñar, implementar y evaluar proyectos y programas educativos de atención a la infancia en el primer ciclo de educación infantil en el ámbito formal",
+        "Realizar diagnósticos psicopedagógicos",
+        "Dirigir centros de Educación Infantil"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 17,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de las siguientes es una competencia profesional del TSEI según el RD 1394/2007?",
+      "options": [
+        "Programar, organizar e implementar actividades lúdicas y educativas adaptadas al desarrollo madurativo",
+        "Emitir diagnósticos psicopedagógicos formales",
+        "Tutorizar aulas del segundo ciclo como docente titular",
+        "Realizar pruebas estandarizadas de evaluación"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 18,
+      "type": "single"
+    },
+    {
+      "text": "Según el RD 1394/2007, el TSEI NO puede realizar de forma autónoma:",
+      "options": [
+        "Implementar las actividades diarias del proyecto",
+        "Organizar el espacio, los tiempos y los materiales",
+        "Tutorizar aulas del segundo ciclo (3-6 años) como docente titular",
+        "Comunicarse con las familias"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 19,
+      "type": "single"
+    },
+    {
+      "text": "La reserva de la docencia y tutoría del segundo ciclo en exclusiva a los Maestros especialistas proviene de:",
+      "options": [
+        "El artículo 92 de la LOE/LOMLOE",
+        "El Decreto 18/2008",
+        "El RD 1394/2007",
+        "La Orden 460/2023"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 20,
+      "type": "single"
+    },
+    {
+      "text": "En la Educación Infantil formal (0-3 años), para ejercer como educador se exige:",
+      "options": [
+        "Únicamente el título de TSEI",
+        "El Grado o Magisterio en Educación Infantil o el título de TSEI (o equivalentes homologados)",
+        "Ser monitor de tiempo libre",
+        "No se exige titulación específica"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 21,
+      "type": "single"
+    },
+    {
+      "text": "En la Educación Infantil no formal, la titulación requerida se rige por:",
+      "options": [
+        "La LOE/LOMLOE",
+        "Convenios laborales (ocio educativo, animación sociocultural)",
+        "El RD 1394/2007",
+        "El Decreto 36/2022"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 22,
+      "type": "single"
+    },
+    {
+      "text": "La Ley Orgánica 8/2021 (LOPIVI) establece:",
+      "options": [
+        "El deber de comunicación de situaciones de violencia que afecten a menores",
+        "La obligatoriedad de la Educación Infantil",
+        "Las ratios máximas por aula",
+        "El currículo de la Educación Infantil"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 23,
+      "type": "single"
+    },
+    {
+      "text": "Según el Decreto 36/2022, la Propuesta Pedagógica es un documento institucional obligatorio que se concreta en el artículo:",
+      "options": [
+        "12",
+        "14",
+        "16",
+        "18"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 24,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de los siguientes es un documento institucional obligatorio en los centros de Educación Infantil?",
+      "options": [
+        "El Plan de Convivencia",
+        "El Proyecto Educativo de Centro (PEC)",
+        "El Plan de Acogida",
+        "Todos los anteriores son documentos institucionales obligatorios según el PDF"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 25,
+      "type": "single"
+    }
+  ]
+}

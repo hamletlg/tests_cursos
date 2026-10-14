@@ -7,6 +7,7 @@ Formato de cada fichero en `fuentes/` (texto plano, se edita rápido):
     #Descripción: texto opcional que sale en el listado
     #Grupo: A
     #Barajar preguntas: no
+    #Visible: si
     #Por página: 10
 
     ## Enunciado de la pregunta
@@ -24,6 +25,7 @@ Formato de cada fichero en `fuentes/` (texto plano, se edita rápido):
 Reglas del formato:
   * La primera línea "# " es el TÍTULO del examen (obligatorio).
   * Directivas opcionales:  "#Descripción: ...", "#Grupo: A", "#Barajar preguntas: si|no",
+                            "#Visible: si|no" (si no, el examen NO sale en el listado del alumno),
                             "#Por página: 10" (preguntas por pantalla en la web).
   * Cada "## " abre una PREGUNTA.
   * Cada línea "- " es una OPCIÓN. Marca con un " *" al final las correctas.
@@ -62,6 +64,8 @@ DIRECTIVAS = {
     "grupo": "grupo",
     "barajar preguntas": "barajar_preguntas",
     "barajar_preguntas": "barajar_preguntas",
+    "visible": "visible",
+    "oculto": "visible",
     "por pagina": "preguntas_por_pagina",
     "preguntas por pagina": "preguntas_por_pagina",
     "preguntas_por_pagina": "preguntas_por_pagina",
@@ -104,6 +108,12 @@ def parsear(texto: str, origen: str) -> dict:
             if destino:
                 if destino == "barajar_preguntas":
                     meta[destino] = parsear_bool(valor)
+                elif destino == "visible":
+                    # "#Oculto: si" es lo mismo que "#Visible: no"
+                    if sin_acentos(m_dir.group(1).strip().lower()) == "oculto":
+                        meta[destino] = not parsear_bool(valor)
+                    else:
+                        meta[destino] = parsear_bool(valor)
                 elif destino == "preguntas_por_pagina":
                     if re.fullmatch(r"\d+", valor) and int(valor) > 0:
                         meta[destino] = int(valor)
@@ -170,6 +180,7 @@ def parsear(texto: str, origen: str) -> dict:
         "title": titulo or origen,
         "description": meta.get("description", ""),
         "grupo": meta.get("grupo", ""),
+        "visible": meta.get("visible", True),
         "barajar_preguntas": meta.get("barajar_preguntas", False),
         "shuffle_options": True,
     }
@@ -235,7 +246,8 @@ def main() -> int:
 
     indice = {"examenes": [
         {"id": e["id"], "title": e["title"], "description": e["description"],
-         "grupo": e["grupo"], "num_preguntas": len(e["questions"]),
+         "grupo": e["grupo"], "visible": e.get("visible", True),
+         "num_preguntas": len(e["questions"]),
          "archivo": f"data/examenes/{e['id']}.json"}
         for e in examenes]}
     INDICE.write_text(json.dumps(indice, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -11,6 +11,7 @@ Generado por `herramientas/convertir.py`. NO se edita a mano.
           "title": "Tema 1 — Fundamentos (grupo A)",
           "description": "Repaso autoevaluable del tema 1",
           "grupo": "A",                        // "" si no se indicó
+          "visible": true,                     // false => no se lista ni se abre por enlace directo
           "num_preguntas": 3,
           "archivo": "data/examenes/tema1-fundamentos-grupoa.json"
         }
@@ -24,6 +25,7 @@ Generado por `herramientas/convertir.py`. NO se edita a mano.
       "title": "Tema 1 — Fundamentos (grupo A)",
       "description": "Repaso autoevaluable del tema 1",
       "grupo": "A",
+      "visible": true,                // "#Visible: no" en el .md => false
       "barajar_preguntas": false,     // si true, la web mezcla el orden de las preguntas
       "shuffle_options": true,        // la web baraja SIEMPRE las opciones (4 por pregunta)
       "preguntas_por_pagina": 10,     // OPCIONAL: solo si el .md lleva "#Por página:"

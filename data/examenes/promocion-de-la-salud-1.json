@@ -1,0 +1,361 @@
+{
+  "id": "promocion-de-la-salud-1",
+  "title": "Promoción de la Salud 1",
+  "description": "Conceptos y marco normativo, niveles de prevención, planificación sanitaria, modelos teóricos y metodología de evaluación de programas de salud",
+  "grupo": "",
+  "visible": false,
+  "barajar_preguntas": false,
+  "shuffle_options": true,
+  "questions": [
+    {
+      "text": "Según la definición de la OMS, la salud es un estado de completo bienestar:",
+      "options": [
+        "Físico, mental y espiritual.",
+        "Físico, mental y social.",
+        "Físico, emocional y ambiental.",
+        "Orgánico, psicológico y comunitario."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 1,
+      "type": "single"
+    },
+    {
+      "text": "El artículo 43 de la Constitución Española reconoce:",
+      "options": [
+        "El derecho a la protección de la salud.",
+        "El derecho a la asistencia sanitaria gratuita.",
+        "El derecho a la promoción de la salud.",
+        "El derecho a la prevención de enfermedades."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 2,
+      "type": "single"
+    },
+    {
+      "text": "La Ley 14/1986, de 25 de abril, tiene como objeto principal:",
+      "options": [
+        "Regular la promoción de la salud.",
+        "Crear el Sistema Nacional de Salud.",
+        "Establecer las bases de la salud pública.",
+        "Regular la educación para la salud."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 3,
+      "type": "single"
+    },
+    {
+      "text": "La Ley 33/2011, de 4 de octubre, introduce como principio rector:",
+      "options": [
+        "La salud como derecho fundamental.",
+        "La «salud en todas las políticas».",
+        "La equidad en el acceso a los servicios.",
+        "La sostenibilidad del sistema sanitario."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 4,
+      "type": "single"
+    },
+    {
+      "text": "Según la Carta de Ottawa (1986), la promoción de la salud se define como el proceso que permite a las personas:",
+      "options": [
+        "Evitar la aparición de enfermedades.",
+        "Incrementar el control sobre su salud para mejorarla.",
+        "Recibir atención sanitaria de calidad.",
+        "Adoptar estilos de vida saludables."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 5,
+      "type": "single"
+    },
+    {
+      "text": "La dimensión de la salud que se refiere a la capacidad de relación e integración comunitaria es la:",
+      "options": [
+        "Física.",
+        "Mental.",
+        "Social.",
+        "Ambiental."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 6,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de los siguientes no es un principio de la promoción de la salud?",
+      "options": [
+        "Equidad.",
+        "Participación.",
+        "Centralización.",
+        "Sostenibilidad."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 7,
+      "type": "single"
+    },
+    {
+      "text": "La prevención que evita la aparición de factores de riesgo se denomina:",
+      "options": [
+        "Primordial.",
+        "Primaria.",
+        "Secundaria.",
+        "Terciaria."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 8,
+      "type": "single"
+    },
+    {
+      "text": "La detección precoz de una enfermedad en fase preclínica es un ejemplo de prevención:",
+      "options": [
+        "Primordial.",
+        "Primaria.",
+        "Secundaria.",
+        "Terciaria."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 9,
+      "type": "single"
+    },
+    {
+      "text": "La rehabilitación cardiaca es un ejemplo de prevención:",
+      "options": [
+        "Primordial.",
+        "Primaria.",
+        "Secundaria.",
+        "Terciaria."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 10,
+      "type": "single"
+    },
+    {
+      "text": "La prevención cuaternaria se define como la que:",
+      "options": [
+        "Evita la aparición de factores de riesgo.",
+        "Impide el desarrollo de la enfermedad.",
+        "Detecta y trata precozmente.",
+        "Evita intervenciones innecesarias."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 11,
+      "type": "single"
+    },
+    {
+      "text": "La educación para la salud tiene como objetivo principal:",
+      "options": [
+        "Evitar la enfermedad.",
+        "Capacitar en conocimientos.",
+        "Garantizar el derecho a la salud.",
+        "Incrementar el control sobre la salud."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 12,
+      "type": "single"
+    },
+    {
+      "text": "La protección de la salud se concreta a través de:",
+      "options": [
+        "Programas educativos.",
+        "Normas y regulaciones.",
+        "Campañas de vacunación.",
+        "Cribados poblacionales."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 13,
+      "type": "single"
+    },
+    {
+      "text": "La alfabetización en salud que implica habilidades básicas de lectura y escritura se denomina:",
+      "options": [
+        "Funcional.",
+        "Interactiva.",
+        "Crítica.",
+        "Avanzada."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 14,
+      "type": "single"
+    },
+    {
+      "text": "Según la OMS, los determinantes sociales de la salud son las circunstancias en que las personas:",
+      "options": [
+        "Nacen, crecen, viven, trabajan y envejecen.",
+        "Reciben atención sanitaria.",
+        "Se educan y se reproducen.",
+        "Participan en la comunidad."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 15,
+      "type": "single"
+    },
+    {
+      "text": "Las diferencias en el estado de salud entre grupos poblacionales que son evitables, injustas y sistemáticas se denominan:",
+      "options": [
+        "Inequidades en salud.",
+        "Desigualdades naturales.",
+        "Determinantes estructurales.",
+        "Brechas sanitarias."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 16,
+      "type": "single"
+    },
+    {
+      "text": "El indicador «esperanza de vida al nacer» en España es de:",
+      "options": [
+        "80,5 años.",
+        "83,8 años.",
+        "85,2 años.",
+        "78,9 años."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 17,
+      "type": "single"
+    },
+    {
+      "text": "La mortalidad prematura se define como toda defunción que ocurre antes de los:",
+      "options": [
+        "65 años.",
+        "70 años.",
+        "75 años.",
+        "80 años."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 18,
+      "type": "single"
+    },
+    {
+      "text": "Según la Ley 33/2011, los ciudadanos tienen derecho a:",
+      "options": [
+        "La participación efectiva en las actuaciones de salud pública.",
+        "La elección de médico especialista.",
+        "La atención sanitaria gratuita universal.",
+        "La información de su historia clínica."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 19,
+      "type": "single"
+    },
+    {
+      "text": "La Ley 14/1986 establece que la promoción y educación sanitaria son:",
+      "options": [
+        "Actuaciones del Sistema Nacional de Salud.",
+        "Competencias exclusivas de las comunidades autónomas.",
+        "Funciones del Ministerio de Sanidad.",
+        "Actividades del sector privado."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 20,
+      "type": "single"
+    },
+    {
+      "text": "La planificación sanitaria se define como un proceso:",
+      "options": [
+        "Racional de toma de decisiones.",
+        "Político de asignación de recursos.",
+        "Técnico de evaluación de programas.",
+        "Administrativo de gestión de servicios."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 21,
+      "type": "single"
+    },
+    {
+      "text": "El nivel estratégico de planificación se caracteriza por:",
+      "options": [
+        "Definir grandes objetivos y políticas de salud.",
+        "Concretar el plan en programas.",
+        "Ejecutar acciones concretas.",
+        "Evaluar los resultados a corto plazo."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 22,
+      "type": "single"
+    },
+    {
+      "text": "Un plan, en el contexto de la planificación sanitaria, tiene una duración de:",
+      "options": [
+        "Menos de 1 año.",
+        "De 1 a 5 años.",
+        "Más de 5 años.",
+        "Indefinida."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 23,
+      "type": "single"
+    },
+    {
+      "text": "Un programa se caracteriza por:",
+      "options": [
+        "Tener objetivos generales y políticos.",
+        "Concretar el plan en objetivos específicos.",
+        "Ejecutar acciones concretas.",
+        "Ser de corta duración."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 24,
+      "type": "single"
+    },
+    {
+      "text": "El nivel operativo de planificación se concreta en:",
+      "options": [
+        "Planes y programas.",
+        "Programas y proyectos.",
+        "Proyectos y programación.",
+        "Programación y evaluación."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 25,
+      "type": "single"
+    }
+  ]
+}

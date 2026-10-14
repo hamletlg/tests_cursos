@@ -1,0 +1,361 @@
+{
+  "id": "primeros-auxilios-1",
+  "title": "Primeros Auxilios 1",
+  "description": "Marco legal, conducta PAS, triaje START, valoración ABC, constantes vitales, comunicación en emergencias y control emocional (prácticas de primeros auxilios)",
+  "grupo": "",
+  "visible": false,
+  "barajar_preguntas": false,
+  "shuffle_options": true,
+  "questions": [
+    {
+      "text": "Según el Artículo 195 del Código Penal, ¿con qué pena se castiga a quien no socorre a una persona desamparada en peligro manifiesto y grave, pudiendo hacerlo sin riesgo propio?",
+      "options": [
+        "Prisión de seis meses a dos años.",
+        "Multa de tres a doce meses.",
+        "Arresto de fin de semana.",
+        "Trabajos en beneficio de la comunidad."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 1,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es el número único europeo de emergencias, gratuito y disponible 24 horas todos los días del año?",
+      "options": [
+        "091",
+        "112",
+        "061",
+        "092"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 2,
+      "type": "single"
+    },
+    {
+      "text": "Según la Ley 41/2002, básica reguladora de la autonomía del paciente, ¿qué se requiere para toda actuación en el ámbito de la salud de un paciente?",
+      "options": [
+        "La autorización judicial previa.",
+        "El consentimiento libre y voluntario del afectado, tras recibir información adecuada.",
+        "La firma de un familiar directo.",
+        "La supervisión de un médico especialista."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 3,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es el contenido mínimo obligatorio de un botiquín portátil en todo lugar de trabajo según el Real Decreto 486/1997, de 14 de abril, sobre disposiciones mínimas de seguridad y salud en los lugares de trabajo (Anexo VI, apartado A.3)?",
+      "options": [
+        "Desinfectantes y antisépticos autorizados, gasas estériles, algodón hidrófilo, venda, esparadrapo, apósitos adhesivos, tijeras, pinzas y guantes desechables.",
+        "Analgésicos, antiinflamatorios y antibióticos.",
+        "Sólo gasas y vendas.",
+        "Material de sutura y jeringuillas."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 4,
+      "type": "single"
+    },
+    {
+      "text": "En el triaje START, ¿qué color se asigna a la víctima que camina por sus propios medios?",
+      "options": [
+        "Rojo.",
+        "Amarillo.",
+        "Verde.",
+        "Negro."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 5,
+      "type": "single"
+    },
+    {
+      "text": "En el triaje START, una víctima que no respira después de abrir la vía aérea se clasifica como:",
+      "options": [
+        "Rojo.",
+        "Amarillo.",
+        "Verde.",
+        "Negro."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 6,
+      "type": "single"
+    },
+    {
+      "text": "Según el triaje START, si una víctima respira espontáneamente y su frecuencia respiratoria es mayor de 30 rpm, se clasifica como:",
+      "options": [
+        "Rojo.",
+        "Amarillo.",
+        "Verde.",
+        "Negro."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 7,
+      "type": "single"
+    },
+    {
+      "text": "En el triaje START, ¿qué se evalúa después de la frecuencia respiratoria si esta es menor de 30 rpm?",
+      "options": [
+        "La presión arterial.",
+        "La perfusión (pulso radial).",
+        "El estado mental.",
+        "La temperatura."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 8,
+      "type": "single"
+    },
+    {
+      "text": "Según el triaje START, una víctima que obedece órdenes simples se clasifica como:",
+      "options": [
+        "Rojo.",
+        "Amarillo.",
+        "Verde.",
+        "Negro."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 9,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué puntuación en la Escala de Coma de Glasgow (GCS) indica la necesidad de control de la vía aérea?",
+      "options": [
+        "GCS ≤ 12",
+        "GCS ≤ 10",
+        "GCS ≤ 8",
+        "GCS ≤ 6"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 10,
+      "type": "single"
+    },
+    {
+      "text": "En la Escala de Coma de Glasgow, ¿cuál es la puntuación máxima posible?",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "20"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 11,
+      "type": "single"
+    },
+    {
+      "text": "En lactantes y niños ≤ 2 años, ¿qué puntuación en la GCS modificada sugiere traumatismo encefálico grave?",
+      "options": [
+        "≤ 8",
+        "≤ 10",
+        "≤ 12",
+        "≤ 14"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 12,
+      "type": "single"
+    },
+    {
+      "text": "Según la valoración primaria ABC, ¿qué evalúa la letra \"A\"?",
+      "options": [
+        "La ventilación y oxigenación.",
+        "La permeabilidad de la vía aérea.",
+        "El pulso, la perfusión y las hemorragias.",
+        "El estado neurológico."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 13,
+      "type": "single"
+    },
+    {
+      "text": "Según la valoración primaria ABC, ¿qué evalúa la letra \"B\"?",
+      "options": [
+        "La permeabilidad de la vía aérea.",
+        "La ventilación y oxigenación.",
+        "El pulso, la perfusión y las hemorragias.",
+        "La temperatura corporal."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 14,
+      "type": "single"
+    },
+    {
+      "text": "Según la valoración primaria ABC, ¿qué evalúa la letra \"C\"?",
+      "options": [
+        "La permeabilidad de la vía aérea.",
+        "La ventilación y oxigenación.",
+        "El pulso, la perfusión y las hemorragias.",
+        "La conciencia."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 15,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es el valor normal de la presión arterial sistólica en un adulto?",
+      "options": [
+        "60 - 90 mmHg",
+        "90 - 140 mmHg",
+        "140 - 180 mmHg",
+        "180 - 200 mmHg"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 16,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es el valor normal de la saturación arterial de oxígeno (SpO₂) en un adulto?",
+      "options": [
+        "80 - 90 %",
+        "85 - 95 %",
+        "95 - 100 %",
+        "100 - 110 %"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 17,
+      "type": "single"
+    },
+    {
+      "text": "De acuerdo con los valores de temperatura, ¿a partir de qué valor se considera fiebre en un adulto?",
+      "options": [
+        "≥ 37,5 °C",
+        "≥ 38 °C",
+        "≥ 38,5 °C",
+        "≥ 39 °C"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 18,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué valor de temperatura se considera hipotermia en un adulto?",
+      "options": [
+        "< 36 °C",
+        "< 35 °C",
+        "< 34 °C",
+        "< 33 °C"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 19,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es la taquipnea?",
+      "options": [
+        "Frecuencia respiratoria elevada.",
+        "Frecuencia respiratoria disminuida.",
+        "Ausencia de respiración.",
+        "Dificultad para respirar."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 20,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es la bradipnea?",
+      "options": [
+        "Frecuencia respiratoria elevada.",
+        "Frecuencia respiratoria disminuida.",
+        "Ausencia de respiración.",
+        "Dificultad para respirar."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 21,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es la apnea?",
+      "options": [
+        "Frecuencia respiratoria elevada.",
+        "Frecuencia respiratoria disminuida.",
+        "Ausencia de respiración.",
+        "Dificultad para respirar."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 22,
+      "type": "single"
+    },
+    {
+      "text": "Según la Cruz Roja Española, ¿cuál es el objetivo de los primeros auxilios?",
+      "options": [
+        "Sustituir la atención médica profesional.",
+        "Conservar la vida, evitar complicaciones y aliviar el sufrimiento hasta la llegada de personal sanitario cualificado.",
+        "Administrar medicamentos sin prescripción.",
+        "Realizar maniobras invasivas."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 23,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué significa la conducta PAS?",
+      "options": [
+        "Proteger, Avisar, Socorrer.",
+        "Prevenir, Atender, Salvar.",
+        "Proteger, Auxiliar, Sanar.",
+        "Prever, Alertar, Socorrer."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 24,
+      "type": "single"
+    },
+    {
+      "text": "En la conducta PAS, ¿qué implica la fase de \"Proteger\"?",
+      "options": [
+        "Llamar al 112 con información clara y concisa.",
+        "Asegurar la zona antes de actuar.",
+        "Aplicar las maniobras de soporte vital básico.",
+        "Evaluar el estado de la víctima."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 25,
+      "type": "single"
+    }
+  ]
+}

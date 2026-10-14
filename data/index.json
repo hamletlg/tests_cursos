@@ -1,20 +1,76 @@
 {
   "examenes": [
     {
-      "id": "contexto-de-la-actividad-educativa",
-      "title": "Contexto de la actividad educativa",
+      "id": "contexto-de-la-actividad-educativa-1",
+      "title": "Contexto de la actividad educativa 1",
       "description": "Test sobre marco normativo, currículo y atención a la infancia en Educación Infantil (LOMLOE, Decretos CM, RD)",
       "grupo": "",
-      "num_preguntas": 50,
-      "archivo": "data/examenes/contexto-de-la-actividad-educativa.json"
+      "visible": true,
+      "num_preguntas": 25,
+      "archivo": "data/examenes/contexto-de-la-actividad-educativa-1.json"
     },
     {
-      "id": "diseno-de-la-intervencion-educativa",
-      "title": "Diseño de la Intervención Educativa",
+      "id": "contexto-de-la-actividad-educativa-2",
+      "title": "Contexto de la actividad educativa 2",
+      "description": "Test sobre marco normativo, currículo y atención a la infancia en Educación Infantil (LOMLOE, Decretos CM, RD)",
+      "grupo": "",
+      "visible": false,
+      "num_preguntas": 25,
+      "archivo": "data/examenes/contexto-de-la-actividad-educativa-2.json"
+    },
+    {
+      "id": "diseno-de-la-intervencion-educativa-1",
+      "title": "Diseño de la Intervención Educativa 1",
       "description": "Test sobre marco curricular, niveles de concreción, fuentes del currículo, PEC, Propuesta Pedagógica y planificación",
       "grupo": "",
-      "num_preguntas": 50,
-      "archivo": "data/examenes/diseno-de-la-intervencion-educativa.json"
+      "visible": false,
+      "num_preguntas": 25,
+      "archivo": "data/examenes/diseno-de-la-intervencion-educativa-1.json"
+    },
+    {
+      "id": "diseno-de-la-intervencion-educativa-2",
+      "title": "Diseño de la Intervención Educativa 2",
+      "description": "Test sobre marco curricular, niveles de concreción, fuentes del currículo, PEC, Propuesta Pedagógica y planificación",
+      "grupo": "",
+      "visible": false,
+      "num_preguntas": 25,
+      "archivo": "data/examenes/diseno-de-la-intervencion-educativa-2.json"
+    },
+    {
+      "id": "primeros-auxilios-1",
+      "title": "Primeros Auxilios 1",
+      "description": "Marco legal, conducta PAS, triaje START, valoración ABC, constantes vitales, comunicación en emergencias y control emocional (prácticas de primeros auxilios)",
+      "grupo": "",
+      "visible": false,
+      "num_preguntas": 25,
+      "archivo": "data/examenes/primeros-auxilios-1.json"
+    },
+    {
+      "id": "primeros-auxilios-2",
+      "title": "Primeros Auxilios 2",
+      "description": "Marco legal, conducta PAS, triaje START, valoración ABC, constantes vitales, comunicación en emergencias y control emocional (prácticas de primeros auxilios)",
+      "grupo": "",
+      "visible": false,
+      "num_preguntas": 24,
+      "archivo": "data/examenes/primeros-auxilios-2.json"
+    },
+    {
+      "id": "promocion-de-la-salud-1",
+      "title": "Promoción de la Salud 1",
+      "description": "Conceptos y marco normativo, niveles de prevención, planificación sanitaria, modelos teóricos y metodología de evaluación de programas de salud",
+      "grupo": "",
+      "visible": false,
+      "num_preguntas": 25,
+      "archivo": "data/examenes/promocion-de-la-salud-1.json"
+    },
+    {
+      "id": "promocion-de-la-salud-2",
+      "title": "Promoción de la Salud 2",
+      "description": "Conceptos y marco normativo, niveles de prevención, planificación sanitaria, modelos teóricos y metodología de evaluación de programas de salud",
+      "grupo": "",
+      "visible": false,
+      "num_preguntas": 25,
+      "archivo": "data/examenes/promocion-de-la-salud-2.json"
     }
   ]
 }

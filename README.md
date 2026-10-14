@@ -38,6 +38,8 @@ Escribes el test en texto plano (rápido), un script lo convierte a JSON y lo pu
   (funciona sin internet), JSON, CSV/Excel o texto.
 - Se admiten preguntas de **una o varias respuestas correctas**.
 - Grupos: `#Grupo: A` en el .md permite dar a cada grupo su propio listado (`...?grupo=A`).
+- Visibilidad: `#Visible: si|no` en el .md. Con `no` el examen no aparece en el listado (ni se abre
+  por enlace directo). Un solo cambio en el `.md`, reconvertir y publicar.
 
 ## Documentación
 

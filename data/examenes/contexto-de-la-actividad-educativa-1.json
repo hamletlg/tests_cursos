@@ -1,0 +1,361 @@
+{
+  "id": "contexto-de-la-actividad-educativa-1",
+  "title": "Contexto de la actividad educativa 1",
+  "description": "Test sobre marco normativo, currículo y atención a la infancia en Educación Infantil (LOMLOE, Decretos CM, RD)",
+  "grupo": "",
+  "visible": true,
+  "barajar_preguntas": false,
+  "shuffle_options": true,
+  "questions": [
+    {
+      "text": "Según la Convención sobre los Derechos del Niño (ONU, 1989), ¿cuál es el principio rector que debe guiar todas las decisiones que afecten a los menores?",
+      "options": [
+        "El principio de autoridad parental",
+        "El interés superior del menor y la no discriminación",
+        "El principio de escolarización obligatoria",
+        "El principio de conciliación familiar"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 1,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué artículo de la Convención sobre los Derechos del Niño reconoce el derecho al juego y al descanso?",
+      "options": [
+        "Artículo 12",
+        "Artículo 19",
+        "Artículo 31",
+        "Artículo 28"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 2,
+      "type": "single"
+    },
+    {
+      "text": "La Constitución Española de 1978, en su artículo 27, establece:",
+      "options": [
+        "El derecho a la educación",
+        "La obligatoriedad de la educación infantil",
+        "La gratuidad de todos los niveles educativos",
+        "La competencia exclusiva de las comunidades autónomas en educación"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 3,
+      "type": "single"
+    },
+    {
+      "text": "Según la LOMLOE (LO 3/2020), la Educación Infantil es:",
+      "options": [
+        "Una etapa obligatoria de 0 a 6 años",
+        "Una etapa única, voluntaria y con carácter educativo",
+        "Una etapa dividida en tres ciclos",
+        "Una etapa exclusivamente asistencial"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 4,
+      "type": "single"
+    },
+    {
+      "text": "El Real Decreto 95/2022 tiene por objeto:",
+      "options": [
+        "Regular el título de Técnico Superior en Educación Infantil",
+        "Establecer la ordenación y las enseñanzas mínimas de la Educación Infantil",
+        "Fijar las ratios máximas por aula en la Comunidad de Madrid",
+        "Regular la atención a las diferencias individuales del alumnado"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 5,
+      "type": "single"
+    },
+    {
+      "text": "El Real Decreto 1394/2007 establece:",
+      "options": [
+        "El currículo de la Educación Infantil en la Comunidad de Madrid",
+        "El título de Técnico Superior en Educación Infantil y sus competencias profesionales",
+        "Los requisitos mínimos de los centros del primer ciclo",
+        "La evaluación en la etapa de Educación Infantil"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 6,
+      "type": "single"
+    },
+    {
+      "text": "El Decreto 36/2022, de 8 de junio, de la Comunidad de Madrid, tiene por objeto:",
+      "options": [
+        "Establecer los requisitos mínimos de los centros del primer ciclo",
+        "Aprobar el currículo del ciclo formativo de TSEI",
+        "La ordenación y el currículo de la etapa de Educación Infantil",
+        "Regular la atención educativa a las diferencias individuales"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 7,
+      "type": "single"
+    },
+    {
+      "text": "Según el Decreto 36/2022, el currículo de la Educación Infantil en la Comunidad de Madrid se organiza en:",
+      "options": [
+        "Dos áreas de conocimiento",
+        "Tres áreas de desarrollo",
+        "Cuatro ámbitos de experiencia",
+        "Cinco bloques de contenido"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 8,
+      "type": "single"
+    },
+    {
+      "text": "El Decreto 18/2008, de 6 de marzo, de la Comunidad de Madrid, regula:",
+      "options": [
+        "El currículo de la Educación Infantil",
+        "Los requisitos mínimos de los centros que imparten el primer ciclo de Educación Infantil",
+        "La evaluación en la etapa de Educación Infantil",
+        "El título de Técnico Superior en Educación Infantil"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 9,
+      "type": "single"
+    },
+    {
+      "text": "El Decreto 94/2008, de 17 de julio, de la Comunidad de Madrid, establece:",
+      "options": [
+        "El currículo del ciclo formativo de TSEI",
+        "Las ratios máximas por aula en el primer ciclo",
+        "La ordenación de la etapa de Educación Infantil",
+        "Las medidas de atención a la diversidad"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 10,
+      "type": "single"
+    },
+    {
+      "text": "Según la LOMLOE, la Educación Infantil se ordena en:",
+      "options": [
+        "Un ciclo único de 0 a 6 años",
+        "Dos ciclos: 0-3 y 3-6 años",
+        "Tres ciclos: 0-2, 2-4 y 4-6 años",
+        "Cuatro ciclos anuales"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 11,
+      "type": "single"
+    },
+    {
+      "text": "El carácter de la Educación Infantil según la LOMLOE es:",
+      "options": [
+        "Obligatorio y gratuito",
+        "Voluntario y educativo",
+        "Obligatorio y asistencial",
+        "Voluntario y exclusivamente lúdico"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 12,
+      "type": "single"
+    },
+    {
+      "text": "Según el Decreto 36/2022, ¿cuál de las siguientes es una de las tres áreas del currículo de Educación Infantil en la Comunidad de Madrid?",
+      "options": [
+        "Conocimiento del medio natural",
+        "Crecimiento en armonía",
+        "Educación artística",
+        "Lengua y literatura"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 13,
+      "type": "single"
+    },
+    {
+      "text": "La Orden 460/2023, de 17 de febrero, de la Comunidad de Madrid, regula:",
+      "options": [
+        "Los requisitos mínimos de los centros del primer ciclo",
+        "La organización, funcionamiento, evaluación y autonomía pedagógica en Educación Infantil",
+        "El currículo del ciclo formativo de TSEI",
+        "Las ratios máximas por aula"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 14,
+      "type": "single"
+    },
+    {
+      "text": "Según la Orden 460/2023, la evaluación en Educación Infantil será:",
+      "options": [
+        "Global, continua y formativa mediante observación sistemática",
+        "Sumativa mediante pruebas objetivas",
+        "Únicamente cualitativa sin registro",
+        "Comparativa mediante calificaciones numéricas"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 15,
+      "type": "single"
+    },
+    {
+      "text": "El Decreto 23/2023, de 22 de marzo, de la Comunidad de Madrid, regula:",
+      "options": [
+        "La atención educativa a las diferencias individuales del alumnado",
+        "El currículo de la Educación Infantil",
+        "Los requisitos mínimos de los centros",
+        "La organización del ciclo formativo de TSEI"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 16,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es la diferencia esencial entre una institución formal y una no formal de atención a la infancia?",
+      "options": [
+        "Solo la edad de atención",
+        "Las formales están reguladas por la administración educativa e imparten currículo oficial prescriptivo; las no formales tienen intencionalidad socioeducativa sin currículo oficial",
+        "El personal no cualificado",
+        "La asistencia obligatoria"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 17,
+      "type": "single"
+    },
+    {
+      "text": "La educación no formal se caracteriza por:",
+      "options": [
+        "Estar sujeta a inspección educativa",
+        "Tener un currículo oficial prescriptivo",
+        "Ser intencional, planificada y organizada, pero al margen del sistema educativo reglado",
+        "Conducir a titulaciones oficiales"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 18,
+      "type": "single"
+    },
+    {
+      "text": "La educación informal se define como:",
+      "options": [
+        "La que se produce por inmersión social, sin intención pedagógica ni programa",
+        "La que se imparte en ludotecas y granjas escuela",
+        "La que está regulada por la LOMLOE",
+        "La que conduce a certificaciones profesionales"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 19,
+      "type": "single"
+    },
+    {
+      "text": "En la Comunidad de Madrid, las Casas de Niños se caracterizan por:",
+      "options": [
+        "Jornada ampliada con comedor obligatorio",
+        "Escolarizar solo a menores con NEAE en régimen de internado",
+        "Jornada reducida (habitualmente 4 h, sin comedor) con implicación y colaboración presencial de las familias",
+        "Carecer de supervisión pedagógica y de adscripción a los Equipos de Atención Temprana"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 20,
+      "type": "single"
+    },
+    {
+      "text": "Según el Decreto 18/2008 de la Comunidad de Madrid, ¿cuál es la ratio máxima por aula en el tramo de 1 a 2 años?",
+      "options": [
+        "8 alumnos",
+        "12 alumnos",
+        "14 alumnos",
+        "20 alumnos"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 21,
+      "type": "single"
+    },
+    {
+      "text": "Según el Decreto 18/2008, la ratio máxima por aula para niños menores de un año es:",
+      "options": [
+        "6 alumnos",
+        "8 alumnos",
+        "10 alumnos",
+        "12 alumnos"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 22,
+      "type": "single"
+    },
+    {
+      "text": "Según el Decreto 18/2008, la ratio máxima por aula para niños de 2 a 3 años es:",
+      "options": [
+        "14 alumnos",
+        "18 alumnos",
+        "20 alumnos",
+        "25 alumnos"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 23,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué institución no formal está centrada en el juego, con fondo catalogado de juguetes y préstamo de materiales lúdicos?",
+      "options": [
+        "Escuela Infantil de gestión indirecta",
+        "Ludoteca",
+        "Aula hospitalaria del SERMAS",
+        "Casa de Niños"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 24,
+      "type": "single"
+    },
+    {
+      "text": "Las Escuelas Infantiles en la Comunidad de Madrid imparten preferentemente:",
+      "options": [
+        "El segundo ciclo (3-6 años)",
+        "El primer ciclo (0-3 años)",
+        "Ambos ciclos (0-6 años) siempre",
+        "Solo el tramo de 2 a 3 años"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 25,
+      "type": "single"
+    }
+  ]
+}

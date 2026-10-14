@@ -139,7 +139,10 @@ async function cargarLista(){
 
 function pintarLista(examenes){
   const grupo = params.get('grupo');
-  const filtrados = grupo ? examenes.filter(e => (e.grupo || '') === grupo) : examenes;
+  // Solo se listan los exámenes visibles. El profesor los oculta con "#Visible: no" en el .md
+  // (los ocultos tampoco se abren por enlace directo; ver cargarExamen).
+  const visibles = examenes.filter(e => e.visible !== false);
+  const filtrados = grupo ? visibles.filter(e => (e.grupo || '') === grupo) : visibles;
   const ul = el('ul',{class:'exam-list'});
   for(const ex of filtrados){
     const titulo = [ex.title || ex.titulo || ex.id];
@@ -163,6 +166,12 @@ async function cargarExamen(id){
       const data = await datosIndice();
       meta = (data.examenes || []).find(x => x.id === id);
       if(!meta) throw new Error('Examen no encontrado: ' + id);
+      if(meta.visible === false){
+        app.replaceChildren(el('div',{class:'card'},
+          el('p',null,'Este test todavía no está disponible.'),
+          el('p',null, el('a',{href:'./'},'← Volver al listado'))));
+        return;
+      }
     }
     const examen = await datosExamen(meta);
     pintarExamen(meta, OFFLINE ? window.__EXAMEN__.examen : examen);

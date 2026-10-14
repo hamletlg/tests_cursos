@@ -35,6 +35,7 @@ siguiente conversión lo sobrescribe.
     #Descripción: texto opcional que aparece en el listado
     #Grupo: A
     #Barajar preguntas: no
+    #Visible: si
     #Por página: 10
 
     ## Enunciado de la pregunta
@@ -56,6 +57,10 @@ Reglas (el conversor las valida y aborta si algo no cuadra):
    - `#Descripción: ...`  -> descripción del examen.
    - `#Grupo: A`          -> etiqueta de grupo (para filtrar en la web con `?grupo=A`).
    - `#Barajar preguntas: si|no` -> si se mezcla el orden de las preguntas (por defecto no).
+   - `#Visible: si|no`    -> si `no`, el examen NO aparece en el listado del alumno y tampoco se
+                             abre por enlace directo (`?examen=...`): sale "Este test todavía no
+                             está disponible". Sirve para dejar el examen preparado sin
+                             publicarlo al alumnado. Por defecto `si`. (`#Oculto: si` es lo mismo.)
    - `#Por página: 10`    -> cuántas preguntas se muestran por pantalla (por defecto 10). El
                              alumno puede cambiarlo en la propia web (5 / 10 / 20 / 60 / Todas).
    - `#Slug: mi-id`       -> fuerza el identificador/URL del examen (por defecto se deriva del título).
@@ -197,6 +202,10 @@ requiere plan de pago).
   descargarlo en JSON o CSV, o copiar el texto.
 - "¿La respuesta correcta sale siempre en el mismo sitio?" -> No: las opciones se barajan en cada
   intento.
+- "¿Puedo tener un test preparado pero sin que lo vean los alumnos?" -> Sí: `#Visible: no` en su
+  `.md`, reconvertir y publicar. Cuando toque, se cambia a `#Visible: si` (o se borra la línea) y
+  se vuelve a publicar. Con `no`, el examen no sale en el listado y el enlace directo tampoco lo
+  abre.
 
 ---
 
