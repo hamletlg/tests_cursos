@@ -1,5 +1,5 @@
 # Contexto de la actividad educativa 1
-#Visible: si
+#Visible: no
 #Descripción: Test sobre marco normativo, currículo y atención a la infancia en Educación Infantil (LOMLOE, Decretos CM, RD)
 
 ## Según la Convención sobre los Derechos del Niño (ONU, 1989), ¿cuál es el principio rector que debe guiar todas las decisiones que afecten a los menores?

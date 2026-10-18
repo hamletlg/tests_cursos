@@ -1,5 +1,5 @@
 # Primeros Auxilios 1
-#Visible: si
+#Visible: no
 #Descripción: Marco legal, conducta PAS, triaje START, valoración ABC, constantes vitales, comunicación en emergencias y control emocional (prácticas de primeros auxilios)
 
 ## Según el Artículo 195 del Código Penal, ¿con qué pena se castiga a quien no socorre a una persona desamparada en peligro manifiesto y grave, pudiendo hacerlo sin riesgo propio?

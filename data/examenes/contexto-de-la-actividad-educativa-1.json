@@ -3,7 +3,7 @@
   "title": "Contexto de la actividad educativa 1",
   "description": "Test sobre marco normativo, currículo y atención a la infancia en Educación Infantil (LOMLOE, Decretos CM, RD)",
   "grupo": "",
-  "visible": true,
+  "visible": false,
   "barajar_preguntas": false,
   "shuffle_options": true,
   "questions": [

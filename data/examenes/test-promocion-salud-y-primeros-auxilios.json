@@ -1,0 +1,1047 @@
+{
+  "id": "test-promocion-salud-y-primeros-auxilios",
+  "title": "Test_promoción_salud_y_primeros_auxilios",
+  "description": "Test unificado de Promoción de la Salud 1 y 2 con las prácticas de Primeros Auxilios 2 mezcladas: conceptos y marco normativo, niveles de prevención, planificación sanitaria, modelos teóricos, evaluación de programas, marco legal, conducta PAS, triaje START, constantes vitales, comunicación en emergencias y control emocional",
+  "grupo": "",
+  "visible": true,
+  "barajar_preguntas": false,
+  "shuffle_options": true,
+  "questions": [
+    {
+      "text": "Según la definición de la OMS, la salud es un estado de completo bienestar:",
+      "options": [
+        "Físico, mental y espiritual.",
+        "Físico, mental y social.",
+        "Físico, emocional y ambiental.",
+        "Orgánico, psicológico y comunitario."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 1,
+      "type": "single"
+    },
+    {
+      "text": "El artículo 43 de la Constitución Española reconoce:",
+      "options": [
+        "El derecho a la protección de la salud.",
+        "El derecho a la asistencia sanitaria gratuita.",
+        "El derecho a la promoción de la salud.",
+        "El derecho a la prevención de enfermedades."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 2,
+      "type": "single"
+    },
+    {
+      "text": "La Ley 14/1986, de 25 de abril, tiene como objeto principal:",
+      "options": [
+        "Regular la promoción de la salud.",
+        "Crear el Sistema Nacional de Salud.",
+        "Establecer las bases de la salud pública.",
+        "Regular la educación para la salud."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 3,
+      "type": "single"
+    },
+    {
+      "text": "En la conducta PAS, ¿qué implica la fase de \"Avisar\"?",
+      "options": [
+        "Asegurar la zona antes de actuar.",
+        "Llamar al 112 con información clara y concisa.",
+        "Aplicar las maniobras de soporte vital básico.",
+        "Evaluar el estado de la víctima."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 4,
+      "type": "single"
+    },
+    {
+      "text": "La Ley 33/2011, de 4 de octubre, introduce como principio rector:",
+      "options": [
+        "La salud como derecho fundamental.",
+        "La «salud en todas las políticas».",
+        "La equidad en el acceso a los servicios.",
+        "La sostenibilidad del sistema sanitario."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 5,
+      "type": "single"
+    },
+    {
+      "text": "Según la Carta de Ottawa (1986), la promoción de la salud se define como el proceso que permite a las personas:",
+      "options": [
+        "Evitar la aparición de enfermedades.",
+        "Incrementar el control sobre su salud para mejorarla.",
+        "Recibir atención sanitaria de calidad.",
+        "Adoptar estilos de vida saludables."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 6,
+      "type": "single"
+    },
+    {
+      "text": "En la conducta PAS, ¿qué implica la fase de \"Socorrer\"?",
+      "options": [
+        "Asegurar la zona antes de actuar.",
+        "Llamar al 112 con información clara y concisa.",
+        "Aplicar las maniobras de soporte vital básico.",
+        "Evaluar el estado de la víctima."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 7,
+      "type": "single"
+    },
+    {
+      "text": "La dimensión de la salud que se refiere a la capacidad de relación e integración comunitaria es la:",
+      "options": [
+        "Física.",
+        "Mental.",
+        "Social.",
+        "Ambiental."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 8,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de los siguientes no es un principio de la promoción de la salud?",
+      "options": [
+        "Equidad.",
+        "Participación.",
+        "Centralización.",
+        "Sostenibilidad."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 9,
+      "type": "single"
+    },
+    {
+      "text": "En la comunicación en emergencias, ¿qué porcentaje del mensaje llega por vía no verbal?",
+      "options": [
+        "50 %",
+        "60 %",
+        "70 %",
+        "80 %"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 10,
+      "type": "single"
+    },
+    {
+      "text": "La prevención que evita la aparición de factores de riesgo se denomina:",
+      "options": [
+        "Primordial.",
+        "Primaria.",
+        "Secundaria.",
+        "Terciaria."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 11,
+      "type": "single"
+    },
+    {
+      "text": "La detección precoz de una enfermedad en fase preclínica es un ejemplo de prevención:",
+      "options": [
+        "Primordial.",
+        "Primaria.",
+        "Secundaria.",
+        "Terciaria."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 12,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es la escucha activa?",
+      "options": [
+        "Técnica que transmite a la persona que se le presta atención plena.",
+        "Técnica para interrumpir a la persona y dar consejos.",
+        "Técnica para minimizar las emociones de la víctima.",
+        "Técnica para hablar sin parar."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 13,
+      "type": "single"
+    },
+    {
+      "text": "La rehabilitación cardiaca es un ejemplo de prevención:",
+      "options": [
+        "Primordial.",
+        "Primaria.",
+        "Secundaria.",
+        "Terciaria."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 14,
+      "type": "single"
+    },
+    {
+      "text": "La prevención cuaternaria se define como la que:",
+      "options": [
+        "Evita la aparición de factores de riesgo.",
+        "Impide el desarrollo de la enfermedad.",
+        "Detecta y trata precozmente.",
+        "Evita intervenciones innecesarias."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 15,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es el primer paso de la escucha activa?",
+      "options": [
+        "Parafrasear.",
+        "Validar.",
+        "Atender.",
+        "Resumir."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 16,
+      "type": "single"
+    },
+    {
+      "text": "La educación para la salud tiene como objetivo principal:",
+      "options": [
+        "Evitar la enfermedad.",
+        "Capacitar en conocimientos.",
+        "Garantizar el derecho a la salud.",
+        "Incrementar el control sobre la salud."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 17,
+      "type": "single"
+    },
+    {
+      "text": "La protección de la salud se concreta a través de:",
+      "options": [
+        "Programas educativos.",
+        "Normas y regulaciones.",
+        "Campañas de vacunación.",
+        "Cribados poblacionales."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 18,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es el segundo paso de la escucha activa?",
+      "options": [
+        "Parafrasear.",
+        "Validar.",
+        "Atender.",
+        "Resumir."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 19,
+      "type": "single"
+    },
+    {
+      "text": "La alfabetización en salud que implica habilidades básicas de lectura y escritura se denomina:",
+      "options": [
+        "Funcional.",
+        "Interactiva.",
+        "Crítica.",
+        "Avanzada."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 20,
+      "type": "single"
+    },
+    {
+      "text": "Según la OMS, los determinantes sociales de la salud son las circunstancias en que las personas:",
+      "options": [
+        "Nacen, crecen, viven, trabajan y envejecen.",
+        "Reciben atención sanitaria.",
+        "Se educan y se reproducen.",
+        "Participan en la comunidad."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 21,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es el tercer paso de la escucha activa?",
+      "options": [
+        "Parafrasear.",
+        "Validar.",
+        "Atender.",
+        "Resumir."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 22,
+      "type": "single"
+    },
+    {
+      "text": "Las diferencias en el estado de salud entre grupos poblacionales que son evitables, injustas y sistemáticas se denominan:",
+      "options": [
+        "Inequidades en salud.",
+        "Desigualdades naturales.",
+        "Determinantes estructurales.",
+        "Brechas sanitarias."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 23,
+      "type": "single"
+    },
+    {
+      "text": "El indicador «esperanza de vida al nacer» en España es de:",
+      "options": [
+        "80,5 años.",
+        "83,8 años.",
+        "85,2 años.",
+        "78,9 años."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 24,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es el \"reflejo\" como técnica facilitadora de la comunicación?",
+      "options": [
+        "Repetir con palabras propias lo que la persona expresa.",
+        "Adoptar una postura corporal similar a la del interlocutor.",
+        "Sintetizar lo esencial para confirmar comprensión.",
+        "Hacer preguntas abiertas."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 25,
+      "type": "single"
+    },
+    {
+      "text": "La mortalidad prematura se define como toda defunción que ocurre antes de los:",
+      "options": [
+        "65 años.",
+        "70 años.",
+        "75 años.",
+        "80 años."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 26,
+      "type": "single"
+    },
+    {
+      "text": "Según la Ley 33/2011, los ciudadanos tienen derecho a:",
+      "options": [
+        "La participación efectiva en las actuaciones de salud pública.",
+        "La elección de médico especialista.",
+        "La atención sanitaria gratuita universal.",
+        "La información de su historia clínica."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 27,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué son las preguntas abiertas como técnica facilitadora de la comunicación?",
+      "options": [
+        "Preguntas que se responden con sí o no.",
+        "Preguntas que invitan a la persona a expresarse, como «¿Qué necesita ahora?».",
+        "Preguntas para obtener datos concretos.",
+        "Preguntas para evaluar el estado mental."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 28,
+      "type": "single"
+    },
+    {
+      "text": "La Ley 14/1986 establece que la promoción y educación sanitaria son:",
+      "options": [
+        "Actuaciones del Sistema Nacional de Salud.",
+        "Competencias exclusivas de las comunidades autónomas.",
+        "Funciones del Ministerio de Sanidad.",
+        "Actividades del sector privado."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 29,
+      "type": "single"
+    },
+    {
+      "text": "La planificación sanitaria se define como un proceso:",
+      "options": [
+        "Racional de toma de decisiones.",
+        "Político de asignación de recursos.",
+        "Técnico de evaluación de programas.",
+        "Administrativo de gestión de servicios."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 30,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es el objetivo del \"resumen\" como técnica facilitadora de la comunicación?",
+      "options": [
+        "Repetir con palabras propias lo que la persona expresa.",
+        "Adoptar una postura corporal similar a la del interlocutor.",
+        "Sintetizar lo esencial para confirmar comprensión.",
+        "Hacer preguntas abiertas."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 31,
+      "type": "single"
+    },
+    {
+      "text": "El nivel estratégico de planificación se caracteriza por:",
+      "options": [
+        "Definir grandes objetivos y políticas de salud.",
+        "Concretar el plan en programas.",
+        "Ejecutar acciones concretas.",
+        "Evaluar los resultados a corto plazo."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 32,
+      "type": "single"
+    },
+    {
+      "text": "Un plan, en el contexto de la planificación sanitaria, tiene una duración de:",
+      "options": [
+        "Menos de 1 año.",
+        "De 1 a 5 años.",
+        "Más de 5 años.",
+        "Indefinida."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 33,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de las siguientes es una barrera en la comunicación en emergencias?",
+      "options": [
+        "El contacto visual.",
+        "El lenguaje técnico incomprensible.",
+        "La empatía.",
+        "La escucha activa."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 34,
+      "type": "single"
+    },
+    {
+      "text": "Un programa se caracteriza por:",
+      "options": [
+        "Tener objetivos generales y políticos.",
+        "Concretar el plan en objetivos específicos.",
+        "Ejecutar acciones concretas.",
+        "Ser de corta duración."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 35,
+      "type": "single"
+    },
+    {
+      "text": "El nivel operativo de planificación se concreta en:",
+      "options": [
+        "Planes y programas.",
+        "Programas y proyectos.",
+        "Proyectos y programación.",
+        "Programación y evaluación."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 36,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es el \"debriefing\"?",
+      "options": [
+        "Una técnica de respiración.",
+        "Una reunión estructurada tras una intervención crítica.",
+        "Una técnica de escucha activa.",
+        "Un tipo de triaje."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 37,
+      "type": "single"
+    },
+    {
+      "text": "La primera fase de un programa de salud es:",
+      "options": [
+        "La planificación.",
+        "La evaluación.",
+        "El diagnóstico.",
+        "La ejecución."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 38,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es la secuencia correcta de la respiración diafragmática?",
+      "options": [
+        "Inhala 3, retén 2, exhala 5.",
+        "Inhala 5, retén 2, exhala 3.",
+        "Inhala 2, retén 3, exhala 5.",
+        "Inhala 5, retén 5, exhala 5."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 39,
+      "type": "single"
+    },
+    {
+      "text": "El diagnóstico en un programa de salud incluye:",
+      "options": [
+        "La definición de objetivos.",
+        "La identificación de necesidades y problemas.",
+        "La asignación de recursos.",
+        "El cronograma de actividades."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 40,
+      "type": "single"
+    },
+    {
+      "text": "La evaluación de estructura de un programa de salud mide:",
+      "options": [
+        "Los cambios en los conocimientos.",
+        "Los recursos humanos, materiales y organizativos.",
+        "Las actividades realizadas.",
+        "El impacto en los indicadores de salud."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 41,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es la \"traumatización vicaria\"?",
+      "options": [
+        "Agotamiento emocional por estrés crónico laboral.",
+        "Impacto emocional por exposición indirecta al trauma.",
+        "Un tipo de duelo.",
+        "Una fase de la agresividad."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 42,
+      "type": "single"
+    },
+    {
+      "text": "La evaluación de proceso de un programa de salud mide:",
+      "options": [
+        "Los recursos utilizados.",
+        "Las actividades realizadas y su calidad.",
+        "Los cambios en las conductas.",
+        "El impacto en la población."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 43,
+      "type": "single"
+    },
+    {
+      "text": "La evaluación de resultados de un programa de salud mide:",
+      "options": [
+        "Los cambios en conocimientos, actitudes y conductas.",
+        "Los recursos humanos y materiales.",
+        "Las actividades realizadas.",
+        "El impacto en los indicadores de salud."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 44,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es el \"síndrome del quemado\"?",
+      "options": [
+        "Agotamiento emocional por estrés crónico laboral.",
+        "Impacto emocional por exposición indirecta al trauma.",
+        "Un tipo de duelo.",
+        "Una fase de la agresividad."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 45,
+      "type": "single"
+    },
+    {
+      "text": "El Modelo de Creencias en Salud incluye la «susceptibilidad percibida», que se refiere a:",
+      "options": [
+        "La gravedad de las consecuencias.",
+        "El riesgo de contraer la enfermedad.",
+        "La eficacia de la acción preventiva.",
+        "Los obstáculos para adoptar la conducta."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 46,
+      "type": "single"
+    },
+    {
+      "text": "En el Modelo de Creencias en Salud, la «autoeficacia» se refiere a:",
+      "options": [
+        "La confianza en la propia capacidad.",
+        "Los beneficios percibidos.",
+        "Las barreras percibidas.",
+        "Las señales para la acción."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 47,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es el primer paso para controlar la agresividad?",
+      "options": [
+        "Desescalada.",
+        "Distancia.",
+        "Apoyo.",
+        "Validación."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 48,
+      "type": "single"
+    },
+    {
+      "text": "El Modelo Transteórico de Prochaska y DiClemente describe la etapa de «precontemplación» como aquella en la que la persona:",
+      "options": [
+        "No pretende iniciar la acción en 6 meses.",
+        "Considera iniciar en los próximos 6 meses.",
+        "Planea actuar en el próximo mes.",
+        "Ha realizado cambios en los últimos 6 meses."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 49,
+      "type": "single"
+    },
+    {
+      "text": "Según el Modelo Transteórico, la etapa de «mantenimiento» se caracteriza porque la persona:",
+      "options": [
+        "No pretende iniciar la acción.",
+        "Considera iniciar en los próximos 6 meses.",
+        "Planea actuar en el próximo mes.",
+        "Mantiene el cambio durante más de 6 meses."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 50,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué se debe hacer en la fase de \"Distancia\" para controlar la agresividad?",
+      "options": [
+        "Usar tono calmado, no responder a provocaciones.",
+        "Mantener una distancia de seguridad, facilitar la salida.",
+        "Solicitar ayuda de compañeros o fuerzas de seguridad si es necesario.",
+        "Validar las emociones de la persona."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 51,
+      "type": "single"
+    },
+    {
+      "text": "Los procesos cognitivos en el Modelo Transteórico son más útiles en:",
+      "options": [
+        "Las etapas iniciales.",
+        "Las etapas avanzadas.",
+        "Todas las etapas por igual.",
+        "La etapa de mantenimiento."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 52,
+      "type": "single"
+    },
+    {
+      "text": "El Modelo Ecológico de Promoción de la Salud incluye el nivel «intrapersonal», que se refiere a:",
+      "options": [
+        "La familia y los amigos.",
+        "Las organizaciones y centros de trabajo.",
+        "Los conocimientos, actitudes y habilidades.",
+        "Las leyes y políticas públicas."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 53,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué se debe hacer en la fase de \"Apoyo\" para controlar la agresividad?",
+      "options": [
+        "Usar tono calmado, no responder a provocaciones.",
+        "Mantener una distancia de seguridad, facilitar la salida.",
+        "Solicitar ayuda de compañeros o fuerzas de seguridad si es necesario.",
+        "Validar las emociones de la persona."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 54,
+      "type": "single"
+    },
+    {
+      "text": "El Modelo Ecológico de Promoción de la Salud incluye el nivel «comunitario», que se refiere a:",
+      "options": [
+        "Las normas y valores de la comunidad.",
+        "Las leyes y políticas públicas.",
+        "Las organizaciones y centros de trabajo.",
+        "La familia y los amigos."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 55,
+      "type": "single"
+    },
+    {
+      "text": "El proceso mediante el cual las comunidades ganan control sobre sus vidas se denomina:",
+      "options": [
+        "Empoderamiento comunitario.",
+        "Participación ciudadana.",
+        "Acción intersectorial.",
+        "Educación dialógica."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 56,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es la primera fase del duelo?",
+      "options": [
+        "Negación.",
+        "Ira.",
+        "Negociación.",
+        "Depresión."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 57,
+      "type": "single"
+    },
+    {
+      "text": "El enfoque de activos para la salud se centra en:",
+      "options": [
+        "Los déficits y factores de riesgo.",
+        "Los recursos y capacidades para la salud.",
+        "Las enfermedades y sus tratamientos.",
+        "Los determinantes estructurales."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 58,
+      "type": "single"
+    },
+    {
+      "text": "La entrevista motivacional se utiliza para:",
+      "options": [
+        "Transmitir información a colectivos.",
+        "Explorar y resolver ambivalencias.",
+        "Realizar aprendizaje vivencial.",
+        "Evaluar programas de salud."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 59,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es la última fase del duelo?",
+      "options": [
+        "Negación.",
+        "Ira.",
+        "Depresión.",
+        "Aceptación."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 60,
+      "type": "single"
+    },
+    {
+      "text": "El taller práctico se caracteriza por:",
+      "options": [
+        "Ser una transmisión de información.",
+        "Ser un aprendizaje vivencial y participativo.",
+        "Utilizar material divulgativo.",
+        "Ser una entrevista individual."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 61,
+      "type": "single"
+    },
+    {
+      "text": "La Investigación-Acción Participativa se engloba en el paradigma:",
+      "options": [
+        "Positivista.",
+        "Interpretativo.",
+        "Sociocrítico.",
+        "Empírico-analítico."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 62,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es la ansiedad?",
+      "options": [
+        "Anticipación de un peligro futuro.",
+        "Respuesta emocional intensa ante una amenaza presente.",
+        "Un tipo de duelo.",
+        "Una fase de la agresividad."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 63,
+      "type": "single"
+    },
+    {
+      "text": "La técnica de «Photovoice» consiste en:",
+      "options": [
+        "Realizar paseos saludables.",
+        "Documentar la realidad con imágenes.",
+        "Crear un foro comunitario.",
+        "Identificar obstáculos y oportunidades."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 64,
+      "type": "single"
+    },
+    {
+      "text": "La evaluación de impacto de un programa de salud mide:",
+      "options": [
+        "Los recursos utilizados.",
+        "Las actividades realizadas.",
+        "Los cambios en los conocimientos.",
+        "Los cambios en los indicadores de salud."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 65,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es la angustia?",
+      "options": [
+        "Anticipación de un peligro futuro.",
+        "Respuesta emocional intensa ante una amenaza presente.",
+        "Un tipo de duelo.",
+        "Una fase de la agresividad."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 66,
+      "type": "single"
+    },
+    {
+      "text": "Un indicador de proceso en la evaluación de un programa de salud es:",
+      "options": [
+        "El número de participantes.",
+        "La satisfacción de los participantes.",
+        "El cambio en la tensión arterial.",
+        "La reducción de la mortalidad."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 67,
+      "type": "single"
+    },
+    {
+      "text": "Un indicador de resultado en la evaluación de un programa de salud es:",
+      "options": [
+        "El número de horas de formación.",
+        "La satisfacción de los participantes.",
+        "El cambio en los parámetros de salud.",
+        "El número de evaluaciones realizadas."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 68,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de las siguientes es una medida de autocontrol antes de la intervención?",
+      "options": [
+        "Autoevaluación del estado emocional.",
+        "Respiración consciente.",
+        "Verbalización de emociones.",
+        "Actividades de desconexión."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 69,
+      "type": "single"
+    },
+    {
+      "text": "El técnico en promoción de la salud desarrolla sus funciones:",
+      "options": [
+        "De forma autónoma.",
+        "Bajo supervisión de profesionales de nivel superior.",
+        "Como responsable único de programas.",
+        "Sin necesidad de coordinación."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 70,
+      "type": "single"
+    },
+    {
+      "text": "Una función del técnico como agente de salud es:",
+      "options": [
+        "Prescribir tratamientos farmacológicos.",
+        "Realizar diagnósticos clínicos.",
+        "Identificar problemas de salud de la comunidad.",
+        "Realizar cirugías menores."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 71,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de las siguientes es una medida de autocontrol después de la intervención?",
+      "options": [
+        "Autoevaluación del estado emocional.",
+        "Respiración consciente.",
+        "Verbalización de emociones.",
+        "Focalización en el procedimiento."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 72,
+      "type": "single"
+    },
+    {
+      "text": "El compromiso profesional del técnico en promoción de la salud incluye:",
+      "options": [
+        "Mantener conocimientos actualizados sobre salud pública.",
+        "Adoptar estilos de vida coherentes con el mensaje educativo.",
+        "Actuar como modelo de referencia para los usuarios.",
+        "Desarrollar la autoeficacia personal en salud."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 73,
+      "type": "single"
+    },
+    {
+      "text": "La dieta de referencia para una alimentación saludable es:",
+      "options": [
+        "La dieta baja en carbohidratos.",
+        "La dieta mediterránea.",
+        "La dieta vegetariana estricta.",
+        "La dieta hiperproteica."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 74,
+      "type": "single"
+    }
+  ]
+}

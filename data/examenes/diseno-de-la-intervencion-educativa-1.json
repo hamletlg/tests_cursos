@@ -3,7 +3,7 @@
   "title": "Diseño de la Intervención Educativa 1",
   "description": "Test sobre marco curricular, niveles de concreción, fuentes del currículo, PEC, Propuesta Pedagógica y planificación",
   "grupo": "",
-  "visible": false,
+  "visible": true,
   "barajar_preguntas": false,
   "shuffle_options": true,
   "questions": [

@@ -1,5 +1,5 @@
 # Diseño de la Intervención Educativa 1
-#Visible: no
+#Visible: si
 #Descripción: Test sobre marco curricular, niveles de concreción, fuentes del currículo, PEC, Propuesta Pedagógica y planificación
 #Barajar preguntas: no
 

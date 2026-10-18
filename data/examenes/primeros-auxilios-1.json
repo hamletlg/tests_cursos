@@ -3,7 +3,7 @@
   "title": "Primeros Auxilios 1",
   "description": "Marco legal, conducta PAS, triaje START, valoración ABC, constantes vitales, comunicación en emergencias y control emocional (prácticas de primeros auxilios)",
   "grupo": "",
-  "visible": true,
+  "visible": false,
   "barajar_preguntas": false,
   "shuffle_options": true,
   "questions": [
