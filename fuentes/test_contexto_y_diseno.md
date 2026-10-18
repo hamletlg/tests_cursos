@@ -1,5 +1,5 @@
-# Test_contexto_y_diseño
-#Visible: no
+# Test de Contexto y Diseño
+#Visible: si
 #Descripción: Test unificado de Contexto de la actividad educativa 2 y Diseño de la intervención educativa 2: marco normativo y currículo de Educación Infantil (LOMLOE, Decretos CM, RD), niveles de concreción, fuentes del currículo, PEC, Propuesta Pedagógica y planificación
 #Barajar preguntas: no
 

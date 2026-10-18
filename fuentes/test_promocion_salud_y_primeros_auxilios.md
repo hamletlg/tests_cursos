@@ -1,4 +1,4 @@
-# Test_promoción_salud_y_primeros_auxilios
+# Test Promoción de salud y Primeros Auxilios
 #Visible: si
 #Descripción: Test unificado de Promoción de la Salud 1 y 2 con las prácticas de Primeros Auxilios 2 mezcladas: conceptos y marco normativo, niveles de prevención, planificación sanitaria, modelos teóricos, evaluación de programas, marco legal, conducta PAS, triaje START, constantes vitales, comunicación en emergencias y control emocional
 #Barajar preguntas: no

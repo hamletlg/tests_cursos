@@ -1,9 +1,9 @@
 {
-  "id": "test-contexto-y-diseno",
-  "title": "Test_contexto_y_diseño",
+  "id": "test-de-contexto-y-diseno",
+  "title": "Test de Contexto y Diseño",
   "description": "Test unificado de Contexto de la actividad educativa 2 y Diseño de la intervención educativa 2: marco normativo y currículo de Educación Infantil (LOMLOE, Decretos CM, RD), niveles de concreción, fuentes del currículo, PEC, Propuesta Pedagógica y planificación",
   "grupo": "",
-  "visible": false,
+  "visible": true,
   "barajar_preguntas": false,
   "shuffle_options": true,
   "questions": [
