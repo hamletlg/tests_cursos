@@ -1,3 +1,22 @@
 {
-  "examenes": []
+  "examenes": [
+    {
+      "id": "bioseguridad-y-seguridad-del-medicamento",
+      "title": "Bioseguridad y Seguridad del Medicamento",
+      "description": "Prueba de 70 preguntas sobre la cadena epidemiológica, agentes y vías de transmisión, precauciones estándar, manejo seguro del medicamento, reglas de administración, errores de medicación y adherencia terapéutica.",
+      "grupo": "",
+      "visible": true,
+      "num_preguntas": 70,
+      "archivo": "data/examenes/bioseguridad-y-seguridad-del-medicamento.json"
+    },
+    {
+      "id": "comunicacion-empresarial-atencion-al-cliente-y-reclamaciones",
+      "title": "Comunicación Empresarial, Atención al Cliente y Reclamaciones",
+      "description": "Prueba de 70 preguntas sobre organización y comunicación en la empresa, comunicación oral y escrita, atención al cliente y servicio postventa, derechos del consumidor y tramitación de consultas, quejas y reclamaciones.",
+      "grupo": "",
+      "visible": true,
+      "num_preguntas": 70,
+      "archivo": "data/examenes/comunicacion-empresarial-atencion-al-cliente-y-reclamaciones.json"
+    }
+  ]
 }

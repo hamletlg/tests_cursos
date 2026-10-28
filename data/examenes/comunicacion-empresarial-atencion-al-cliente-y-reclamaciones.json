@@ -1,0 +1,992 @@
+{
+  "id": "comunicacion-empresarial-atencion-al-cliente-y-reclamaciones",
+  "title": "Comunicación Empresarial, Atención al Cliente y Reclamaciones",
+  "description": "Prueba de 70 preguntas sobre organización y comunicación en la empresa, comunicación oral y escrita, atención al cliente y servicio postventa, derechos del consumidor y tramitación de consultas, quejas y reclamaciones.",
+  "grupo": "",
+  "visible": true,
+  "barajar_preguntas": false,
+  "shuffle_options": true,
+  "preguntas_por_pagina": 10,
+  "questions": [
+    {
+      "text": "En el ámbito de la empresa, la organización se define como el conjunto de:",
+      "options": [
+        "normas laborales que regulan la relación con los clientes",
+        "instalaciones y equipos destinados a la fabricación de productos",
+        "departamentos que compiten entre sí por los mismos objetivos",
+        "personas, recursos y procesos coordinados para alcanzar objetivos comunes"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 1,
+      "type": "single"
+    },
+    {
+      "text": "El principio organizativo que exige que cada persona reciba órdenes de un único superior se denomina:",
+      "options": [
+        "coordinación",
+        "unidad de mando",
+        "jerarquía",
+        "división del trabajo"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 2,
+      "type": "single"
+    },
+    {
+      "text": "La representación gráfica de la estructura de una empresa, en la que se muestran sus jerarquías, departamentos y relaciones funcionales, es el:",
+      "options": [
+        "organigrama",
+        "inventario de funciones",
+        "cronograma",
+        "cuadro de mando"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 3,
+      "type": "single"
+    },
+    {
+      "text": "En un organigrama circular, la dirección de la empresa se representa:",
+      "options": [
+        "en el centro del gráfico",
+        "en el vértice superior del gráfico",
+        "en la base del gráfico",
+        "a la izquierda del primer nivel"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 4,
+      "type": "single"
+    },
+    {
+      "text": "El área funcional que define las estrategias y los objetivos globales de la empresa es:",
+      "options": [
+        "Producción y Operaciones",
+        "Marketing y Ventas",
+        "Dirección General",
+        "Administración y Finanzas"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 5,
+      "type": "single"
+    },
+    {
+      "text": "La imagen corporativa y los flujos informativos de la empresa son competencia del área de:",
+      "options": [
+        "Administración y Finanzas",
+        "Producción y Operaciones",
+        "Comunicación",
+        "Recursos Humanos"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 6,
+      "type": "single"
+    },
+    {
+      "text": "Los informes, las sugerencias y las quejas que los trabajadores dirigen a sus superiores circulan por el flujo de comunicación:",
+      "options": [
+        "descendente",
+        "ascendente",
+        "diagonal",
+        "horizontal"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 7,
+      "type": "single"
+    },
+    {
+      "text": "Dos jefes de sección del mismo nivel que intercambian información para coordinar su trabajo utilizan un flujo de comunicación:",
+      "options": [
+        "ascendente",
+        "descendente",
+        "horizontal",
+        "diagonal"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 8,
+      "type": "single"
+    },
+    {
+      "text": "El elemento de la comunicación que origina el mensaje y lo codifica es el:",
+      "options": [
+        "canal",
+        "emisor",
+        "contexto",
+        "receptor"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 9,
+      "type": "single"
+    },
+    {
+      "text": "El conjunto de signos que comparten emisor y receptor y que hace comprensible el mensaje se denomina:",
+      "options": [
+        "código",
+        "canal",
+        "retroalimentación",
+        "contexto"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 10,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de estas situaciones es un ejemplo de comunicación informal dentro de la empresa?",
+      "options": [
+        "Un comentario sobre la carga de trabajo surgido en la pausa del café",
+        "El acta de la reunión mensual de departamento",
+        "Una circular interna que anuncia el nuevo horario de verano",
+        "Una orden de servicio firmada por la dirección"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 11,
+      "type": "single"
+    },
+    {
+      "text": "Un técnico explica una gestión al cliente con siglas que este desconoce y el mensaje no llega a entenderse. Se ha producido una barrera:",
+      "options": [
+        "intercultural",
+        "física",
+        "psicológica",
+        "semántica"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 12,
+      "type": "single"
+    },
+    {
+      "text": "Cuando la información se distorsiona porque atraviesa varios intermediarios antes de llegar al destinatario, la barrera es:",
+      "options": [
+        "psicológica",
+        "organizativa",
+        "física",
+        "semántica"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 13,
+      "type": "single"
+    },
+    {
+      "text": "Los gestos, las posturas y los movimientos del cuerpo que acompañan al mensaje se estudian dentro de la:",
+      "options": [
+        "kinesia",
+        "paralingüística",
+        "cronemia",
+        "proxemia"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 14,
+      "type": "single"
+    },
+    {
+      "text": "La distancia interpersonal que se mantiene con el interlocutor corresponde a la:",
+      "options": [
+        "kinesia",
+        "paralingüística",
+        "cronemia",
+        "proxemia"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 15,
+      "type": "single"
+    },
+    {
+      "text": "El tono, el volumen y el ritmo del habla forman parte de la:",
+      "options": [
+        "cronemia",
+        "paralingüística",
+        "proxemia",
+        "kinesia"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 16,
+      "type": "single"
+    },
+    {
+      "text": "La habilidad de expresar las opiniones propias y defender los derechos propios respetando los de los demás es la:",
+      "options": [
+        "asertividad",
+        "flexibilidad",
+        "empatía",
+        "tolerancia"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 17,
+      "type": "single"
+    },
+    {
+      "text": "En la escucha activa, comprender el significado del mensaje y las emociones que lleva implícitas corresponde a la fase de:",
+      "options": [
+        "responder",
+        "interpretar",
+        "confirmar",
+        "recibir"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 18,
+      "type": "single"
+    },
+    {
+      "text": "En la atención telefónica en la empresa, la llamada debe contestarse:",
+      "options": [
+        "al terminar la tarea que se esté realizando",
+        "cuando la centralita lo indique",
+        "en un máximo de tres timbrazos",
+        "tras comprobar el motivo de la llamada"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 19,
+      "type": "single"
+    },
+    {
+      "text": "En la recepción de visitas, preguntar el motivo de la visita y a quién desea ver corresponde a la fase de:",
+      "options": [
+        "identificación",
+        "despedida",
+        "gestión",
+        "acogida"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 20,
+      "type": "single"
+    },
+    {
+      "text": "Durante una llamada telefónica, al interlocutor no debe dejársele en espera más de:",
+      "options": [
+        "cinco minutos si la gestión es compleja",
+        "dos minutos si hay música ambiental",
+        "30 segundos sin informarle",
+        "un minuto y medio sin informarle"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 21,
+      "type": "single"
+    },
+    {
+      "text": "Junto a la claridad, la precisión y la amabilidad, la comunicación oral se rige por los principios de:",
+      "options": [
+        "persuasión y contundencia",
+        "inmediatez y volumen",
+        "disciplina y jerarquía",
+        "brevedad y coherencia"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 22,
+      "type": "single"
+    },
+    {
+      "text": "Al finalizar una visita, una pauta correcta de despedida consiste en:",
+      "options": [
+        "indicarle dónde está la salida y continuar con el trabajo pendiente",
+        "pedirle que confirme por escrito el motivo de la visita",
+        "entregarle la documentación y cerrar la puerta del despacho",
+        "acompañar al visitante hasta la salida y agradecer su visita"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 23,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué elemento de la carta comercial recoge el nombre, la dirección y el CIF de la empresa emisora?",
+      "options": [
+        "El membrete",
+        "El destinatario",
+        "El cuerpo",
+        "La antefirma"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 24,
+      "type": "single"
+    },
+    {
+      "text": "La carta comercial que formaliza la solicitud de mercancías es la carta de:",
+      "options": [
+        "pedido",
+        "presentación",
+        "reclamación",
+        "solicitud"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 25,
+      "type": "single"
+    },
+    {
+      "text": "El envío postal que permite transmitir documentos de forma fehaciente, con validez legal, es:",
+      "options": [
+        "el correo certificado",
+        "la mensajería urgente",
+        "el correo ordinario",
+        "el burofax"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 26,
+      "type": "single"
+    },
+    {
+      "text": "¿Para qué sirve el registro de la correspondencia en la empresa?",
+      "options": [
+        "Para ordenar los archivos históricos por materias",
+        "Para sustituir el acuse de recibo del destinatario",
+        "Para reducir el importe del franqueo postal",
+        "Para garantizar la trazabilidad y el control documental"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 27,
+      "type": "single"
+    },
+    {
+      "text": "La solicitud formal que una persona dirige por escrito a un organismo público se denomina:",
+      "options": [
+        "recurso",
+        "instancia",
+        "certificado",
+        "notificación"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 28,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de las siguientes es una norma sintáctica que debe respetarse en la redacción empresarial?",
+      "options": [
+        "Alternar mayúsculas para destacar las ideas",
+        "Emplear abreviaturas no normalizadas",
+        "Mantener la concordancia entre sujeto y predicado",
+        "Prescindir de los conectores entre las oraciones"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 29,
+      "type": "single"
+    },
+    {
+      "text": "En un correo electrónico profesional, el asunto debe ser:",
+      "options": [
+        "claro y descriptivo del contenido",
+        "una copia de la primera frase del cuerpo",
+        "un espacio en blanco que no condicione la lectura",
+        "un texto en mayúsculas para asegurar su lectura"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 30,
+      "type": "single"
+    },
+    {
+      "text": "La atención al cliente se define como el conjunto de actividades interrelacionadas que aseguran que el usuario obtenga el producto o servicio:",
+      "options": [
+        "con la mayor dotación de personal disponible",
+        "en el menor número posible de contactos",
+        "al precio más bajo de su mercado",
+        "adecuado, en el momento y la forma idóneos"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 31,
+      "type": "single"
+    },
+    {
+      "text": "Frente a la atención al cliente, de carácter operativo y reactivo, la experiencia de cliente se caracteriza por ser:",
+      "options": [
+        "documental y jurídica",
+        "estratégica y proactiva",
+        "técnica y reglamentaria",
+        "puntual y correctiva"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 32,
+      "type": "single"
+    },
+    {
+      "text": "En términos de fidelización, retener a un cliente cuesta, respecto a captar uno nuevo, hasta:",
+      "options": [
+        "diez veces más",
+        "tres veces menos",
+        "cinco veces menos",
+        "el doble"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 33,
+      "type": "single"
+    },
+    {
+      "text": "El modelo que sitúa al cliente en el centro de todas las decisiones de la empresa se denomina:",
+      "options": [
+        "modelo distributivo",
+        "modelo transaccional",
+        "modelo productivo",
+        "Customer Centric"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 34,
+      "type": "single"
+    },
+    {
+      "text": "El departamento de cobros que recibe las facturas elaboradas por el departamento de facturación actúa como:",
+      "options": [
+        "cliente potencial",
+        "cliente ocasional",
+        "cliente externo",
+        "cliente interno"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 35,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué rasgo es propio del cliente B2C?",
+      "options": [
+        "Decisiones con alta carga emocional y procesos de decisión cortos",
+        "Contratos mercantiles de elevado volumen económico",
+        "Exigencias de rigor documental y conocimiento técnico",
+        "Decisiones colegiadas adoptadas en comités de compra"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 36,
+      "type": "single"
+    },
+    {
+      "text": "La atención a un cliente B2B exige, frente a la atención a un cliente B2C:",
+      "options": [
+        "mayor rigor documental y conocimiento técnico",
+        "procesos de decisión más breves y personales",
+        "respuestas más rápidas y de mayor carga emocional",
+        "tickets medios más bajos por operación"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 37,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué diferencia a la omnicanalidad de la multicanalidad?",
+      "options": [
+        "La omnicanalidad multiplica el número de canales disponibles",
+        "La multicanalidad mantiene la trazabilidad del caso entre canales",
+        "La multicanalidad evita repetir los datos en cada nuevo contacto",
+        "La omnicanalidad integra los canales en una experiencia continua y trazable"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 38,
+      "type": "single"
+    },
+    {
+      "text": "El plazo legal de garantía de los bienes de consumo nuevos en España es de:",
+      "options": [
+        "tres años",
+        "dos años",
+        "cinco años",
+        "cuatro años"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 39,
+      "type": "single"
+    },
+    {
+      "text": "En las compras a distancia, el consumidor dispone para desistir de un plazo de:",
+      "options": [
+        "treinta días naturales",
+        "siete días naturales",
+        "tres meses",
+        "catorce días naturales"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 40,
+      "type": "single"
+    },
+    {
+      "text": "¿En cuál de estos casos no procede el derecho de desistimiento?",
+      "options": [
+        "Una prenda de vestir adquirida por teléfono",
+        "Una pieza personalizada fabricada a medida",
+        "Un electrodoméstico comprado por internet",
+        "Un libro comprado en una tienda en línea"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 41,
+      "type": "single"
+    },
+    {
+      "text": "La Ley 10/2025 de Atención a la Clientela establece tiempos máximos de respuesta que van desde:",
+      "options": [
+        "2 horas hasta 15 días según el caso",
+        "48 horas hasta 2 meses según el caso",
+        "1 hora hasta 10 días según el caso",
+        "24 horas hasta 30 días según el caso"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 42,
+      "type": "single"
+    },
+    {
+      "text": "Según el régimen general tradicional del Real Decreto Legislativo 1/2007 (TRLGDCU), el plazo máximo de contestación de una reclamación es de:",
+      "options": [
+        "quince días hábiles",
+        "un mes",
+        "tres meses",
+        "seis meses"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 43,
+      "type": "single"
+    },
+    {
+      "text": "La vía extrajudicial de resolución de conflictos de consumo que es rápida, gratuita y vinculante es:",
+      "options": [
+        "la mediación notarial",
+        "el arbitraje de consumo",
+        "la inspección de consumo",
+        "el juicio verbal"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 44,
+      "type": "single"
+    },
+    {
+      "text": "En la acogida del cliente, la predisposición favorable hacia la conversación se decide en:",
+      "options": [
+        "los primeros 30 segundos",
+        "el tiempo que dure el saludo",
+        "el primer minuto completo",
+        "los primeros cinco minutos"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 45,
+      "type": "single"
+    },
+    {
+      "text": "La pregunta «Si le he entendido bien, necesita…» es un ejemplo de pregunta:",
+      "options": [
+        "cerrada",
+        "retórica",
+        "abierta",
+        "de control"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 46,
+      "type": "single"
+    },
+    {
+      "text": "En la atención comercial, una objeción del cliente debe interpretarse como:",
+      "options": [
+        "un error de argumentación que debe corregirse en el acto",
+        "una queja formal que exige compensación económica inmediata",
+        "una señal de interés que pide información o una razón para decidir",
+        "un rechazo definitivo de la oferta que obliga a retirarla"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 47,
+      "type": "single"
+    },
+    {
+      "text": "Si la percepción del cliente supera sus expectativas, el resultado es:",
+      "options": [
+        "insatisfacción, con riesgo de pérdida del cliente",
+        "una objeción que queda pendiente de resolver",
+        "un efecto «wow» que favorece la fidelización",
+        "satisfacción básica, sin efecto sobre la fidelidad"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 48,
+      "type": "single"
+    },
+    {
+      "text": "El indicador que se obtiene preguntando al cliente si recomendaría la empresa, en una escala de 0 a 10, es el:",
+      "options": [
+        "TMR",
+        "NPS",
+        "CES",
+        "CSAT"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 49,
+      "type": "single"
+    },
+    {
+      "text": "El servicio postventa comprende:",
+      "options": [
+        "la facturación y el cobro de los pedidos pendientes",
+        "las acciones de publicidad posteriores a la campaña",
+        "soporte técnico, gestión administrativa y fidelización proactiva",
+        "únicamente la reparación de los productos defectuosos"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 50,
+      "type": "single"
+    },
+    {
+      "text": "La petición de información o aclaración sobre un producto, un precio o una condición contractual, sin disconformidad previa, es una:",
+      "options": [
+        "queja",
+        "reclamación",
+        "consulta",
+        "denuncia"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 51,
+      "type": "single"
+    },
+    {
+      "text": "La manifestación de malestar por el trato recibido o por los tiempos de espera, que no exige resarcimiento económico, es una:",
+      "options": [
+        "denuncia",
+        "reclamación",
+        "consulta",
+        "queja"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 52,
+      "type": "single"
+    },
+    {
+      "text": "La comunicación a la Administración competente de una presunta infracción de la normativa de consumo, para que se intervenga y se imponga una sanción, es una:",
+      "options": [
+        "queja",
+        "consulta",
+        "denuncia",
+        "reclamación"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 53,
+      "type": "single"
+    },
+    {
+      "text": "El artículo 8 del TRLGDCU regula:",
+      "options": [
+        "el derecho de desistimiento del consumidor",
+        "la información precontractual del empresario",
+        "los derechos básicos de los consumidores y usuarios",
+        "el régimen de las cláusulas abusivas"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 54,
+      "type": "single"
+    },
+    {
+      "text": "La información que el empresario debe facilitar antes de contratar, con las características del bien, el precio total y los plazos de entrega, se regula en el artículo:",
+      "options": [
+        "57",
+        "8",
+        "114",
+        "60"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 55,
+      "type": "single"
+    },
+    {
+      "text": "En el régimen de garantía por falta de conformidad, la carga de la prueba a favor del consumidor alcanza:",
+      "options": [
+        "seis meses",
+        "dos años",
+        "tres años",
+        "un año"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 56,
+      "type": "single"
+    },
+    {
+      "text": "Las cláusulas no negociadas individualmente que causan un desequilibrio importante en perjuicio del consumidor son:",
+      "options": [
+        "válidas si la empresa informa de ellas",
+        "legales si constan en el contrato firmado",
+        "abusivas y nulas de pleno derecho",
+        "anulables solo a instancia del empresario"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 57,
+      "type": "single"
+    },
+    {
+      "text": "El plazo máximo que tienen las entidades de resolución alternativa de litigios para resolver es de:",
+      "options": [
+        "6 meses",
+        "90 días naturales",
+        "60 días naturales",
+        "30 días naturales"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 58,
+      "type": "single"
+    },
+    {
+      "text": "La Directiva Ómnibus refuerza la transparencia en el mercado digital y, entre otras medidas:",
+      "options": [
+        "suprime la obligación de indicar el precio total",
+        "prohíbe las reseñas falsas o manipuladas",
+        "reduce las sanciones por incumplimientos transfronterizos",
+        "exime a las tiendas en línea de informar sobre el vendedor"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 59,
+      "type": "single"
+    },
+    {
+      "text": "Al tratar los datos personales de un reclamante, la conservación de su expediente debe limitarse a:",
+      "options": [
+        "el tiempo necesario para la tramitación",
+        "un mínimo de diez años en todos los casos",
+        "un periodo indefinido, mientras la empresa lo estime útil",
+        "el plazo que decida el departamento comercial"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 60,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué obligación establece el artículo 14.1 de la Ley 11/1998 de la Comunidad de Madrid?",
+      "options": [
+        "La conservación del expediente durante dos años",
+        "La disposición de hojas de reclamaciones en el establecimiento",
+        "La exhibición de los precios de todos los bienes y productos",
+        "La entrega del acuse de recibo al reclamante"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 61,
+      "type": "single"
+    },
+    {
+      "text": "La obligatoriedad de disponer de hojas de reclamaciones en los establecimientos de la Comunidad de Madrid se recoge en el:",
+      "options": [
+        "artículo 102 del TRLGDCU",
+        "artículo 57 de la Ley 7/2017",
+        "artículo 29 del Decreto 1/2010",
+        "artículo 8 del TRLGDCU"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 62,
+      "type": "single"
+    },
+    {
+      "text": "El modelo oficial de hoja de reclamaciones del Sistema Unificado de Reclamaciones (SUR) fue aprobado por:",
+      "options": [
+        "la Ley 11/1998, de 9 de julio",
+        "la Orden de 3 de febrero de 2017",
+        "el Decreto 1/2010, de 14 de enero",
+        "el Real Decreto Legislativo 1/2007"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 63,
+      "type": "single"
+    },
+    {
+      "text": "En el impreso autocopiativo de hojas de reclamaciones, el ejemplar que el consumidor conserva definitivamente para sí como resguardo o prueba es el de color:",
+      "options": [
+        "verde o amarillo",
+        "blanco",
+        "rosa o azul",
+        "blanco y amarillo"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 64,
+      "type": "single"
+    },
+    {
+      "text": "En la primera fase de tramitación de una reclamación se asigna al expediente:",
+      "options": [
+        "un importe de indemnización estimado",
+        "un código identificativo único",
+        "un dictamen jurídico preliminar",
+        "un plazo de respuesta provisional"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 65,
+      "type": "single"
+    },
+    {
+      "text": "Una resolución que atiende solo una parte de lo solicitado por el reclamante se califica como:",
+      "options": [
+        "desestimatoria",
+        "inadmisible",
+        "estimatoria parcial",
+        "estimatoria total"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 66,
+      "type": "single"
+    },
+    {
+      "text": "El acuse de recibo de una reclamación debe contener obligatoriamente:",
+      "options": [
+        "el nombre del instructor del expediente, su titulación y su turno",
+        "el importe de la tasa administrativa aplicable y la cuenta de abono",
+        "la propuesta de indemnización económica ofrecida y su importe",
+        "la clave de seguimiento, la fecha de entrada y el plazo de respuesta"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 67,
+      "type": "single"
+    },
+    {
+      "text": "Entre las funciones de la OMIC se encuentran:",
+      "options": [
+        "informar y orientar al consumidor y tramitar sus reclamaciones",
+        "representar a las empresas en los procedimientos de consumo",
+        "imponer sanciones económicas a los establecimientos",
+        "dictar laudos arbitrales con valor de sentencia"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 68,
+      "type": "single"
+    },
+    {
+      "text": "Mientras la gestión reactiva actúa después de la queja, la gestión proactiva se caracteriza por:",
+      "options": [
+        "reducir el plazo legal de respuesta al cliente",
+        "trasladar el expediente a la Administración",
+        "contener el daño una vez presentada la reclamación",
+        "anticiparse y prevenir la queja antes de que se formalice"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 69,
+      "type": "single"
+    },
+    {
+      "text": "Para identificar la causa de fondo de reclamaciones repetidas se emplea el análisis de causa raíz, cuya metodología básica es:",
+      "options": [
+        "la matriz de Eisenhower",
+        "la de los cinco porqués",
+        "el análisis DAFO",
+        "el diagrama de Gantt"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 70,
+      "type": "single"
+    }
+  ]
+}
