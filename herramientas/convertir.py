@@ -203,8 +203,9 @@ def main() -> int:
 
     ficheros = sorted(FUENTES.glob("*.md"))
     if not ficheros:
-        print(f"No hay ficheros .md en {FUENTES}", file=sys.stderr)
-        return 2
+        # Un catálogo vacío es un estado válido (p. ej. al retirar todos los exámenes). Se genera un
+        # índice sin exámenes y se limpian los JSON huérfanos, en vez de abortar con error.
+        print(f"Aviso: no hay ficheros .md en {FUENTES}; se publica un catálogo vacío.")
 
     examenes: list[dict] = []
     todos: list[str] = []

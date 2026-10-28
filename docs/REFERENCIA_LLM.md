@@ -227,7 +227,9 @@ requiere plan de pago).
 
 - Editar `data/*.json` a mano: no. Se sobrescribe. Edita `fuentes/*.md` y reconvierte.
 - Añadir un examen: crear `fuentes/<algo>.md`, ejecutar `convertir.py`, publicar.
-- Borrar un examen: borrar su `fuentes/<algo>.md`, reconvertir, publicar.
+- Borrar un examen: borrar su `fuentes/<algo>.md`, reconvertir, publicar. Si se borran todos, el
+  catálogo se publica vacío (`data/index.json` con `"examenes": []`) y la carpeta `fuentes/` se
+  conserva con un `.gitkeep`.
 - Poner imágenes dentro de una pregunta: no está soportado en el formato de texto actual; habría
   que ampliar `index.html` y el conversor (pedirlo como mejora).
 - ¿Dónde se guardan las respuestas del alumno? En su propio navegador (`localStorage`); no viajan a
