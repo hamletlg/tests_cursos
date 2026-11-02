@@ -17,6 +17,15 @@
       "visible": true,
       "num_preguntas": 70,
       "archivo": "data/examenes/comunicacion-empresarial-atencion-al-cliente-y-reclamaciones.json"
+    },
+    {
+      "id": "de-la-escuela-nueva-a-las-situaciones-de-aprendizaje",
+      "title": "De la Escuela Nueva a las Situaciones de Aprendizaje",
+      "description": "Test de 70 preguntas sobre Escuela Nueva, pedagogos, constructivismo, marco normativo RD 95/2022, programación y Situaciones de Aprendizaje.",
+      "grupo": "",
+      "visible": true,
+      "num_preguntas": 70,
+      "archivo": "data/examenes/de-la-escuela-nueva-a-las-situaciones-de-aprendizaje.json"
     }
   ]
 }

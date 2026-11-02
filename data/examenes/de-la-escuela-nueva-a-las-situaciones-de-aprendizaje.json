@@ -1,0 +1,992 @@
+{
+  "id": "de-la-escuela-nueva-a-las-situaciones-de-aprendizaje",
+  "title": "De la Escuela Nueva a las Situaciones de Aprendizaje",
+  "description": "Test de 70 preguntas sobre Escuela Nueva, pedagogos, constructivismo, marco normativo RD 95/2022, programación y Situaciones de Aprendizaje.",
+  "grupo": "",
+  "visible": true,
+  "barajar_preguntas": true,
+  "shuffle_options": true,
+  "preguntas_por_pagina": 10,
+  "questions": [
+    {
+      "text": "En la Escuela Nueva, ¿qué concepto reemplaza al adultocentrismo de la escuela tradicional?",
+      "options": [
+        "El magistrocentrismo",
+        "El paidocentrismo",
+        "El verbalismo",
+        "El memorismo"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 1,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de los siguientes principios caracterizaba a la escuela tradicional previa a la Escuela Nueva?",
+      "options": [
+        "El niño como protagonista activo",
+        "El juego como eje del aprendizaje",
+        "La memorización y la disciplina severa",
+        "La globalización del conocimiento"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 2,
+      "type": "single"
+    },
+    {
+      "text": "Friedrich Fröbel es conocido por fundar en 1840:",
+      "options": [
+        "La Casa dei Bambini",
+        "El Kindergarten",
+        "El Instituto Lóczy",
+        "La pedagogía Waldorf"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 3,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es el país de origen de Maria Montessori?",
+      "options": [
+        "Bélgica",
+        "Francia",
+        "Italia",
+        "Suiza"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 4,
+      "type": "single"
+    },
+    {
+      "text": "El concepto de «ambiente preparado» y el «material autocorrectivo» pertenecen a la pedagogía de:",
+      "options": [
+        "Célestin Freinet",
+        "Ovide Decroly",
+        "Maria Montessori",
+        "Loris Malaguzzi"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 5,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué aportación principal se atribuye a las hermanas Agazzi?",
+      "options": [
+        "Los centros de interés",
+        "El tanteo experimental",
+        "El uso de material cotidiano como recurso educativo",
+        "La rutina planificar-hacer-revisar"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 6,
+      "type": "single"
+    },
+    {
+      "text": "Ovide Decroly propuso como método en los centros de interés:",
+      "options": [
+        "Asimilación, acomodación y equilibrio",
+        "Observación, asociación y expresión",
+        "Planificar, hacer y revisar",
+        "Andamiaje y retirada progresiva de ayuda"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 7,
+      "type": "single"
+    },
+    {
+      "text": "Célestin Freinet, maestro rural francés, se caracteriza por promover:",
+      "options": [
+        "El aprendizaje activo con rutina planificar-hacer-revisar",
+        "El tanteo experimental, la imprenta y la cooperación",
+        "La libertad de movimiento y los cuidados primarios educativos",
+        "Los cien lenguajes y la documentación pedagógica"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 8,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué autora defendía la libertad de movimiento y los cuidados primarios como educativos?",
+      "options": [
+        "Maria Montessori",
+        "Emmi Pikler",
+        "Rosa Agazzi",
+        "Loris Malaguzzi"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 9,
+      "type": "single"
+    },
+    {
+      "text": "Loris Malaguzzi fue impulsor de la pedagogía de Reggio Emilia. ¿Qué concepto es central en su enfoque?",
+      "options": [
+        "El material autocorrectivo",
+        "Los cien lenguajes del niño",
+        "El tanteo experimental",
+        "La educación funcional"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 10,
+      "type": "single"
+    },
+    {
+      "text": "¿En qué consiste la «revolución paidocéntrica» de la Escuela Nueva?",
+      "options": [
+        "En pasar de un niño pasivo a un niño activo que aprende por experiencia",
+        "En sustituir el juego por la enseñanza verbal",
+        "En mantener la transmisión magistral con nuevos métodos",
+        "En eliminar la participación de las familias"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 11,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué autor propuso la «educación funcional» como enfoque pedagógico?",
+      "options": [
+        "Jean Piaget",
+        "Edward Claparède",
+        "Jerome Bruner",
+        "David Ausubel"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 12,
+      "type": "single"
+    },
+    {
+      "text": "El estadio preoperacional de Piaget corresponde a qué rango de edad?",
+      "options": [
+        "0 a 2 años",
+        "2 a 6 años",
+        "6 a 12 años",
+        "12 años en adelante"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 13,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es la Zona de Desarrollo Próximo (ZDP) según Vygotsky?",
+      "options": [
+        "La distancia entre lo que el niño hace solo y lo que logra con guía",
+        "El estadio de desarrollo sensoriomotor",
+        "El andamiaje temporal que ofrece el docente",
+        "La diferencia entre aprendizaje significativo y memorístico"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 14,
+      "type": "single"
+    },
+    {
+      "text": "Jerome Bruner introdujo el concepto de «andamiaje». ¿Qué significa?",
+      "options": [
+        "Un soporte temporal que se retira conforme el niño gana autonomía",
+        "Un material autocorrectivo que guía al niño sin intervención adulta",
+        "Un método de evaluación basado en rúbricas cualitativas",
+        "Una rutina diaria de planificar-hacer-revisar"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 15,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué propone David Ausubel como base del aprendizaje?",
+      "options": [
+        "La memorización repetitiva de contenidos",
+        "Los saberes previos como punto de partida para el aprendizaje significativo",
+        "El aprendizaje por descubrimiento puro sin guía",
+        "La globalización del conocimiento exclusivamente"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 16,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué establece el RD 95/2022 como principio de la Educación Infantil?",
+      "options": [
+        "Enseñanza por asignaturas estancas con horarios rígidos",
+        "Experiencias globalizadas, significativas y lúdicas",
+        "Verbalismo y transmisión magistral como método principal",
+        "Evaluación numérica desde los 3 años"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 17,
+      "type": "single"
+    },
+    {
+      "text": "El principio de «transición positiva» del hogar a la escuela implica:",
+      "options": [
+        "Separación total entre familia y centro durante el primer trimestre",
+        "Un periodo de acogida con vínculo afectivo y coordinación familia-escuela",
+        "Evaluación diagnóstica numérica al inicio del curso",
+        "Exclusión de las familias en la toma de decisiones"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 18,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué principio recoge el RD 95/2022 respecto a la autonomía personal?",
+      "options": [
+        "Que debe fomentarse con imagen positiva libre de estereotipos",
+        "Que el niño debe tomar decisiones adultas desde los 3 años",
+        "Que la autonomía es responsabilidad exclusiva de la familia",
+        "Que se logra mediante castigos y refuerzos conductuales"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 19,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué papel tiene el juego según el marco normativo del RD 95/2022?",
+      "options": [
+        "Es una actividad opcional que se realiza al final de la jornada",
+        "Es prioritario y orienta espacios, tiempos y materiales",
+        "Complementa la enseñanza verbal como recurso secundario",
+        "Se reserva exclusivamente para el tercer ciclo"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 20,
+      "type": "single"
+    },
+    {
+      "text": "El Diseño Universal para el Aprendizaje (DUA) propone:",
+      "options": [
+        "Una única forma de representación adaptada al alumnado más avanzado",
+        "Múltiples formas de representación, acción, expresión e implicación",
+        "Eliminar la diversidad del aula mediante enseñanza homogénea",
+        "Adaptaciones exclusivas para alumnado con necesidades específicas"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 21,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué diferencia fundamental existe entre rincones y talleres?",
+      "options": [
+        "Los rincones son temporales y los talleres permanentes",
+        "Los talleres tienen producto final y elección dirigida; los rincones, elección libre",
+        "No existe diferencia; son sinónimos didácticos",
+        "Los rincones trabajan en grupos reducidos y los talleres de forma libre"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 22,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué estrategia didáctica se inspira en la herencia de Decroly y se basa en necesidades universales?",
+      "options": [
+        "Los talleres de cocina",
+        "Los centros de interés",
+        "El ABP (Aprendizaje Basado en Proyectos)",
+        "La provocación pedagógica"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 23,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es la primera fase de una secuencia didáctica?",
+      "options": [
+        "La evaluación con rúbricas",
+        "La motivación, provocación y conexión con conocimientos previos",
+        "La elaboración del producto final",
+        "La documentación pedagógica"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 24,
+      "type": "single"
+    },
+    {
+      "text": "La fase de cierre de una secuencia didáctica se caracteriza por:",
+      "options": [
+        "La recogida de materiales sin reflexión",
+        "La socialización de hallazgos y una metacognición sencilla",
+        "La imposición de un nuevo reto sin conexión con lo aprendido",
+        "La evaluación numérica individual"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 25,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es una provocación pedagógica según la herencia de Reggio Emilia?",
+      "options": [
+        "Un castigo temporal ante conductas disruptivas",
+        "Una instrucción directa para ordenar los juguetes",
+        "Una disposición estética y deliberada de materiales que invita a explorar",
+        "Una pregunta teórica formulada en la asamblea"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 26,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué caracteriza a una tarea auténtica frente a una simple actividad?",
+      "options": [
+        "La tarea auténtica tiene finalidad funcional y responde a un reto significativo",
+        "La tarea siempre se realiza de forma individual",
+        "La tarea requiere siempre libro de texto",
+        "La tarea es obligatoria y la actividad es de libre elección"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 27,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es una Situación de Aprendizaje según el RD 95/2022?",
+      "options": [
+        "Un tema abstracto organizado por asignaturas",
+        "Una suma de fichas y ejercicios mecánicos",
+        "Un escenario complejo, contextualizado y significativo que moviliza saberes para resolver un reto real",
+        "Un cuaderno de trabajo con actividades secuenciadas"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 28,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál de los siguientes NO es un elemento indispensable de una Situación de Aprendizaje?",
+      "options": [
+        "Contexto de la vida cotidiana del niño",
+        "Un reto estimulante",
+        "Fichas de trabajo mecánico como eje metodológico",
+        "Principios DUA aplicados desde el diseño"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 29,
+      "type": "single"
+    },
+    {
+      "text": "¿Cómo se definen los Saberes Básicos en el RD 95/2022?",
+      "options": [
+        "Temas conceptuales memorizables organizados por asignaturas",
+        "Conjunto integrado de conocimientos, destrezas y actitudes",
+        "Hábitos de higiene obligatorios en 0-3 años",
+        "Competencias de lengua y matemáticas exclusivamente"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 30,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es la función principal de la documentación pedagógica?",
+      "options": [
+        "Justificar documentalmente las ausencias del alumnado",
+        "Hacer visible el proceso de aprendizaje mediante registros",
+        "Poner notas numéricas para clasificar a los niños",
+        "Rellenar expedientes administrativos de matriculación"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 31,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué instrumento de evaluación formativa se considera base en el TSEI?",
+      "options": [
+        "El examen escrito",
+        "La observación sistemática",
+        "La prueba de opción múltiple",
+        "El cuestionario de autoevaluación"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 32,
+      "type": "single"
+    },
+    {
+      "text": "Las evidencias de aprendizaje en Infantil incluyen:",
+      "options": [
+        "Exámenes con calificación numérica del 1 al 10",
+        "Grabaciones de audio, construcciones, dibujos y secuencias de fotos",
+        "Cuadernos de fichas corregidos con nota",
+        "Listas de asistencia y comportamientos"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 33,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué nivel de concreción curricular corresponde a la Propuesta Pedagógica de Centro?",
+      "options": [
+        "Primer nivel: Administración educativa",
+        "Segundo nivel: centro educativo",
+        "Tercer nivel: programación de aula",
+        "Cuarto nivel: adaptación individual"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 34,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué diferencia fundamental existe entre criterio de evaluación e indicador de logro?",
+      "options": [
+        "El criterio es operativo y el indicador es prescriptivo",
+        "El criterio es referente normativo y el indicador es conducta observable concreta",
+        "Son términos equivalentes e intercambiables",
+        "El criterio es optativo y el indicador es obligatorio"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 35,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué implica aplicar el principio DUA de múltiples formas de representación?",
+      "options": [
+        "Enseñar solo mediante explicación oral del docente",
+        "Ofrecer información por canales visual, táctil, auditivo y manipulativo",
+        "Hacer que todos usen el mismo libro al mismo tiempo",
+        "Separar al alumnado por capacidades cognitivas"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 36,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué medidas ordinarias ante la diversidad son beneficiosas para todo el grupo?",
+      "options": [
+        "Exclusivamente los Planes de Trabajo Individualizados",
+        "Accesibilidad espacial, apoyos visuales, agrupamientos flexibles y tiempos elásticos",
+        "La separación del alumnado con NESE en aulas diferenciadas",
+        "La eliminación de rincones del aula"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 37,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué tipo de alumnado destinatario tienen las medidas específicas ante la diversidad?",
+      "options": [
+        "Todo el alumnado del centro sin excepción",
+        "Alumnado con necesidades educativas especiales, retrasos madurativos o alteraciones de la comunicación",
+        "Únicamente el alumnado con diagnóstico formal de TEA",
+        "Solo el alumnado del segundo ciclo de Infantil"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 38,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué modelo pedagógico propone la rutina «planificar-hacer-revisar»?",
+      "options": [
+        "Montessori",
+        "Reggio Emilia",
+        "Waldorf",
+        "HighScope"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 39,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué autor propuso la pedagogía Waldorf con los «septenios» como etapas de desarrollo?",
+      "options": [
+        "Loris Malaguzzi",
+        "Rudolf Steiner",
+        "David Weikart",
+        "Ovide Decroly"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 40,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué papel desempeña el adulto en el modelo Montessori?",
+      "options": [
+        "Transmisor directo de conocimientos",
+        "Observador que acompaña sin dirigir",
+        "Facilitador que guía con asamblea diaria",
+        "Modelo de imitación para los niños"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 41,
+      "type": "single"
+    },
+    {
+      "text": "En el modelo Reggio Emilia, ¿qué rol tiene el docente?",
+      "options": [
+        "Observador pasivo sin intervención",
+        "Documentador que registra y hace visible el proceso",
+        "Transmisor de contenidos programados",
+        "Evaluador mediante pruebas escritas"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 42,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué característica define el modelo Pikler?",
+      "options": [
+        "Aprendizaje activo con rutina planificar-hacer-revisar",
+        "Cien lenguajes y documentación pedagógica",
+        "Libertad de movimiento y cuidados primarios educativos",
+        "Imitación del adulto como modelo principal"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 43,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué diferencia los centros de interés de los proyectos de trabajo?",
+      "options": [
+        "Los centros de interés parten de necesidades universales y tienen dirección adultocéntrica; los proyectos, de una pregunta del grupo",
+        "Los centros de interés son siempre individuales y los proyectos siempre grupales",
+        "No existe diferencia; son sinónimos curriculares",
+        "Los proyectos son temporales y los centros de interés permanentes"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 44,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es la primera fase de un proyecto de trabajo (ABP)?",
+      "options": [
+        "Producto final",
+        "Evaluación con rúbricas",
+        "Elección del tema",
+        "Documentación pedagógica"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 45,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué tipo de evaluación propone el modelo Reggio Emilia?",
+      "options": [
+        "Autocorrección del material",
+        "Documentación pedagógica",
+        "Observación sistemática con rúbricas",
+        "Evaluación cualitativa basada en la imitación"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 46,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué tipo de evaluación se asocia al modelo Montessori?",
+      "options": [
+        "Autocorrección del material",
+        "Documentación pedagógica",
+        "Observación sistemática con rúbricas",
+        "Evaluación cualitativa basada en la imitación"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 47,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué tipo de evaluación propone el modelo HighScope?",
+      "options": [
+        "Autocorrección del material",
+        "Documentación pedagógica",
+        "Observación sistemática con rúbricas",
+        "Evaluación basada en la imitación"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 48,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué estrategia globalizadora se inspira en la herencia de Freinet?",
+      "options": [
+        "Los rincones de juego libre",
+        "Los talleres con producto final",
+        "Los centros de interés",
+        "La provocación pedagógica"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 49,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué característica define los rincones de aula?",
+      "options": [
+        "Actividad temporal con producto final obligatorio",
+        "Espacios delimitados con material específico donde el niño elige libremente",
+        "Trabajo cooperativo guiado por el docente con grupo reducido",
+        "Evaluación mediante pruebas escritas"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 50,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué función principal cumple la asamblea en Educación Infantil?",
+      "options": [
+        "Calificar numéricamente el comportamiento",
+        "Desarrollo del lenguaje oral, gestión emocional y planificación",
+        "Transmisión magistral de contenidos",
+        "Evaluación individual mediante rúbricas"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 51,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué duración recomendada tiene la asamblea en el aula de Infantil?",
+      "options": [
+        "30 a 45 minutos",
+        "5 a 10 minutos",
+        "15 a 20 minutos",
+        "No tiene duración fija"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 52,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué principio del RD 95/2022 se relaciona con el desarrollo integral y las familias?",
+      "options": [
+        "La familia como corresponsable del proceso y el bienestar emocional como base del aprendizaje",
+        "La separación total entre familia y escuela",
+        "La evaluación numérica compartida con las familias",
+        "La exclusión de las familias en la toma de decisiones"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 53,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué se entiende por «globalización» en el currículo de Infantil?",
+      "options": [
+        "Enseñar todas las asignaturas en un solo bloque horario",
+        "Un tema que conecta todas las áreas sin estancamiento",
+        "La impartición de contenidos por asignaturas separadas",
+        "La unificación de los tres ciclos en un solo grupo"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 54,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué autor propuso la «percepción sintética infantil» como base del aprendizaje?",
+      "options": [
+        "Piaget",
+        "Vygotsky",
+        "Ovide Decroly",
+        "Jerome Bruner"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 55,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es el «verbalismo» criticado por la Escuela Nueva?",
+      "options": [
+        "El uso excesivo del juego en el aula",
+        "La transmisión de palabras sin comprensión ni experiencia asociada",
+        "La comunicación fluida entre iguales",
+        "El aprendizaje mediante la manipulación directa"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 56,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué modelo pedagógico se centra en la imitación del adulto como modelo?",
+      "options": [
+        "Reggio Emilia",
+        "Montessori",
+        "Waldorf",
+        "HighScope"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 57,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué concepto clave introduce Jerome Bruner en la mediación educativa?",
+      "options": [
+        "El andamiaje como soporte temporal que se retira con la autonomía",
+        "La ZDP como distancia entre lo autónomo y lo guiado",
+        "El tanteo experimental como método de descubrimiento",
+        "Los cien lenguajes del niño"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 58,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué papel tiene la familia según el RD 95/2022 en Educación Infantil?",
+      "options": [
+        "Mera espectadora sin participación en el proceso",
+        "Corresponsable del proceso educativo del niño",
+        "Responsable exclusiva de la evaluación",
+        "Excluida de las decisiones pedagógicas"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 59,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué áreas curriculares establece el RD 95/2022 para Infantil?",
+      "options": [
+        "Lengua, Matemáticas y Ciencias de forma estanca",
+        "Crecimiento en Armonía, Descubrimiento del Entorno y Comunicación y Representación",
+        "Educación Física, Plástica y Música como únicas áreas",
+        "Religión, Ética y Valores Sociales"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 60,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué carácter tienen las tres áreas del currículo según el RD 95/2022?",
+      "options": [
+        "Independiente y estanco por área",
+        "Globalizado e interconectado, sin trabajar un área de forma aislada",
+        "Opcional según la programación de cada centro",
+        "Exclusivo del segundo ciclo de Infantil"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 61,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es la «ficha» en el contexto didáctico de Infantil?",
+      "options": [
+        "Un recurso tridimensional de exploración autónoma",
+        "Un soporte bidimensional con tareas repetitivas y orden unívoca del adulto",
+        "Una herramienta de evaluación formativa cualitativa",
+        "Un instrumento de documentación pedagógica"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 62,
+      "type": "single"
+    },
+    {
+      "text": "¿Por qué está contraindicada la ficha en el primer ciclo (0-3 años)?",
+      "options": [
+        "Porque resulta cara económicamente para los centros",
+        "Porque anula la tridimensionalidad y contradice el estadio sensoriomotor",
+        "Porque la LOMLOE prohíbe explícitamente el papel",
+        "Porque sustituye la comunicación no verbal necesaria a esa edad"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 63,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué diferencia una tarea auténtica de una actividad secuenciada?",
+      "options": [
+        "La tarea auténtica es una suma de actividades desconectadas",
+        "La tarea auténtica exige contexto, finalidad y producto observable; las tareas están articuladas",
+        "La actividad secuenciada siempre tiene producto final",
+        "No existe diferencia entre ambas"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 64,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es una tarea articulada según el modelo competencial?",
+      "options": [
+        "Una cadena de acciones sucesivas desconectadas entre sí",
+        "Una red de acciones interdependientes donde cada paso es necesario para el siguiente",
+        "Una ficha con una orden unívoca del adulto",
+        "Una provocación pedagógica sin estructura"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 65,
+      "type": "single"
+    },
+    {
+      "text": "¿Cuál es el sentido de programar en Educación Infantil?",
+      "options": [
+        "Encorsetar el aula con consignas rígidas y horarias fijas",
+        "Diseñar un marco flexible que garantiza coherencia, continuidad e intencionalidad educativa",
+        "Evitar cualquier tipo de improvisación sin excepciones",
+        "Sustituir la observación por la planificación detallada"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 66,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué contiene la Propuesta Pedagógica de Centro según el Art. 11 del RD 95/2022?",
+      "options": [
+        "Únicamente los horarios del alumnado",
+        "Concreción de competencias, criterios metodológicos, evaluación y coordinación",
+        "Exclusivamente los nombres del claustro de profesores",
+        "Los presupuestos del centro y los gastos de material"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 67,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es una «capacidad» en el contexto del desarrollo infantil?",
+      "options": [
+        "Una aptitud práctica adquirida para resolver una acción concreta",
+        "Un potencial biopsicológico general para desarrollarse o aprender",
+        "Un criterio de evaluación normativo del RD 95/2022",
+        "Un indicador de logro operativo del equipo docente"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 68,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué es una «habilidad» o «destreza» en el contexto del desarrollo infantil?",
+      "options": [
+        "Un potencial biopsicológico general",
+        "Una aptitud práctica adquirida para ejecutar una acción concreta",
+        "Una competencia específica de área curricular",
+        "Un criterio de evaluación prescriptivo"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 69,
+      "type": "single"
+    },
+    {
+      "text": "¿Qué define una «competencia» en el marco competencial?",
+      "options": [
+        "La capacidad de movilizar de forma integrada conocimientos, destrezas y actitudes para responder a un reto real",
+        "La acumulación de contenidos conceptuales memorizados",
+        "La ejecución mecánica de ejercicios repetitivos",
+        "La capacidad biopsicológica innata del niño"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 70,
+      "type": "single"
+    }
+  ]
+}
