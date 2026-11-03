@@ -2,11 +2,11 @@
   "examenes": [
     {
       "id": "bioseguridad-y-seguridad-del-medicamento",
-      "title": "Bioseguridad y Seguridad del Medicamento",
-      "description": "Prueba de 70 preguntas sobre la cadena epidemiológica, agentes y vías de transmisión, precauciones estándar, manejo seguro del medicamento, reglas de administración, errores de medicación y adherencia terapéutica.",
+      "title": "Seguridad en el Manejo del Medicamento y Adherencia Terapéutica",
+      "description": "Prueba de 33 preguntas sobre el manejo seguro del medicamento y la adherencia terapéutica: principio activo y excipientes, farmacocinética, formas y vías de administración, conservación, botiquín de planta, los cinco correctos, errores de medicación, medicamentos de alto riesgo, SPD, farmacovigilancia y adherencia.",
       "grupo": "",
       "visible": true,
-      "num_preguntas": 70,
+      "num_preguntas": 33,
       "archivo": "data/examenes/bioseguridad-y-seguridad-del-medicamento.json"
     },
     {
