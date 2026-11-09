@@ -5,7 +5,7 @@
       "title": "Seguridad en el Manejo del Medicamento y Adherencia Terapéutica",
       "description": "Prueba de 33 preguntas sobre el manejo seguro del medicamento y la adherencia terapéutica: principio activo y excipientes, farmacocinética, formas y vías de administración, conservación, botiquín de planta, los cinco correctos, errores de medicación, medicamentos de alto riesgo, SPD, farmacovigilancia y adherencia.",
       "grupo": "",
-      "visible": true,
+      "visible": false,
       "num_preguntas": 33,
       "archivo": "data/examenes/bioseguridad-y-seguridad-del-medicamento.json"
     },
@@ -14,7 +14,7 @@
       "title": "Comunicación Empresarial, Atención al Cliente y Reclamaciones",
       "description": "Prueba de 70 preguntas sobre organización y comunicación en la empresa, comunicación oral y escrita, atención al cliente y servicio postventa, derechos del consumidor y tramitación de consultas, quejas y reclamaciones.",
       "grupo": "",
-      "visible": true,
+      "visible": false,
       "num_preguntas": 70,
       "archivo": "data/examenes/comunicacion-empresarial-atencion-al-cliente-y-reclamaciones.json"
     },
@@ -23,9 +23,18 @@
       "title": "De la Escuela Nueva a las Situaciones de Aprendizaje",
       "description": "Test de 70 preguntas sobre Escuela Nueva, pedagogos, constructivismo, marco normativo RD 95/2022, programación y Situaciones de Aprendizaje.",
       "grupo": "",
-      "visible": true,
+      "visible": false,
       "num_preguntas": 70,
       "archivo": "data/examenes/de-la-escuela-nueva-a-las-situaciones-de-aprendizaje.json"
+    },
+    {
+      "id": "cae-practicas-12-11-2026",
+      "title": "Prácticas 12/11/2026 — Unidad del paciente, higiene y biomecánica",
+      "description": "Test de 80 preguntas de repaso de las sesiones del 3, 5 y 10 de noviembre: unidad del usuario-paciente (condiciones ambientales, mobiliario y cama, arreglo de cama, eliminación), higiene y confort (piel, aseo en cama, zonas especiales, errores frecuentes) y biomecánica y ergonomía (palancas, columna, articulaciones, movimientos, transferencias y riesgos del profesional).",
+      "grupo": "",
+      "visible": true,
+      "num_preguntas": 80,
+      "archivo": "data/examenes/cae-practicas-12-11-2026.json"
     }
   ]
 }

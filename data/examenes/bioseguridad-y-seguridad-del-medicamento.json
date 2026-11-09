@@ -3,7 +3,7 @@
   "title": "Seguridad en el Manejo del Medicamento y Adherencia Terapéutica",
   "description": "Prueba de 33 preguntas sobre el manejo seguro del medicamento y la adherencia terapéutica: principio activo y excipientes, farmacocinética, formas y vías de administración, conservación, botiquín de planta, los cinco correctos, errores de medicación, medicamentos de alto riesgo, SPD, farmacovigilancia y adherencia.",
   "grupo": "",
-  "visible": true,
+  "visible": false,
   "barajar_preguntas": false,
   "shuffle_options": true,
   "preguntas_por_pagina": 10,

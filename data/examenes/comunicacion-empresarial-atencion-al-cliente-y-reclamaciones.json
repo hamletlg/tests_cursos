@@ -3,7 +3,7 @@
   "title": "Comunicación Empresarial, Atención al Cliente y Reclamaciones",
   "description": "Prueba de 70 preguntas sobre organización y comunicación en la empresa, comunicación oral y escrita, atención al cliente y servicio postventa, derechos del consumidor y tramitación de consultas, quejas y reclamaciones.",
   "grupo": "",
-  "visible": true,
+  "visible": false,
   "barajar_preguntas": false,
   "shuffle_options": true,
   "preguntas_por_pagina": 10,

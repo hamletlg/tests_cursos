@@ -3,6 +3,8 @@
 #Barajar preguntas: no
 #Por página: 10
 
+#Visible: no
+
 ## En el ámbito de la empresa, la organización se define como el conjunto de:
 - normas laborales que regulan la relación con los clientes
 - instalaciones y equipos destinados a la fabricación de productos

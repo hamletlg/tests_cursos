@@ -3,6 +3,8 @@
 #Barajar preguntas: si
 #Por página: 10
 
+#Visible: no
+
 ## En la Escuela Nueva, ¿qué concepto reemplaza al adultocentrismo de la escuela tradicional?
 - El magistrocentrismo
 - El paidocentrismo *

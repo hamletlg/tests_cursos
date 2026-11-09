@@ -3,7 +3,7 @@
   "title": "De la Escuela Nueva a las Situaciones de Aprendizaje",
   "description": "Test de 70 preguntas sobre Escuela Nueva, pedagogos, constructivismo, marco normativo RD 95/2022, programación y Situaciones de Aprendizaje.",
   "grupo": "",
-  "visible": true,
+  "visible": false,
   "barajar_preguntas": true,
   "shuffle_options": true,
   "preguntas_por_pagina": 10,

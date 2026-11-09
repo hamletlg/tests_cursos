@@ -4,6 +4,8 @@
 #Barajar preguntas: no
 #Por página: 10
 
+#Visible: no
+
 ## Se considera medicamento toda sustancia con propiedades para:
 - mejorar las propiedades organolépticas del preparado
 - aportar volumen y cohesión a la forma farmacéutica
