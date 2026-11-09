@@ -35,6 +35,15 @@
       "visible": true,
       "num_preguntas": 80,
       "archivo": "data/examenes/cae-practicas-12-11-2026.json"
+    },
+    {
+      "id": "gestion-documentacion-calculo-10-11-2026",
+      "title": "Test 10/11/2026 — Documentación de la compraventa y cálculo comercial",
+      "description": "Test de 70 preguntas de repaso de las sesiones del 10 de noviembre: ciclo documental de la compraventa (pedido, albarán, factura y sus tipos, factura electrónica, factura rectificativa, conservación, libros registro y archivo) y cálculo comercial (escalera del precio, márgenes sobre coste y sobre venta, descuentos y recargos, IVA, punto muerto, margen de seguridad e interés y descuento comercial).",
+      "grupo": "",
+      "visible": true,
+      "num_preguntas": 70,
+      "archivo": "data/examenes/gestion-documentacion-calculo-10-11-2026.json"
     }
   ]
 }
