@@ -44,6 +44,15 @@
       "visible": true,
       "num_preguntas": 70,
       "archivo": "data/examenes/gestion-documentacion-calculo-10-11-2026.json"
+    },
+    {
+      "id": "test-de-farmacia-medicamentos-y-organizacion-del-organismo",
+      "title": "Test de Farmacia, Medicamentos y Organización del Organismo",
+      "description": "60 preguntas sobre patología, sistema nervioso, organización del organismo y medicamentos",
+      "grupo": "A",
+      "visible": true,
+      "num_preguntas": 60,
+      "archivo": "data/examenes/test-de-farmacia-medicamentos-y-organizacion-del-organismo.json"
     }
   ]
 }

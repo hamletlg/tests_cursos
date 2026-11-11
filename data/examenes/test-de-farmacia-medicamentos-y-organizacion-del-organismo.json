@@ -1,0 +1,852 @@
+{
+  "id": "test-de-farmacia-medicamentos-y-organizacion-del-organismo",
+  "title": "Test de Farmacia, Medicamentos y Organización del Organismo",
+  "description": "60 preguntas sobre patología, sistema nervioso, organización del organismo y medicamentos",
+  "grupo": "A",
+  "visible": true,
+  "barajar_preguntas": true,
+  "shuffle_options": true,
+  "preguntas_por_pagina": 10,
+  "questions": [
+    {
+      "text": "Según la definición de la OMS, la salud es:",
+      "options": [
+        "Un estado exclusivo de ausencia de enfermedades y dolencias.",
+        "Un estado de completo bienestar físico, mental y social.",
+        "La capacidad de realizar actividad física sin limitaciones.",
+        "Un objetivo estático que se alcanza en la edad adulta."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 1,
+      "type": "single"
+    },
+    {
+      "text": "El modelo biomédico predominante antes de 1946 identificaba la salud principalmente con:",
+      "options": [
+        "La ausencia de enfermedad.",
+        "El bienestar emocional de la persona.",
+        "La integración social del individuo.",
+        "La práctica regular de ejercicio físico."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 2,
+      "type": "single"
+    },
+    {
+      "text": "La Carta de Ottawa de 1986 matizó la definición de salud de la OMS presentándola como:",
+      "options": [
+        "Un estado perfecto que debe perseguirse constantemente.",
+        "Un recurso para la vida diaria.",
+        "Una responsabilidad exclusiva del sistema sanitario.",
+        "Un derecho limitado a las personas trabajadoras."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 3,
+      "type": "single"
+    },
+    {
+      "text": "Las tres fases de la prevención son, respectivamente:",
+      "options": [
+        "Primaria, secundaria y terciaria.",
+        "Curativa, paliativa y rehabilitadora.",
+        "Individual, familiar y comunitaria.",
+        "Farmacológica, quirúrgica y psicológica."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 4,
+      "type": "single"
+    },
+    {
+      "text": "El periodo subclínico de una enfermedad se caracteriza porque:",
+      "options": [
+        "El paciente presenta síntomas graves y evidentes.",
+        "Los cambios fisiopatológicos ya han comenzado pero no hay síntomas perceptibles.",
+        "La enfermedad ha sido completamente erradicada del organismo.",
+        "El paciente ya se ha recuperado por completo."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 5,
+      "type": "single"
+    },
+    {
+      "text": "Los criterios de Wilson y Jungner (OMS, 1968) se utilizan para evaluar:",
+      "options": [
+        "La eficacia de un medicamento nuevo.",
+        "La idoneidad de una enfermedad para un programa de cribado poblacional.",
+        "La seguridad de una vacuna.",
+        "La necesidad de hospitalización de un paciente."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 6,
+      "type": "single"
+    },
+    {
+      "text": "La fase de la enfermedad en la que los síntomas son leves e inespecíficos se denomina:",
+      "options": [
+        "Incubación.",
+        "Estado.",
+        "Prodromos.",
+        "Convalecencia."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 7,
+      "type": "single"
+    },
+    {
+      "text": "Durante la fase de declive de una enfermedad, el paciente suele tener la tentación de:",
+      "options": [
+        "Aumentar la dosis de los medicamentos.",
+        "Abandonar el tratamiento porque se siente mejor.",
+        "Solicitar una segunda opinión médica.",
+        "Realizar ejercicio físico intenso."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 8,
+      "type": "single"
+    },
+    {
+      "text": "La convalecencia se define como el período en el que:",
+      "options": [
+        "La enfermedad alcanza su máxima expresión clínica.",
+        "El organismo repara los tejidos dañados y restablece su funcionamiento.",
+        "El agente patógeno se multiplica sin causar síntomas.",
+        "Los síntomas son completamente inespecíficos."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 9,
+      "type": "single"
+    },
+    {
+      "text": "Una enfermedad que no se resuelve y se prolonga en el tiempo se denomina:",
+      "options": [
+        "Aguda.",
+        "Crónica.",
+        "Subclínica.",
+        "Incubada."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 10,
+      "type": "single"
+    },
+    {
+      "text": "El sistema nervioso central (SNC) está formado por:",
+      "options": [
+        "El encéfalo y la médula espinal.",
+        "Los nervios craneales y raquídeos.",
+        "El cerebro y el cerebelo únicamente.",
+        "El tronco encefálico y los ganglios."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 11,
+      "type": "single"
+    },
+    {
+      "text": "La estructura más voluminosa del encéfalo, dividida en dos hemisferios, es:",
+      "options": [
+        "El cerebelo.",
+        "El tronco encefálico.",
+        "El cerebro.",
+        "El bulbo raquídeo."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 12,
+      "type": "single"
+    },
+    {
+      "text": "El cerebelo tiene como función principal:",
+      "options": [
+        "El pensamiento superior y la planificación.",
+        "La coordinación del movimiento, el equilibrio y el tono muscular.",
+        "La regulación del ritmo cardíaco y la respiración.",
+        "El procesamiento de la información visual."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 13,
+      "type": "single"
+    },
+    {
+      "text": "El bulbo raquídeo regula funciones vitales automáticas como:",
+      "options": [
+        "El pensamiento abstracto y la memoria.",
+        "La coordinación motora fina.",
+        "El ritmo cardíaco, la respiración y la presión arterial.",
+        "La percepción del dolor y la temperatura."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 14,
+      "type": "single"
+    },
+    {
+      "text": "La médula espinal en adultos termina aproximadamente a nivel de:",
+      "options": [
+        "La última vértebra lumbar (L5).",
+        "La primera o segunda vértebra lumbar (L1-L2).",
+        "La última vértebra torácica (T12).",
+        "La base del cráneo."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 15,
+      "type": "single"
+    },
+    {
+      "text": "Los tres pares de membranas que protegen el encéfalo y la médula espinal se denominan:",
+      "options": [
+        "Peritoneo, pleura y pericardio.",
+        "Duramadre, aracnoides y piamadre.",
+        "Epidermis, dermis e hipodermis.",
+        "Membrana celular, membrana nuclear y membrana mitocondrial."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 16,
+      "type": "single"
+    },
+    {
+      "text": "El líquido cefalorraquídeo (LCR) circula entre:",
+      "options": [
+        "La duramadre y el cráneo.",
+        "La aracnoides y la piamadre.",
+        "La piel y el músculo.",
+        "El hueso y el cartílago."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 17,
+      "type": "single"
+    },
+    {
+      "text": "Los nervios craneales son un total de:",
+      "options": [
+        "10 pares.",
+        "12 pares.",
+        "31 pares.",
+        "8 pares."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 18,
+      "type": "single"
+    },
+    {
+      "text": "El nervio vago (X par craneal) se denomina así porque:",
+      "options": [
+        "Es el más corto del cuerpo.",
+        "Inerva múltiples órganos torácicos y abdominales descendiendo por el cuello.",
+        "Solo tiene función motora.",
+        "Se encuentra únicamente en la cabeza."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 19,
+      "type": "single"
+    },
+    {
+      "text": "Los nervios raquídeos son un total de 31 pares y se dividen en:",
+      "options": [
+        "Cervicales, torácicos y lumbares.",
+        "Cervicales, torácicos, lumbares, sacros y coccígeo.",
+        "Craneales y espinales.",
+        "Sensibles y motores."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 20,
+      "type": "single"
+    },
+    {
+      "text": "Cada nervio raquídeo es de tipo:",
+      "options": [
+        "Solo sensorial.",
+        "Solo motor.",
+        "Mixto (sensorial y motor).",
+        "Solo autonómico."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 21,
+      "type": "single"
+    },
+    {
+      "text": "La raíz dorsal de un nervio raquídeo conduce fibras:",
+      "options": [
+        "Motoras (eferentes).",
+        "Sensoriales (aferentes).",
+        "Autonómicas.",
+        "Mixtas."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 22,
+      "type": "single"
+    },
+    {
+      "text": "El sistema nervioso somático se encarga de:",
+      "options": [
+        "Controlar las funciones automáticas del organismo.",
+        "El control voluntario de los músculos esqueléticos y la recepción sensorial.",
+        "La digestión y la absorción de nutrientes.",
+        "La regulación de la temperatura corporal."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 23,
+      "type": "single"
+    },
+    {
+      "text": "El sistema nervioso autónomo se subdivide en:",
+      "options": [
+        "Somático y periférico.",
+        "Simpático y parasimpático.",
+        "Central y periférico.",
+        "Sensitivo y motor."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 24,
+      "type": "single"
+    },
+    {
+      "text": "La respuesta de «lucha o huida» corresponde al sistema:",
+      "options": [
+        "Parasimpático.",
+        "Somático.",
+        "Simpático.",
+        "Entérico."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 25,
+      "type": "single"
+    },
+    {
+      "text": "La respuesta de «descanso y digestión» corresponde al sistema:",
+      "options": [
+        "Simpático.",
+        "Parasimpático.",
+        "Somático.",
+        "Periférico."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 26,
+      "type": "single"
+    },
+    {
+      "text": "El neurotransmisor liberado por las fibras postganglionares del sistema simpático en la mayoría de los órganos diana es:",
+      "options": [
+        "Acetilcolina.",
+        "Serotonina.",
+        "Noradrenalina.",
+        "Dopamina."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 27,
+      "type": "single"
+    },
+    {
+      "text": "El receptor beta-1 (β₁) se encuentra principalmente en:",
+      "options": [
+        "Los bronquios.",
+        "El corazón y el riñón.",
+        "El tejido adiposo.",
+        "El músculo liso vascular."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 28,
+      "type": "single"
+    },
+    {
+      "text": "El efecto del sistema parasimpático sobre los bronquios es:",
+      "options": [
+        "Broncodilatación.",
+        "Broncoconstricción.",
+        "Sin efecto alguno.",
+        "Aumento de la frecuencia respiratoria."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 29,
+      "type": "single"
+    },
+    {
+      "text": "El efecto del sistema simpático sobre el corazón es:",
+      "options": [
+        "Disminuir la frecuencia y la fuerza de contracción.",
+        "Aumentar la frecuencia y la fuerza de contracción.",
+        "No tener ningún efecto.",
+        "Detener la actividad cardíaca."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 30,
+      "type": "single"
+    },
+    {
+      "text": "La córnea aporta aproximadamente dos tercios del poder de enfoque del ojo. Su valor en dioptrías es de:",
+      "options": [
+        "19-20 dioptrías.",
+        "25 dioptrías.",
+        "43 dioptrías.",
+        "60 dioptrías."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 31,
+      "type": "single"
+    },
+    {
+      "text": "La zona de la retina con la mayor densidad de conos y la máxima agudeza visual se denomina:",
+      "options": [
+        "Punto ciego.",
+        "Fóvea central.",
+        "Mácula oscura.",
+        "Periferia retiniana."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 32,
+      "type": "single"
+    },
+    {
+      "text": "Las cataratas consisten en:",
+      "options": [
+        "La inflamación del nervio óptico.",
+        "La opacidad del cristalino.",
+        "El desprendimiento de la retina.",
+        "El aumento de la presión intraocular."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 33,
+      "type": "single"
+    },
+    {
+      "text": "La presbicia se debe a:",
+      "options": [
+        "Un globo ocular demasiado largo.",
+        "La pérdida de elasticidad del cristalino con la edad.",
+        "Una córnea demasiado curva.",
+        "Un defecto en la retina."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 34,
+      "type": "single"
+    },
+    {
+      "text": "El nervio óptico corresponde al par craneal:",
+      "options": [
+        "I.",
+        "II.",
+        "VIII.",
+        "V."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 35,
+      "type": "single"
+    },
+    {
+      "text": "El oído medio es una cavidad que se encuentra:",
+      "options": [
+        "Llena de líquido endolinfático.",
+        "Llena de aire.",
+        "Rodeada de hueso compacto.",
+        "Conectada directamente con el exterior."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 36,
+      "type": "single"
+    },
+    {
+      "text": "Los tres huesecillos del oído medio son, respectivamente:",
+      "options": [
+        "Estribo, yunque y martillo.",
+        "Martillo, estribo y caracol.",
+        "Yunque, estribo y cóclea.",
+        "Martillo, yunque y tímpano."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "id": 37,
+      "type": "single"
+    },
+    {
+      "text": "El hueso más pequeño del cuerpo humano, ubicado en el oído medio, es el:",
+      "options": [
+        "Martillo.",
+        "Yunque.",
+        "Estribo.",
+        "Tímpano."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "id": 38,
+      "type": "single"
+    },
+    {
+      "text": "La cóclea es la estructura del oído interno encargada de:",
+      "options": [
+        "El equilibrio.",
+        "La audición.",
+        "La producción de cerumen.",
+        "La regulación de la presión."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 39,
+      "type": "single"
+    },
+    {
+      "text": "Las células ciliadas del oído interno:",
+      "options": [
+        "Se regeneran continuamente a lo largo de la vida.",
+        "No se regeneran y, una vez dañadas, la pérdida auditiva es permanente.",
+        "Solo se dañan por infecciones virales.",
+        "Se regeneran en aproximadamente 30 días."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 40,
+      "type": "single"
+    },
+    {
+      "text": "El vértigo se diferencia del mareo porque:",
+      "options": [
+        "El vértigo es siempre más leve que el mareo.",
+        "El vértigo implica sensación de rotación del entorno o del propio cuerpo.",
+        "El mareo siempre indica un problema cardíaco.",
+        "No existe ninguna diferencia clínica entre ambos."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 41,
+      "type": "single"
+    },
+    {
+      "text": "Los cinco sabores básicos detectados por la lengua son:",
+      "options": [
+        "Dulce, salado, ácido, amargo y picante.",
+        "Dulce, salado, ácido, amargo y umami.",
+        "Dulce, salado, ácido, amargo y dulce.",
+        "Dulce, amargo, picante, ácido y metálico."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 42,
+      "type": "single"
+    },
+    {
+      "text": "El mito del «mapa de la lengua» sostiene erróneamente que:",
+      "options": [
+        "Todas las zonas de la lengua detectan todos los sabores por igual.",
+        "Cada zona de la lengua detecta un sabor diferente exclusivamente.",
+        "El gusto no depende de las papilas gustativas.",
+        "El olfato no tiene relación con el gusto."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 43,
+      "type": "single"
+    },
+    {
+      "text": "La piel como órgano sensorial se compone de tres capas principales:",
+      "options": [
+        "Epidermis, dermis e hipodermis.",
+        "Epitelio, conectivo y muscular.",
+        "Membrana, tejido y hueso.",
+        "Córnea, cristalino y retina."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 44,
+      "type": "single"
+    },
+    {
+      "text": "Los corpúsculos de Pacini detectan:",
+      "options": [
+        "Presión ligera sostenida.",
+        "Vibraciones de alta frecuencia y presión profunda.",
+        "Cambios de temperatura.",
+        "El movimiento del vello."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 45,
+      "type": "single"
+    },
+    {
+      "text": "Las fibras Aδ transmiten el:",
+      "options": [
+        "Dolor sordo y ardiente.",
+        "Dolor agudo y bien localizado.",
+        "Tacto fino y vibración.",
+        "Temperatura y presión ligera."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 46,
+      "type": "single"
+    },
+    {
+      "text": "La vía espinothalámica transporta información de:",
+      "options": [
+        "Tacto fino, vibración y propiocepción.",
+        "Dolor, temperatura y tacto grosero.",
+        "Equilibrio y coordinación motora.",
+        "Memoria y aprendizaje."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 47,
+      "type": "single"
+    },
+    {
+      "text": "Un medicamento se define como toda sustancia con propiedades para:",
+      "options": [
+        "Mejorar el rendimiento físico de las personas.",
+        "Prevenir, diagnosticar, tratar o curar enfermedades.",
+        "Aumentar la masa muscular.",
+        "Sustituir alimentos en la dieta."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 48,
+      "type": "single"
+    },
+    {
+      "text": "Los procesos fundamentales de la farmacocinética se resumen en las siglas:",
+      "options": [
+        "ABCD.",
+        "ADME.",
+        "PHARM.",
+        "VITA."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 49,
+      "type": "single"
+    },
+    {
+      "text": "La farmacodinamia estudia:",
+      "options": [
+        "El recorrido del fármaco en el organismo.",
+        "Los efectos bioquímicos y fisiológicos del fármaco y su mecanismo de acción.",
+        "La forma en que se absorbe un medicamento.",
+        "La eliminación renal de los fármacos."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 50,
+      "type": "single"
+    },
+    {
+      "text": "Un agonista es una sustancia que:",
+      "options": [
+        "Bloquea el receptor.",
+        "Activa el receptor.",
+        "Destruye el receptor.",
+        "Modifica la membrana celular."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 51,
+      "type": "single"
+    },
+    {
+      "text": "Los excipientes en un medicamento son sustancias:",
+      "options": [
+        "Con actividad terapéutica principal.",
+        "Sin actividad terapéutica que acompañan al principio activo.",
+        "Exclusivamente conservantes.",
+        "Responsables del efecto farmacológico."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 52,
+      "type": "single"
+    },
+    {
+      "text": "Las formas farmacéuticas sólidas incluyen:",
+      "options": [
+        "Pomadas, cremas y geles.",
+        "Comprimidos, cápsulas y grageas.",
+        "Soluciones, suspensiones y jarabes.",
+        "Óvulos, supositorios y parches."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 53,
+      "type": "single"
+    },
+    {
+      "text": "La vía sublingual se caracteriza por:",
+      "options": [
+        "Deglución del fármaco con efecto sistémico.",
+        "Absorción rápida bajo la lengua, evitando el primer paso hepático.",
+        "Aplicación sobre la piel para efecto local.",
+        "Administración mediante supositorio rectal."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 54,
+      "type": "single"
+    },
+    {
+      "text": "Los medicamentos termolábiles requieren conservación en:",
+      "options": [
+        "Temperatura ambiente (hasta 25 °C).",
+        "El frigorífico, entre 2 °C y 8 °C.",
+        "Un lugar seco y sin luz.",
+        "Cualquier temperatura sin restricciones."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 55,
+      "type": "single"
+    },
+    {
+      "text": "Los «5 correctos» para la administración segura de medicamentos incluyen:",
+      "options": [
+        "Paciente, medicamento, dosis, vía y hora correctos.",
+        "Prescripción, laboratorio, farmacia, enfermero y paciente.",
+        "Nombre, apellido, dosis, fecha y firma.",
+        "Tipo, marca, precio, fecha y lugar."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 56,
+      "type": "single"
+    },
+    {
+      "text": "La regla de los 5 correctos tiene su origen en el ámbito de:",
+      "options": [
+        "La medicina veterinaria.",
+        "La enfermería anglosajona.",
+        "La farmacología experimental.",
+        "La biología molecular."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 57,
+      "type": "single"
+    },
+    {
+      "text": "Un error de medicación con daño al paciente se considera:",
+      "options": [
+        "Un incidente menor sin consecuencias.",
+        "Una reacción adversa.",
+        "Un efecto secundario normal.",
+        "Una alergia al medicamento."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 58,
+      "type": "single"
+    },
+    {
+      "text": "Los medicamentos de alto riesgo que requieren doble verificación incluyen:",
+      "options": [
+        "Paracetamol e ibuprofeno.",
+        "Anticoagulantes, insulinas y opioides.",
+        "Vitaminas y suplementos nutricionales.",
+        "Cremas hidratantes y antisépticos."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "id": 59,
+      "type": "single"
+    },
+    {
+      "text": "La farmacocinética describe el recorrido del fármaco en el organismo. Las cuatro fases son:",
+      "options": [
+        "Absorción, distribución, metabolismo y excreción.",
+        "Ingestión, digestión, absorción y eliminación.",
+        "Aplicación, circulación, acción y eliminación.",
+        "Entrada, transformación, uso y eliminación."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "id": 60,
+      "type": "single"
+    }
+  ]
+}
