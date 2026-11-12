@@ -219,7 +219,7 @@
       "type": "single"
     },
     {
-      "text": "Los tres pares de membranas que protegen el encéfalo y la médula espinal se denominan:",
+      "text": "Las tres membranas que protegen el encéfalo y la médula espinal se denominan:",
       "options": [
         "Peritoneo, pleura y pericardio.",
         "Duramadre, aracnoides y piamadre.",
@@ -521,7 +521,7 @@
         "Martillo, yunque y tímpano."
       ],
       "correct_indices": [
-        3
+        0
       ],
       "id": 37,
       "type": "single"
@@ -681,15 +681,15 @@
       "type": "single"
     },
     {
-      "text": "Los procesos fundamentales de la farmacocinética se resumen en las siglas:",
+      "text": "En farmacocinética, la biodisponibilidad se define como:",
       "options": [
-        "ABCD.",
-        "ADME.",
-        "PHARM.",
-        "VITA."
+        "La fracción de fármaco inalterado que alcanza la circulación sistémica y la velocidad a la que lo hace.",
+        "El tiempo que tarda la concentración plasmática del fármaco en reducirse a la mitad.",
+        "El volumen de plasma que queda completamente depurado de fármaco por unidad de tiempo.",
+        "La intensidad del efecto farmacológico producido al unirse al receptor celular."
       ],
       "correct_indices": [
-        1
+        0
       ],
       "id": 49,
       "type": "single"
@@ -807,7 +807,7 @@
       "type": "single"
     },
     {
-      "text": "Un error de medicación con daño al paciente se considera:",
+      "text": "Un efecto nocivo no intencionado que ocurre a dosis habituales con daño al paciente se considera:",
       "options": [
         "Un incidente menor sin consecuencias.",
         "Una reacción adversa.",

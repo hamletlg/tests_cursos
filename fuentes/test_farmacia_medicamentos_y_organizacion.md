@@ -95,7 +95,7 @@
 - La última vértebra torácica (T12).
 - La base del cráneo.
 
-## Los tres pares de membranas que protegen el encéfalo y la médula espinal se denominan:
+## Las tres membranas que protegen el encéfalo y la médula espinal se denominan:
 - Peritoneo, pleura y pericardio.
 - Duramadre, aracnoides y piamadre. *
 - Epidermis, dermis e hipodermis.
@@ -222,10 +222,10 @@
 - Conectada directamente con el exterior.
 
 ## Los tres huesecillos del oído medio son, respectivamente:
-- Estribo, yunque y martillo.
+- Estribo, yunque y martillo. *
 - Martillo, estribo y caracol.
 - Yunque, estribo y cóclea.
-- Martillo, yunque y tímpano. *
+- Martillo, yunque y tímpano. 
 
 ## El hueso más pequeño del cuerpo humano, ubicado en el oído medio, es el:
 - Martillo.
@@ -293,11 +293,11 @@
 - Aumentar la masa muscular.
 - Sustituir alimentos en la dieta.
 
-## Los procesos fundamentales de la farmacocinética se resumen en las siglas:
-- ABCD.
-- ADME. *
-- PHARM.
-- VITA.
+## En farmacocinética, la biodisponibilidad se define como:
+- La fracción de fármaco inalterado que alcanza la circulación sistémica y la velocidad a la que lo hace. *
+- El tiempo que tarda la concentración plasmática del fármaco en reducirse a la mitad.
+- El volumen de plasma que queda completamente depurado de fármaco por unidad de tiempo.
+- La intensidad del efecto farmacológico producido al unirse al receptor celular.
 
 ## La farmacodinamia estudia:
 - El recorrido del fármaco en el organismo.
@@ -347,7 +347,7 @@
 - La farmacología experimental.
 - La biología molecular.
 
-## Un error de medicación con daño al paciente se considera:
+## Un efecto nocivo no intencionado que ocurre a dosis habituales con daño al paciente se considera:
 - Un incidente menor sin consecuencias.
 - Una reacción adversa. *
 - Un efecto secundario normal.
